@@ -129,7 +129,7 @@ function exportaMetares(arrayMetares) {
 }
 
 function plotaAeroportos() {
-    /*if (groupMarkersHide) {
+    if (groupMarkersHide) {
         map.removeLayer(groupMarkersHide); // corrige o problema de não apagar os markers com o zoom out no inicio
         groupMarkersHide = false
     }
@@ -137,7 +137,7 @@ function plotaAeroportos() {
         map.removeLayer(groupMarkers); // corrige o problema de não apagar os markers com o zoom out no inicio
         groupMarkers = false
     }
-    updateDescobertos(false)*/
+    //updateDescobertos(false)
     for (var i in localidadesFIR) {
         var fir = removeEspacos(localidadesFIR[i])
         var aloc = fir.split(",")
