@@ -376,7 +376,7 @@ function trataMetarRedemet(response, idxFIR, onLine = true) {
 
     if (response.includes("getaddrinfo failed") || erroDeAcesso) {
         var strErroDeAcesso = limpaMsgErro(response);
-        strToCell(["Erro ao tentar obter metares! " + strErroDeAcesso, ""], idxFIR, false, false);
+        //strToCell(["Erro ao tentar obter metares! " + strErroDeAcesso, ""], idxFIR, false, false);
         return;
     }
 
@@ -542,14 +542,14 @@ function trataMetarRedemet(response, idxFIR, onLine = true) {
                 // return metar.includes(" TS ") || metar.includes("TSRA ") || metar.includes("TSGR ");
                 var strStatusMetar = visStr + tetoStr + ventoStr + ventoRajStr + cortanteStr + trovoadaStr;
                 //updateArrayStatus (strStatusMetar);
-                strToCell([metar, strStatusMetar, { vento: vento, teto: arrayTeto[2], tetoBaixo: tetoBaixo, visibilidade: parseInt(visibilidade), maisRecente: isMostRecent(arrayMetares, localidade, i) }], idxFIR, novo, xEscondeSpeciAuto);
+                //strToCell([metar, strStatusMetar, { vento: vento, teto: arrayTeto[2], tetoBaixo: tetoBaixo, visibilidade: parseInt(visibilidade), maisRecente: isMostRecent(arrayMetares, localidade, i) }], idxFIR, novo, xEscondeSpeciAuto);
 
                 cont = cont + 1;
             }
         }
     }
     if (cont == 1) {
-        strToCell(["NENHUMA LOCALIDADE COM RESTRIÇÃO", ""], idxFIR, false, false, onLine);
+        //strToCell(["NENHUMA LOCALIDADE COM RESTRIÇÃO", ""], idxFIR, false, false, onLine);
         cont = cont + 1;
     }
     limpaArrayStatusGamet(idxFIR)
