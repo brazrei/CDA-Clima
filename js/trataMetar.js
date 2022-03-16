@@ -555,7 +555,7 @@ function trataMetarRedemet(response, idxFIR, onLine = true) {
     //limpaArrayStatusGamet(idxFIR)
 
     //trataGametRedemet(lastGamet)
-    exportaMetares(idxFIR);
+    exportaMetares(arrayMetares);
     return cont; //retorna o total de metares lidos +1
 }
 
