@@ -308,7 +308,7 @@ function plotaMarca(lat, lng, loc) {
 
     if (!isNaN(lat) && !isNaN(lng)) {
 
-        desc = getMetarFromLoc(loc)
+        desc = getMetarFromLoc(loc) + ' - ' + getDescricao(loc)
 
         var greenIcon = new L.Icon({
             //            iconUrl: 'png/marker-icon-green.png',
