@@ -19,6 +19,14 @@ function getTipoAlerta(loc){
     return false
 }
 
+function bringRedMarkersToFront(layers) {
+    //layer1.bringToFront();   
+    layers.eachLayer(function (layer) {
+        if (layer.options.icon.options.alt >= 1000)
+            layer.setZIndexOffset(5000);
+    });
+}
+
 function addMarker(m, loc, restricao, pulse = false) {
     // if (pulse)
     //     return m.addTo(map)
