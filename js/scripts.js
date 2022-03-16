@@ -382,3 +382,46 @@ function plotaMarca(lat, lng, loc) {
         m.bindTooltip(desc, { closeButton: false, offset: L.point(0, -20) })
     }
 }
+
+
+/*$(document).ready(function ()
+
+{
+    temp = getTempMetar("METAR SBGM 161400Z 25003KT 200V290 6000 BKN004 40/17 Q1013=")
+    let UR = getUR(temp)
+	
+	console.log("Umidade: " + parseInt(UR) + "%")
+	
+	console.log("I:" + getI(temp,UR))
+	   
+	   
+});
+*/
+
+function getTempMetar(metar) { //programado apenas para pressao em Q
+    let patt2 = /\d{2}\/\d{2} Q/;
+    let t = metar.match(patt2)    
+    //console.log(t)
+    t = t[0].split("/")
+    
+    return {t:parseInt(t[0]),td:parseInt(t[1].split(" ")[0])}
+}
+
+function getUR(temp){
+    let neper = 2.7182818285
+    
+	console.log("=>" + temp.t+" "+temp.td)
+
+    let n1 = 6.112 * Math.pow(neper, (17.67 * temp.td) / (temp.td + 243.5)  )
+
+    console.log(n1)
+    let n2 = 6.112 * Math.pow( neper, (17.67*temp.t) / (temp.t + 243.5) )
+    console.log(n2)
+    let UR = 100 * ( n1 / n2) 
+    return UR
+}
+
+function getI (temp,UR){
+    let i = Math.pow(temp.t,(1/4)) * Math.pow(UR,(3/32))
+    return i   
+}
