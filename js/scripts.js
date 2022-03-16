@@ -105,7 +105,7 @@ function loadMap(){
 
 $(document).ready(function(){
     loadMap();
-    plotaAeroportos();
+    getAeroportos();
   });
 
 function plotaAeroportos() {
