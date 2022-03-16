@@ -408,7 +408,7 @@ function plotaMarca(lat, lng, loc) {
                 //if (alerta.ad)
                 //    addMarker(L.marker([lat, lng], { icon: cssIconYellow }), "", restricao, true)
         }
-        let icon = greenIcon
+        let icon = grayIcon
 
 
         var m = addMarker(L.marker([lat, lng], { icon: icon }), loc, restricao)
