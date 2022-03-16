@@ -318,7 +318,7 @@ function plotaMarca(lat, lng, loc) {
                 // icon = orangeIcon
                 //else {
                 //icon = yellowIcon
-                icon = getSvgIcon(loc, alerta.strAlerta, adWRNGPertoDoFim, false) //vento trovoada teto visib
+                //icon = getSvgIcon(loc, alerta.strAlerta, adWRNGPertoDoFim, false) //vento trovoada teto visib
 
                 //}
                 //if (alerta.ad)
