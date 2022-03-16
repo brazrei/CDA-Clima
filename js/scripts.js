@@ -165,7 +165,7 @@ function plotaAeroportos() {
         }
     }
 
-    if (map.getZoom() > 5)
+    if (map.getZoom() > 5 && groupMarkersHide)
         map.addLayer(groupMarkersHide); // corrige o problema de não apagar os markers com o zoom out no inicio
     map.addLayer(groupMarkers); // corrige o problema de não apagar os markers com o zoom out no inicio
     bringRedMarkersToFront(groupMarkers)
@@ -322,8 +322,9 @@ function plotaMarca(lat, lng, loc) {
 
 
     if (!isNaN(lat) && !isNaN(lng)) {
-
-        desc = getDescricao(loc) + '<br><br>'+ getMetarFromLoc(loc)
+	let metar = getMetarFromLoc(loc)
+	let indiceI = getI(metar)
+        desc = getDescricao(loc) + '<br><br>'+ metar
 
         var greenIcon = new L.Icon({
             //            iconUrl: 'png/marker-icon-green.png',
@@ -424,7 +425,16 @@ function plotaMarca(lat, lng, loc) {
                 //if (alerta.ad)
                 //    addMarker(L.marker([lat, lng], { icon: cssIconYellow }), "", restricao, true)
         }
-        let icon = grayIcon
+        let icon
+	
+	if (indiceI > 0 && indiceI <= 3.34)
+          icon = greenIcon
+	else if (indiceI >= 3.35 && indiceI <= 3.47)
+          icon = yellowIcon
+	else if (indiceI >= 3.48 && indiceI <= 3.54)
+          icon = redIcon
+	else if (indiceI >= 3.55)
+          icon = grayIcon
 
 
         var m = addMarker(L.marker([lat, lng], { icon: icon }), loc, restricao)
@@ -481,7 +491,10 @@ function getUR(temp){
     return UR
 }
 
-function getI (temp,UR){
+function getI (metar){
+    let temp = getTempMetar(metar)
+    let UR = getUR(temp)	
+	
     let i = Math.pow(temp.t,(1/4)) * Math.pow(UR,(3/32))
     return i   
 }
