@@ -1,5 +1,6 @@
 var aeroIntern = "SBBG* SBBE SBCF SBBV SBBR SBKP SBCG SBCR SBCZ SBCY SBCT SBFL SBFZ SBFI SBJP SBMQ SBEG SBNF SBPK SBPP SBPA SBPV SBRF SBRP* SBRB* SBGL SBSV SBSN SBSG SBSJ SBSP* SBVT* SBSL SBGR SBTT SBPB SBPL* SBPS* SBCB*	SBMO* SBMG*"
 var groupMarkers=false
+var groupMarkersHide=false
 var arrayMetaresGeral = []
 
 function removeInfo(desc){
