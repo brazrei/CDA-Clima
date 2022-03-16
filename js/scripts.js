@@ -9,6 +9,28 @@ function removeEspacos(str){
     return str.replace(/ /g,"")
 }
 
+function addMarker(m, loc, restricao, pulse = false) {
+    // if (pulse)
+    //     return m.addTo(map)
+
+    let int = aeroIntern.indexOf(loc) > -1
+
+    if (!int && !restricao) {
+        if (!groupMarkersHide)
+            groupMarkersHide = new L.FeatureGroup();
+        groupMarkersHide.addLayer(m)
+    } else {
+        if (!groupMarkers)
+            groupMarkers = new L.FeatureGroup();
+        groupMarkers.addLayer(m)
+    }
+
+
+    //return m.addTo(map)
+    return m
+}
+
+
 function makeMap() {
   //  Init Overlays
   var overlays = {};
