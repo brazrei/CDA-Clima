@@ -134,7 +134,8 @@ $(document).ready(function(){
   });
 
 function exportaMetares(arrayMetares) {
-  for (let metar in arrayMetares) {
+  for (let i in arrayMetares) {
+    let metar = arrayMetares[i]
     let loc = getLocalidade(metar)
     updateArrayMetaresGeral(loc, metar)
   }
