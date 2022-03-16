@@ -46,7 +46,8 @@ function getAeroportos() {
                 arrAeroDescricao.push(desc);
             });
             aeroportosOK = true;
-            loadFirBrasil();
+            plotaAeroportos();
+            //loadFirBrasil();
             //BtnMetarGERALClick(true); // era chamado de dentro de relogio.js // achar uma solução mais bonita
         }
     });
