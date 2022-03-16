@@ -187,7 +187,7 @@ function getMetarFromLoc(loc) {
         return xitem
     }
 
-    let met = buscaMetar(arrayMetares, loc) //busca os que tem restrição
+    let met = buscaMetar(arrayMetaresGeral, loc) //busca os que tem restrição
     return met
 }
 
