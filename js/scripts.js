@@ -149,7 +149,7 @@ function plotaAeroportos() {
     bringRedMarkersToFront(groupMarkers)
 
 }
-function getMetar(loc){
+function getMetarFromLoc(loc){
   return ""
 }
 function plotaMarca(lat, lng, loc) {
@@ -268,7 +268,7 @@ function plotaMarca(lat, lng, loc) {
 
     if (!isNaN(lat) && !isNaN(lng)) {
 
-        desc = getMetar(loc)
+        desc = getMetarFromLoc(loc)
 
         var greenIcon = new L.Icon({
             //            iconUrl: 'png/marker-icon-green.png',
