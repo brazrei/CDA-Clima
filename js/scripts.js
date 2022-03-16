@@ -327,7 +327,7 @@ function plotaMarca(lat, lng, loc) {
 
         if (descU.includes("DESCOBERTO")) {
           let strDescoberto = descU.split("DESCOBERTO")[1].split("<")[0]
-          let alerta = getTipoAlerta(loc, strDescoberto);
+          ///let alerta = getTipoAlerta(loc, strDescoberto);
           //icon = redIcon
           icon = getSvgIcon(loc, alerta.strAlerta, adWRNGPertoDoFim, true) //vento trovoada teto visib
 
