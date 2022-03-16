@@ -46,8 +46,6 @@ function addMarker(m, loc, restricao, pulse = false) {
 function makeMap() {
   //  Init Overlays
   var overlays = {};
-  var aeroIntern = "SBBG* SBBE SBCF SBBV SBBR SBKP SBCG SBCR SBCZ SBCY SBCT SBFL SBFZ SBFI SBJP SBMQ SBEG SBNF SBPK SBPP SBPA SBPV SBRF SBRP* SBRB* SBGL SBSV SBSN SBSG SBSJ SBSP* SBVT* SBSL SBGR SBTT SBPB SBPL* SBPS* SBCB*	SBMO* SBMG*"
-
   //
   //Init BaseMaps
   var basemaps = {
@@ -120,6 +118,14 @@ $(document).ready(function(){
     getAeroportos();
   });
 
+function exportaMetares(arrayMetares) {
+  for (let metar in arrayMetares) {
+    let loc = getLocalidade(metar)
+    updateArrayMetaresGeral(loc, metar)
+  }
+	
+}
+
 function plotaAeroportos() {
     /*if (groupMarkersHide) {
         map.removeLayer(groupMarkersHide); // corrige o problema de não apagar os markers com o zoom out no inicio
@@ -149,9 +155,42 @@ function plotaAeroportos() {
     bringRedMarkersToFront(groupMarkers)
 
 }
-function getMetarFromLoc(loc){
-  return ""
+
+function updateArrayMetaresGeral(loc, met) {
+    let achou = false
+    let i = 0
+    arrayMetaresGeral.forEach(itemG => {
+        if (itemG.includes(loc)) {
+            achou = true
+            arrayMetaresGeral[i] = met
+
+            return true
+        }
+        i++
+
+    })
+    if (!achou)
+        arrayMetaresGeral.push(met)
+    return false
 }
+
+function getMetarFromLoc(loc) {
+    function buscaMetar(array, loc) {
+        let xitem = loc
+
+        for (i in array) {
+            if (array[i].includes(loc)) {
+                xitem = array[i];
+                break;
+            }
+        }
+        return xitem
+    }
+
+    let met = buscaMetar(arrayMetares, loc) //busca os que tem restrição
+    return met
+}
+
 function plotaMarca(lat, lng, loc) {
     function getSvgIcon(loc, strAlerta) {
         //inicio x = 78
@@ -273,6 +312,17 @@ function plotaMarca(lat, lng, loc) {
         var greenIcon = new L.Icon({
             //            iconUrl: 'png/marker-icon-green.png',
             iconUrl: 'png/condicao_verde.png',
+            //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [8, 8],
+            //iconAnchor: [0, 0],
+            popupAnchor: [1, -12],
+            shadowSize: [6, 6],
+            alt: 0
+        });
+
+        var grayIcon = new L.Icon({
+            //            iconUrl: 'png/marker-icon-green.png',
+            iconUrl: 'png/condicao_cinza.png',
             //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
             iconSize: [8, 8],
             //iconAnchor: [0, 0],
