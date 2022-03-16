@@ -167,8 +167,11 @@ function plotaAeroportos() {
 
     if (map.getZoom() > 5 && groupMarkersHide)
         map.addLayer(groupMarkersHide); // corrige o problema de não apagar os markers com o zoom out no inicio
-    map.addLayer(groupMarkers); // corrige o problema de não apagar os markers com o zoom out no inicio
-    bringRedMarkersToFront(groupMarkers)
+    
+    if  (groupMarkers){
+    	map.addLayer(groupMarkers); // corrige o problema de não apagar os markers com o zoom out no inicio
+    	bringRedMarkersToFront(groupMarkers)
+    }
 
 }
 
