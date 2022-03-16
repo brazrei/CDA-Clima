@@ -1,0 +1,780 @@
+<?xml version="1.0"?>
+<markers>
+ <m> <lt>-19.1572222222</lt><ln>-045.4958333333</ln><t>SNLI - ABAETé</t><l>ABAETÉ, MG</l></m>
+ <m> <lt>-08.7386111111</lt><ln>-039.1258333333</ln><t>SDLI - ABARé</t><l>ABARÉ, BA</l></m>
+ <m> <lt>-05.5952777778</lt><ln>-036.9611111111</ln><t>SNUC - AçU</t><l>AÇU, RN</l></m>
+ <m> <lt>-21.6961111111</lt><ln>-051.0963888889</ln><t>SDAD - EVERALDO MORAES BARRETO</t><l>ADAMANTINA, SP</l></m>
+ <m> <lt>-10.5847222222</lt><ln>-038.0872222222</ln><t>SNAH - ADUSTINA</t><l>ADUSTINA, BA</l></m>
+ <m> <lt>-02.3716666667</lt><ln>-044.3908333333</ln><t>SNCW - CENTRO DE LANçAMENTO DE ALCâNTARA</t><l>ALCÂNTARA, MA</l></m>
+ <m> <lt>-29.8125000000</lt><ln>-055.8922222222</ln><t>SSLT - ALEGRETE NOVO</t><l>ALEGRETE, RS</l></m>
+ <m> <lt>-01.9169444444</lt><ln>-054.7227777778</ln><t>SDWQ - ALENQUER</t><l>ALENQUER, PA</l></m>
+ <m> <lt>-21.4316666667</lt><ln>-045.9330555556</ln><t>SNFE - ALFENAS</t><l>ALFENAS, MG</l></m>
+ <m> <lt>-01.4919444444</lt><ln>-052.5783333333</ln><t>SNYA - ALMEIRIM</t><l>ALMEIRIM, PA</l></m>
+ <m> <lt>-00.8897222222</lt><ln>-052.6022222222</ln><t>SBMD - MONTE DOURADO</t><l>ALMEIRIM, PA</l></m>
+ <m> <lt>-16.1838888889</lt><ln>-040.6672222222</ln><t>SNAR - CIRILO QUEIRóZ</t><l>ALMENARA, MG</l></m>
+ <m> <lt>-09.8663888889</lt><ln>-056.1050000000</ln><t>SBAT - AEROPORTO PILOTO OSVALDO MARQUES DIAS</t><l>ALTA FLORESTA, MT</l></m>
+ <m> <lt>-03.2508333333</lt><ln>-052.2522222222</ln><t>SBHT - ALTAMIRA</t><l>ALTAMIRA, PA</l></m>
+ <m> <lt>02.8352777778</lt><ln>-063.6463888889</ln><t>SWUQ - SURUCUCU</t><l>ALTO ALEGRE, RR</l></m>
+ <m> <lt>03.5450000000</lt><ln>-063.1822222222</ln><t>SWAE - UAICAS</t><l>ALTO ALEGRE, RR</l></m>
+ <m> <lt>-14.1183333333</lt><ln>-047.5280555556</ln><t>SDXF - ALTO PARAíSO</t><l>ALTO PARAÍSO, GO</l></m>
+ <m> <lt>-09.0836111111</lt><ln>-045.9505555556</ln><t>SNAI - ALTO PARNAíBA</t><l>ALTO PARNAÍBA, MA</l></m>
+ <m> <lt>-23.1427777778</lt><ln>-055.2077777778</ln><t>SSAM - AMAMBAí</t><l>AMAMBAÍ, MS</l></m>
+ <m> <lt>02.0727777778</lt><ln>-050.8625000000</ln><t>SBAM - AMAPá</t><l>AMAPÁ, AP</l></m>
+ <m> <lt>-12.9944444444</lt><ln>-039.6405555556</ln><t>SNAZ - AMARGOSA</t><l>AMARGOSA, BA</l></m>
+ <m> <lt>-22.7552777778</lt><ln>-047.2680555556</ln><t>SDAI - AMERICANA</t><l>AMERICANA, SP</l></m>
+ <m> <lt>-16.3625000000</lt><ln>-048.9280555556</ln><t>SWNS - ANáPOLIS</t><l>ANÁPOLIS, GO</l></m>
+ <m> <lt>-16.2386111111</lt><ln>-048.9722222222</ln><t>SBAN - BASE AéREA</t><l>ANÁPOLIS, GO</l></m>
+ <m> <lt>-23.0269444444</lt><ln>-050.2283333333</ln><t>SSAN - ANDIRá</t><l>ANDIRÁ, PR</l></m>
+ <m> <lt>-20.9258333333</lt><ln>-051.3838888889</ln><t>SDDN - ANDRADINA</t><l>ANDRADINA, SP</l></m>
+ <m> <lt>-22.9752777778</lt><ln>-044.3072222222</ln><t>SDAG - ANGRA DOS REIS</t><l>ANGRA DOS REIS, RJ</l></m>
+ <m> <lt>-23.6122222222</lt><ln>-051.3850000000</ln><t>SSAP - APUCARANA</t><l>APUCARANA, PR</l></m>
+ <m> <lt>-07.1722222222</lt><ln>-059.8388888889</ln><t>SWYN - PRAINHA</t><l>APUÍ, AM</l></m>
+ <m> <lt>-20.4525000000</lt><ln>-055.7569444444</ln><t>SSGC - GENERAL CANROBERT PEREIRA DA COSTA</t><l>AQUIDAUANA, MS</l></m>
+ <m> <lt>-10.9033333333</lt><ln>-037.0830555556</ln><t>SNAU - AEROCLUBE</t><l>ARACAJU, SE</l></m>
+ <m> <lt>-10.9852777778</lt><ln>-037.0733333333</ln><t>SBAR - SANTA MARIA</t><l>ARACAJU, SE</l></m>
+ <m> <lt>-04.5663888889</lt><ln>-037.7986111111</ln><t>SNAT - ARACATI</t><l>ARACATI, CE</l></m>
+ <m> <lt>-21.1441666667</lt><ln>-050.4263888889</ln><t>SBAU - ARAçATUBA</t><l>ARAÇATUBA, SP</l></m>
+ <m> <lt>-16.8519444444</lt><ln>-042.0461111111</ln><t>SNUI - ARAçUAí</t><l>ARAÇUAÍ, MG</l></m>
+ <m> <lt>-15.8991666667</lt><ln>-052.2452777778</ln><t>SJVO - ARAGARçAS</t><l>ARAGARÇAS, GO</l></m>
+ <m> <lt>-08.8377777778</lt><ln>-049.5577777778</ln><t>SJAU - ARAGUACEMA</t><l>ARAGUACEMA, TO</l></m>
+ <m> <lt>-15.7238888889</lt><ln>-051.8363888889</ln><t>SWAY - ARAGUAIANA</t><l>ARAGUAIANA, MT</l></m>
+ <m> <lt>-07.2283333333</lt><ln>-048.2408333333</ln><t>SWGN - ARAGUAíNA</t><l>ARAGUAÍNA, TO</l></m>
+ <m> <lt>-18.6680555556</lt><ln>-048.1902777778</ln><t>SNAG - ARAGUARI</t><l>ARAGUARI, MG</l></m>
+ <m> <lt>-05.6844444444</lt><ln>-048.1155555556</ln><t>SJGU - ARAGUATINS</t><l>ARAGUATINS, TO</l></m>
+ <m> <lt>-09.7763888889</lt><ln>-036.6305555556</ln><t>SNAL - ARAPIRACA</t><l>ARAPIRACA, AL</l></m>
+ <m> <lt>-23.3558333333</lt><ln>-051.4908333333</ln><t>SSOG - ARAPONGAS</t><l>ARAPONGAS, PR</l></m>
+ <m> <lt>-24.1041666667</lt><ln>-049.7905555556</ln><t>SSYA - ARAPOTI</t><l>ARAPOTI, PR</l></m>
+ <m> <lt>-21.8044444444</lt><ln>-048.1402777778</ln><t>SBAQ - ARARAQUARA</t><l>ARARAQUARA, SP</l></m>
+ <m> <lt>-22.3369444444</lt><ln>-047.3583333333</ln><t>SDAA - ARARAS</t><l>ARARAS, SP</l></m>
+ <m> <lt>-07.5944444444</lt><ln>-040.5222222222</ln><t>SNAB - ARARIPINA</t><l>ARARIPINA, PE</l></m>
+ <m> <lt>-19.5605555556</lt><ln>-046.9655555556</ln><t>SBAX - ARAXá</t><l>ARAXÁ, MG</l></m>
+ <m> <lt>-08.4172222222</lt><ln>-037.0836111111</ln><t>SNAE - ARCOVERDE</t><l>ARCOVERDE, PE</l></m>
+ <m> <lt>-14.5002777778</lt><ln>-057.0172222222</ln><t>SWAN - ARENáPOLIS</t><l>ARENÁPOLIS, MT</l></m>
+ <m> <lt>-09.8847222222</lt><ln>-063.0488888889</ln><t>SJOG - ARIQUEMES</t><l>ARIQUEMES, RO</l></m>
+ <m> <lt>-10.1780555556</lt><ln>-062.8255555556</ln><t>SWNI - NOVA VIDA</t><l>ARIQUEMES, RO</l></m>
+ <m> <lt>-08.9169444444</lt><ln>-062.1172222222</ln><t>SWTB - TABAJARA</t><l>ARIQUEMES, RO</l></m>
+ <m> <lt>-13.0238888889</lt><ln>-046.8855555556</ln><t>SWRA - ARRAIAS</t><l>ARRAIAS, TO</l></m>
+ <m> <lt>-32.2241666667</lt><ln>-053.0672222222</ln><t>SSAE - ARROIO GRANDE</t><l>ARROIO GRANDE, RS</l></m>
+ <m> <lt>-14.9330555556</lt><ln>-051.0483333333</ln><t>SWNH - ARUANã</t><l>ARUANÃ, GO</l></m>
+ <m> <lt>-22.6400000000</lt><ln>-050.4530555556</ln><t>SNAX - ASSIS</t><l>ASSIS, SP</l></m>
+ <m> <lt>-04.5286111111</lt><ln>-071.5655555556</ln><t>SWEE - ESTIRãO DO EQUADOR</t><l>ATALAIA DO NORTE, AM</l></m>
+ <m> <lt>-05.1302777778</lt><ln>-072.8055555556</ln><t>SWJV - PALMEIRAS DO JAVARI</t><l>ATALAIA DO NORTE, AM</l></m>
+ <m> <lt>-23.1277777778</lt><ln>-046.5747222222</ln><t>SDTB - ATIBAIA</t><l>ATIBAIA, SP</l></m>
+ <m> <lt>-20.7419444444</lt><ln>-050.5316666667</ln><t>SIAY - AURIFLAMA</t><l>AURIFLAMA, SP</l></m>
+ <m> <lt>-23.0930555556</lt><ln>-048.9841666667</ln><t>SDRR - AVARé-ARANDU</t><l>AVARÉ, SP</l></m>
+ <m> <lt>-04.2330555556</lt><ln>-044.8219444444</ln><t>SNBI - BACABAL</t><l>BACABAL, MA</l></m>
+ <m> <lt>-31.3277777778</lt><ln>-054.1347222222</ln><t>SSCE - AEROCLUBE</t><l>BAGÉ, RS</l></m>
+ <m> <lt>-31.3908333333</lt><ln>-054.1097222222</ln><t>SBBG - COMANDANTE GUSTAVO KRAEMER</t><l>BAGÉ, RS</l></m>
+ <m> <lt>-02.8002777778</lt><ln>-049.6672222222</ln><t>SNBW - BAIãO</t><l>BAIÃO, PA</l></m>
+ <m> <lt>-19.4988888889</lt><ln>-041.0419444444</ln><t>SNBG - BAIXO GUANDU - AIMORéS</t><l>BAIXO GUANDU, ES</l></m>
+ <m> <lt>-07.5252777778</lt><ln>-046.0533333333</ln><t>SNBS - BALSAS</t><l>BALSAS, MA</l></m>
+ <m> <lt>-23.0727777778</lt><ln>-050.4230555556</ln><t>SSBR - BANDEIRANTES</t><l>BANDEIRANTES, PR</l></m>
+ <m> <lt>-21.2672222222</lt><ln>-043.7605555556</ln><t>SBBQ - MAJOR BRIGADEIRO DOORGAL BORGES</t><l>BARBACENA, MG</l></m>
+ <m> <lt>-00.9811111111</lt><ln>-062.9194444444</ln><t>SWBC - BARCELOS</t><l>BARCELOS, AM</l></m>
+ <m> <lt>-22.0691666667</lt><ln>-048.7063888889</ln><t>SDBY - BARIRI</t><l>BARIRI, SP</l></m>
+ <m> <lt>-11.0838888889</lt><ln>-043.1338888889</ln><t>SNBX - BARRA</t><l>BARRA, BA</l></m>
+ <m> <lt>-15.0586111111</lt><ln>-057.1830555556</ln><t>SWBB - BARRA DO BUGRES</t><l>BARRA DO BUGRES, MT</l></m>
+ <m> <lt>-05.5025000000</lt><ln>-045.2158333333</ln><t>SNBC - BARRA DO CORDA</t><l>BARRA DO CORDA, MA</l></m>
+ <m> <lt>-15.8608333333</lt><ln>-052.3894444444</ln><t>SBBW - BARRA DO GARçAS</t><l>BARRA DO GARÇAS, MT</l></m>
+ <m> <lt>-11.0336111111</lt><ln>-053.1172222222</ln><t>SWDU - DIAUARUM</t><l>BARRA DO GARÇAS, MT</l></m>
+ <m> <lt>-11.5669444444</lt><ln>-050.7005555556</ln><t>SWMY - PORTO FLUVIAL SUIá MISSU</t><l>BARRA DO GARÇAS, MT</l></m>
+ <m> <lt>-12.0055555556</lt><ln>-053.4022222222</ln><t>SWXG - XINGU</t><l>BARRA DO GARÇAS, MT</l></m>
+ <m> <lt>-12.0791666667</lt><ln>-045.0094444444</ln><t>SNBR - BARREIRAS</t><l>BARREIRAS, BA</l></m>
+ <m> <lt>-02.7961111111</lt><ln>-057.0561111111</ln><t>SWBI - BARREIRINHA</t><l>BARREIRINHA, AM</l></m>
+ <m> <lt>-20.5855555556</lt><ln>-048.5958333333</ln><t>SNBA - CHAFEI AMSEI</t><l>BARRETOS, SP</l></m>
+ <m> <lt>-20.8772222222</lt><ln>-047.5855555556</ln><t>SDBA - BATATAIS</t><l>BATATAIS, SP</l></m>
+ <m> <lt>-22.3436111111</lt><ln>-049.0538888889</ln><t>SBBU - BAURU</t><l>BAURU, SP</l></m>
+ <m> <lt>-22.1577777778</lt><ln>-049.0683333333</ln><t>SBAE - BAURU - AREALVA</t><l>BAURU, SP</l></m>
+ <m> <lt>-20.8972222222</lt><ln>-048.4813888889</ln><t>SDBB - BEBEDOURO</t><l>BEBEDOURO, SP</l></m>
+ <m> <lt>-22.0822222222</lt><ln>-056.5383333333</ln><t>SSBV - BELA VISTA</t><l>BELA VISTA, MS</l></m>
+ <m> <lt>-01.4150000000</lt><ln>-048.4588888889</ln><t>SBJC - BRIGADEIRO PROTáSIO DE OLIVEIRA</t><l>BELÉM, PA</l></m>
+ <m> <lt>-01.3847222222</lt><ln>-048.4788888889</ln><t>SBBE - VAL DE CANS/JúLIO CEZAR RIBEIRO</t><l>BELÉM, PA</l></m>
+ <m> <lt>-08.7669444444</lt><ln>-038.9502777778</ln><t>SNFR - BELéM DE SãO FRANCISCO</t><l>BELÉM DE SÃO FRANCISCO, PE</l></m>
+ <m> <lt>-15.8713888889</lt><ln>-038.8725000000</ln><t>SNBL - BELMONTE</t><l>BELMONTE, BA</l></m>
+ <m> <lt>-19.9091666667</lt><ln>-043.9891666667</ln><t>SBPR - CARLOS PRATES</t><l>BELO HORIZONTE, MG</l></m>
+ <m> <lt>-19.8519444444</lt><ln>-043.9505555556</ln><t>SBBH - PAMPULHA - CARLOS DRUMMOND DE ANDRADE</t><l>BELO HORIZONTE, MG</l></m>
+ <m> <lt>-19.6244444444</lt><ln>-043.9719444444</ln><t>SBCF - TANCREDO NEVES</t><l>BELO HORIZONTE, MG</l></m>
+ <m> <lt>-08.3452777778</lt><ln>-036.4411111111</ln><t>SNBJ - BELO JARDIM</t><l>BELO JARDIM, PE</l></m>
+ <m> <lt>-02.6669444444</lt><ln>-054.9005555556</ln><t>SNEL - BELTERRA</t><l>BELTERRA, PA</l></m>
+ <m> <lt>-07.2169444444</lt><ln>-044.5505555556</ln><t>SNBT - BENEDITO LEITE</t><l>BENEDITO LEITE, MA</l></m>
+ <m> <lt>-26.8327777778</lt><ln>-049.0936111111</ln><t>SSBL - BLUMENAU</t><l>BLUMENAU, SC</l></m>
+ <m> <lt>02.8413888889</lt><ln>-060.6922222222</ln><t>SBBV - ATLAS BRASIL CANTANHEDE</t><l>BOA VISTA, RR</l></m>
+ <m> <lt>04.0163888889</lt><ln>-064.5186111111</ln><t>SWBV - AUARIS</t><l>BOA VISTA, RR</l></m>
+ <m> <lt>03.7633333333</lt><ln>-062.4094444444</ln><t>SWAQ - ÉRICO</t><l>BOA VISTA, RR</l></m>
+ <m> <lt>04.3163888889</lt><ln>-060.7005555556</ln><t>SWMU - SURUMU</t><l>BOA VISTA, RR</l></m>
+ <m> <lt>-08.8336111111</lt><ln>-067.3122222222</ln><t>SWNK - NOVO CAMPO</t><l>BOCA DO ACRE, AM</l></m>
+ <m> <lt>-28.6127777778</lt><ln>-050.4494444444</ln><t>SSBJ - BOM JESUS</t><l>BOM JESUS, RS</l></m>
+ <m> <lt>-13.2613888889</lt><ln>-043.4075000000</ln><t>SBLP - BOM JESUS DA LAPA</t><l>BOM JESUS DA LAPA, BA</l></m>
+ <m> <lt>-09.0594444444</lt><ln>-044.3691666667</ln><t>SNGG - GURGUéIA</t><l>BOM JESUS DO GURGUÉIA, PI</l></m>
+ <m> <lt>-21.2294444444</lt><ln>-056.4561111111</ln><t>SBDB - BONITO </t><l>BONITO, MS</l></m>
+ <m> <lt>-12.7905555556</lt><ln>-042.7288888889</ln><t>SNBO - BOQUIRA</t><l>BOQUIRA, BA</l></m>
+ <m> <lt>-04.4086111111</lt><ln>-059.5977777778</ln><t>SWBR - BORBA</t><l>BORBA, AM</l></m>
+ <m> <lt>-28.7222222222</lt><ln>-054.8908333333</ln><t>SSBO - PALMARES</t><l>BOSSOROCA, RS</l></m>
+ <m> <lt>-22.9366666667</lt><ln>-048.4675000000</ln><t>SDBK - BOTUCATU</t><l>BOTUCATU, SP</l></m>
+ <m> <lt>-22.9791666667</lt><ln>-046.5375000000</ln><t>SBBP - AEROPORTO ESTADUAL ARTHUR SIQUEIRA</t><l>BRAGANÇA PAULISTA, SP</l></m>
+ <m> <lt>-15.8691666667</lt><ln>-047.9208333333</ln><t>SBBR - PRES. JUSCELINO KUBITSCHEK</t><l>BRASÍLIA, DF</l></m>
+ <m> <lt>-11.0169444444</lt><ln>-048.6005555556</ln><t>SWBH - BREJINHO DE NAZARé</t><l>BREJINHO DE NAZARÉ, TO</l></m>
+ <m> <lt>-03.6669444444</lt><ln>-042.8338888889</ln><t>SNRJ - BREJO</t><l>BREJO, MA</l></m>
+ <m> <lt>-01.6386111111</lt><ln>-050.4413888889</ln><t>SNVS - BREVES</t><l>BREVES, PA</l></m>
+ <m> <lt>-12.0208333333</lt><ln>-042.6250000000</ln><t>SNKO - BROTAS DE MACAUBAS</t><l>BROTAS DE MACAUBAS, BA</l></m>
+ <m> <lt>-18.1255555556</lt><ln>-049.0427777778</ln><t>SWBA - BURITI ALEGRE</t><l>BURITI ALEGRE, GO</l></m>
+ <m> <lt>-10.7241666667</lt><ln>-043.6547222222</ln><t>SNTQ - BURITIRAMA</t><l>BURITIRAMA, BA</l></m>
+ <m> <lt>-15.6316666667</lt><ln>-046.4286111111</ln><t>SNUY - BURITIS</t><l>BURITIS, MG</l></m>
+ <m> <lt>-13.7002777778</lt><ln>-060.7005555556</ln><t>SWCX - CABIXI</t><l>CABIXI, MT</l></m>
+ <m> <lt>-22.9208333333</lt><ln>-042.0713888889</ln><t>SBCB - CABO FRIO</t><l>CABO FRIO, RJ</l></m>
+ <m> <lt>-26.7897222222</lt><ln>-050.9397222222</ln><t>SBCD - CAçADOR</t><l>CAÇADOR, SC</l></m>
+ <m> <lt>-30.5494444444</lt><ln>-053.4591666667</ln><t>SSWS - CAçAPAVA DO SUL</t><l>CAÇAPAVA DO SUL, RS</l></m>
+ <m> <lt>-29.8997222222</lt><ln>-054.9458333333</ln><t>SSCQ - SAICã</t><l>CACEQUI, RS</l></m>
+ <m> <lt>-16.0427777778</lt><ln>-057.6297222222</ln><t>SWKC - CáCERES</t><l>CÁCERES, MT</l></m>
+ <m> <lt>-16.3836111111</lt><ln>-058.3172222222</ln><t>SWKX - CORIXá</t><l>CÁCERES, MT</l></m>
+ <m> <lt>-16.7347222222</lt><ln>-057.7638888889</ln><t>SWDV - DESCALVADOS</t><l>CÁCERES, MT</l></m>
+ <m> <lt>-30.0022222222</lt><ln>-052.9402777778</ln><t>SSKS - CACHOEIRA DO SUL</t><l>CACHOEIRA DO SUL, RS</l></m>
+ <m> <lt>-20.8366666667</lt><ln>-041.1875000000</ln><t>SNKI - CACHOEIRO DO ITAPEMIRIM</t><l>CACHOEIRO DO ITAPEMIRIM, ES</l></m>
+ <m> <lt>-11.4955555556</lt><ln>-061.4508333333</ln><t>SSKW - CACOAL</t><l>CACOAL, RO</l></m>
+ <m> <lt>-14.4988888889</lt><ln>-042.2638888889</ln><t>SDLK - CACULé</t><l>CACULÉ, BA</l></m>
+ <m> <lt>-14.0113888889</lt><ln>-042.4916666667</ln><t>SNIE - CAETITé</t><l>CAETITÉ, BA</l></m>
+ <m> <lt>-06.4394444444</lt><ln>-037.0783333333</ln><t>SNKK - CAICó</t><l>CAICÓ, RN</l></m>
+ <m> <lt>02.5147222222</lt><ln>-050.9522222222</ln><t>SNCC - CALçOENE</t><l>CALÇOENE, AP</l></m>
+ <m> <lt>-17.7247222222</lt><ln>-048.6100000000</ln><t>SBCN - CALDAS NOVAS</t><l>CALDAS NOVAS, GO</l></m>
+ <m> <lt>-19.5977777778</lt><ln>-054.0191666667</ln><t>SSBE - CAMAPUã</t><l>CAMAPUÃ, MS</l></m>
+ <m> <lt>-02.8966666667</lt><ln>-040.8569444444</ln><t>SNWC - AEROPORTO DE CAMOCIM</t><l>CAMOCIM, CE</l></m>
+ <m> <lt>-07.2691666667</lt><ln>-035.8950000000</ln><t>SBKG - PRESIDENTE JOãO SUASSUNA</t><l>CAMPINA GRANDE, PB</l></m>
+ <m> <lt>-19.5380555556</lt><ln>-049.4950000000</ln><t>SNCV - CAMPINA VERDE</t><l>CAMPINA VERDE, MG</l></m>
+ <m> <lt>-22.8591666667</lt><ln>-047.1080555556</ln><t>SDAM - AMARAIS</t><l>CAMPINAS, SP</l></m>
+ <m> <lt>-23.0069444444</lt><ln>-047.1344444444</ln><t>SBKP - VIRACOPOS</t><l>CAMPINAS, SP</l></m>
+ <m> <lt>-09.5161111111</lt><ln>-042.9955555556</ln><t>SSRK - CAMPO ALEGRE DE LOURDES</t><l>CAMPO ALEGRE DE LOURDES, BA</l></m>
+ <m> <lt>-20.8925000000</lt><ln>-045.3355555556</ln><t>SNCA - CAMPO BELO</t><l>CAMPO BELO, MG</l></m>
+ <m> <lt>-21.1061111111</lt><ln>-045.8047222222</ln><t>SNCE - CAMPO DO MEIO</t><l>CAMPO DO MEIO, MG</l></m>
+ <m> <lt>-20.4694444444</lt><ln>-054.6702777778</ln><t>SBCG - CAMPO GRANDE</t><l>CAMPO GRANDE, MS</l></m>
+ <m> <lt>-20.5055555556</lt><ln>-054.5247222222</ln><t>SSKG - ESTâNCIA SANTA MARIA</t><l>CAMPO GRANDE, MS</l></m>
+ <m> <lt>-20.5994444444</lt><ln>-054.6025000000</ln><t>SSIE - TERUEL IPANEMA ESTâNCIA</t><l>CAMPO GRANDE, MS</l></m>
+ <m> <lt>-24.0025000000</lt><ln>-052.3569444444</ln><t>SSKM - CAMPO MOURãO</t><l>CAMPO MOURÃO, PR</l></m>
+ <m> <lt>-27.6669444444</lt><ln>-053.8102777778</ln><t>SSKN - CAMPO NOVO</t><l>CAMPO NOVO, RS</l></m>
+ <m> <lt>-13.0088888889</lt><ln>-046.7747222222</ln><t>SWCB - CAMPOS BELOS</t><l>CAMPOS BELOS, GO</l></m>
+ <m> <lt>-21.7011111111</lt><ln>-041.3077777778</ln><t>SBCP - BARTOLOMEU LISANDRO</t><l>CAMPOS DOS GOYTACAZES, RJ</l></m>
+ <m> <lt>-21.2261111111</lt><ln>-045.7791666667</ln><t>SNCG - CAMPOS GERAIS</t><l>CAMPOS GERAIS, MG</l></m>
+ <m> <lt>-07.0494444444</lt><ln>-040.3641666667</ln><t>SNCS - CAMPOS SALES</t><l>CAMPOS SALES, CE</l></m>
+ <m> <lt>-13.5744444444</lt><ln>-052.2705555556</ln><t>SWEK - CANARANA</t><l>CANARANA, MT</l></m>
+ <m> <lt>-15.6805555556</lt><ln>-038.9491666667</ln><t>SNED - CANAVIEIRAS</t><l>CANAVIEIRAS, BA</l></m>
+ <m> <lt>-29.3647222222</lt><ln>-050.8272222222</ln><t>SSCN - CANELA</t><l>CANELA, RS</l></m>
+ <m> <lt>-29.9327777778</lt><ln>-051.1833333333</ln><t>SSDD - HELPN N. S. DE FáTIMA</t><l>CANOAS, RS</l></m>
+ <m> <lt>-09.9005555556</lt><ln>-039.1336111111</ln><t>SNKU - CANUDOS</t><l>CANUDOS, BA</l></m>
+ <m> <lt>-24.0325000000</lt><ln>-048.3583333333</ln><t>SDCA - CAPãO BONITO</t><l>CAPÃO BONITO, SP</l></m>
+ <m> <lt>-29.7636111111</lt><ln>-050.0369444444</ln><t>SSKK - CAPãO DA CANOA</t><l>CAPÃO DA CANOA, RS</l></m>
+ <m> <lt>01.8441666667</lt><ln>-061.1213888889</ln><t>SWQI - CARACARAí</t><l>CARACARAÍ, RR</l></m>
+ <m> <lt>-19.7252777778</lt><ln>-042.1111111111</ln><t>SNCT - UBAPORANGA</t><l>CARATINGA, MG</l></m>
+ <m> <lt>-04.8786111111</lt><ln>-066.8955555556</ln><t>SWCA - CARAUARI</t><l>CARAUARI, AM</l></m>
+ <m> <lt>-17.6505555556</lt><ln>-039.2544444444</ln><t>SBCV - CARAVELAS</t><l>CARAVELAS, BA</l></m>
+ <m> <lt>-28.3213888889</lt><ln>-052.8155555556</ln><t>SSKZ - CARAZINHO</t><l>CARAZINHO, RS</l></m>
+ <m> <lt>-14.3033333333</lt><ln>-043.7755555556</ln><t>SNNH - CARINHANHA</t><l>CARINHANHA, BA</l></m>
+ <m> <lt>-07.3205555556</lt><ln>-047.4586111111</ln><t>SBCI - BRIG. LYSIAS AUGUSTO RODRIGUES</t><l>CAROLINA, MA</l></m>
+ <m> <lt>-08.2844444444</lt><ln>-036.0108333333</ln><t>SNRU - CARUARU</t><l>CARUARU, PE</l></m>
+ <m> <lt>-01.2502777778</lt><ln>-046.0172222222</ln><t>SNCP - CARUTAPERA</t><l>CARUTAPERA, MA</l></m>
+ <m> <lt>-21.7880555556</lt><ln>-047.0555555556</ln><t>SDKB - CASA BRANCA</t><l>CASA BRANCA, SP</l></m>
+ <m> <lt>-09.1597222222</lt><ln>-040.9380555556</ln><t>SDFX - CASA NOVA</t><l>CASA NOVA, BA</l></m>
+ <m> <lt>-25.0022222222</lt><ln>-053.5019444444</ln><t>SBCA - CASCAVEL</t><l>CASCAVEL, PR</l></m>
+ <m> <lt>-19.1463888889</lt><ln>-051.6852777778</ln><t>SSCL - CASSILâNDIA</t><l>CASSILÂNDIA, MS</l></m>
+ <m> <lt>-24.8075000000</lt><ln>-049.9602777778</ln><t>SSQT - CASTRO</t><l>CASTRO, PR</l></m>
+ <m> <lt>-12.7686111111</lt><ln>-039.4491666667</ln><t>SSRF - CASTRO ALVES</t><l>CASTRO ALVES, BA</l></m>
+ <m> <lt>-18.2169444444</lt><ln>-047.9013888889</ln><t>SWKT - CATALãO</t><l>CATALÃO, GO</l></m>
+ <m> <lt>-06.3544444444</lt><ln>-037.7550000000</ln><t>SIBU - CATOLé DA ROCHA</t><l>CATOLÉ DA ROCHA, PB</l></m>
+ <m> <lt>-13.7661111111</lt><ln>-047.4286111111</ln><t>SWCW - CAVALCANTE</t><l>CAVALCANTE, GO</l></m>
+ <m> <lt>-21.9175000000</lt><ln>-044.9694444444</ln><t>SNXB - CAXAMBU</t><l>CAXAMBU, MG</l></m>
+ <m> <lt>-29.1955555556</lt><ln>-051.1897222222</ln><t>SBCX - CAMPO DOS BUGRES</t><l>CAXIAS DO SUL, RS</l></m>
+ <m> <lt>-22.8308333333</lt><ln>-051.6036111111</ln><t>SSZS - CENTENáRIO DO SUL</t><l>CENTENÁRIO DO SUL, PR</l></m>
+ <m> <lt>-15.3447222222</lt><ln>-049.6047222222</ln><t>SWCZ - CERES</t><l>CERES, GO</l></m>
+ <m> <lt>-12.1983333333</lt><ln>-053.3816666667</ln><t>SWPL - POSTO LEONARDO VILAS BOAS</t><l>CHAPADA DOS GUIMARÃES, MT</l></m>
+ <m> <lt>-18.8377777778</lt><ln>-052.4866666667</ln><t>SSCD - CHAPADãO DO SUL</t><l>CHAPADÃO DO SUL, MS</l></m>
+ <m> <lt>-27.1338888889</lt><ln>-052.6619444444</ln><t>SBCH - CHAPECó</t><l>CHAPECÓ, SC</l></m>
+ <m> <lt>-00.2002777778</lt><ln>-049.9672222222</ln><t>SNXW - CHAVES</t><l>CHAVES, PA</l></m>
+ <m> <lt>-23.6913888889</lt><ln>-052.6422222222</ln><t>SSCT - CIANORTE</t><l>CIANORTE, PR</l></m>
+ <m> <lt>-11.1250000000</lt><ln>-038.4877777778</ln><t>SNIO - CIPó</t><l>CLPÓ, BA</l></m>
+ <m> <lt>-04.1338888889</lt><ln>-063.1311111111</ln><t>SWKO - COARI</t><l>COARI, AM</l></m>
+ <m> <lt>-04.8830555556</lt><ln>-065.3558333333</ln><t>SBUY - URUCU</t><l>COARI, AM</l></m>
+ <m> <lt>-14.1727777778</lt><ln>-044.5466666667</ln><t>SNKC - COCOS</t><l>COCOS, BA</l></m>
+ <m> <lt>-19.4869444444</lt><ln>-040.5791666667</ln><t>SNCX - COLATINA</t><l>COLATINA, ES</l></m>
+ <m> <lt>-05.9669444444</lt><ln>-044.2338888889</ln><t>SNKL - COLINAS</t><l>COLINAS, MA</l></m>
+ <m> <lt>-07.5625000000</lt><ln>-038.4975000000</ln><t>SIBW - CONCEIçãO</t><l>CONCEIÇÃO, PB</l></m>
+ <m> <lt>-08.3486111111</lt><ln>-049.3030555556</ln><t>SBAA - CONCEIçãO DO ARAGUAIA</t><l>CONCEIÇÃO DO ARAGUAIA, PA</l></m>
+ <m> <lt>-19.0202777778</lt><ln>-043.4338888889</ln><t>SNKD - CONCEIçãO DO MATO DENTRO</t><l>CONCEIÇÃO DO MATO DENTRO, MG</l></m>
+ <m> <lt>-27.1805555556</lt><ln>-052.0511111111</ln><t>SSCK - CONCóRDIA</t><l>CONCÓRDIA, SC</l></m>
+ <m> <lt>-20.7386111111</lt><ln>-043.7980555556</ln><t>SNKF - CONSELHEIRO LAFAIETE</t><l>CONSELHEIRO LAFAIETE, MG</l></m>
+ <m> <lt>-13.7772222222</lt><ln>-044.4644444444</ln><t>SDKE - CORIBE</t><l>CORIBE, BA</l></m>
+ <m> <lt>-23.1527777778</lt><ln>-050.6027777778</ln><t>SSCP - CORNéLIO PROCóPIO</t><l>CORNÉLIO PROCÓPLO, PR</l></m>
+ <m> <lt>-10.4519444444</lt><ln>-045.1363888889</ln><t>SNKR - CORRENTE</t><l>CORRENTE, PI</l></m>
+ <m> <lt>-13.3805555556</lt><ln>-044.6172222222</ln><t>SNTY - CORRENTINA</t><l>CORRENTINA, BA</l></m>
+ <m> <lt>-19.0119444444</lt><ln>-057.6713888889</ln><t>SBCR - CORUMBá</t><l>CORUMBÁ, MS</l></m>
+ <m> <lt>-19.9061111111</lt><ln>-057.7794444444</ln><t>SSFK - FORTE COIMBRA</t><l>CORUMBÁ, MS</l></m>
+ <m> <lt>-17.6697222222</lt><ln>-057.7530555556</ln><t>SSPY - PORTO íNDIO</t><l>CORUMBÁ, MS</l></m>
+ <m> <lt>-12.4216666667</lt><ln>-064.2516666667</ln><t>SWCQ - COSTA MARQUES</t><l>COSTA MARQUES, RO</l></m>
+ <m> <lt>-12.4186111111</lt><ln>-064.4188888889</ln><t>SWPB - FORTE PRíNCIPE DA BEIRA</t><l>COSTA MARQUES, RO</l></m>
+ <m> <lt>-18.4866666667</lt><ln>-053.1533333333</ln><t>SDXJ - COSTA RICA</t><l>COSTA RICA, MS</l></m>
+ <m> <lt>-18.4813888889</lt><ln>-054.7158333333</ln><t>SSCI - COXIM</t><l>COXIM, MS</l></m>
+ <m> <lt>-05.2111111111</lt><ln>-040.7041666667</ln><t>SNWS - CRATEúS</t><l>CRATEÚS, CE</l></m>
+ <m> <lt>-08.1169444444</lt><ln>-057.1172222222</ln><t>SNKH - CREPUTIá</t><l>CREPUTIÁ, PA</l></m>
+ <m> <lt>-28.7244444444</lt><ln>-049.4211111111</ln><t>SBCM - FORQUILHINHA - CRICIúMA</t><l>CRICIÚMA, SC</l></m>
+ <m> <lt>-11.5733333333</lt><ln>-050.6683333333</ln><t>SWIY - SANTA ISABEL DO MORRO</t><l>CRISTALÂNDIA, TO</l></m>
+ <m> <lt>-16.7897222222</lt><ln>-047.6433333333</ln><t>SDXB - CRISTALINA</t><l>CRISTALINA, GO</l></m>
+ <m> <lt>-28.6577777778</lt><ln>-053.6105555556</ln><t>SSAK - AEROCLUBE</t><l>CRUZ ALTA, RS</l></m>
+ <m> <lt>-07.5994444444</lt><ln>-072.7694444444</ln><t>SBCZ - CRUZEIRO DO SUL</t><l>CRUZEIRO DO SUL, AC</l></m>
+ <m> <lt>-15.6500000000</lt><ln>-056.1175000000</ln><t>SBCY - MARECHAL RONDON</t><l>CUIABÁ, MT</l></m>
+ <m> <lt>-06.4875000000</lt><ln>-036.1400000000</ln><t>SICB - PEDRO SIMõES PIMENTA</t><l>CUITÉ, PB</l></m>
+ <m> <lt>-09.1561111111</lt><ln>-040.0972222222</ln><t>SDKF - JUAZEIRO</t><l>CURAÇÁ, BA</l></m>
+ <m> <lt>-25.5311111111</lt><ln>-049.1755555556</ln><t>SBCT - AFONSO PENA</t><l>CURITIBA, PR</l></m>
+ <m> <lt>-25.4033333333</lt><ln>-049.2336111111</ln><t>SBBI - BACACHERI</t><l>CURITIBA, PR</l></m>
+ <m> <lt>-27.2872222222</lt><ln>-050.6038888889</ln><t>SSKU - LAURO ANTôNIO DA COSTA</t><l>CURITIBANOS, SC</l></m>
+ <m> <lt>-06.2808333333</lt><ln>-036.5402777778</ln><t>SNKN - CURRAIS NOVOS</t><l>CURRAIS NOVOS, RN</l></m>
+ <m> <lt>-01.8211111111</lt><ln>-044.8669444444</ln><t>SNCU - CURURUPU</t><l>CURURUPU, MA</l></m>
+ <m> <lt>-18.7661111111</lt><ln>-044.4580555556</ln><t>SNQV - CURVELO</t><l>CURVELO, MG</l></m>
+ <m> <lt>-18.2322222222</lt><ln>-043.6502777778</ln><t>SNDT - JUSCELINO KUBITSCHEK</t><l>DIAMANTINA, MG</l></m>
+ <m> <lt>-14.3769444444</lt><ln>-056.4005555556</ln><t>SWDM - DIAMANTINO</t><l>DIAMANTINO, MT</l></m>
+ <m> <lt>-13.1169444444</lt><ln>-056.1672222222</ln><t>SWDW - DIVISãO</t><l>DIAMANTINO, MT</l></m>
+ <m> <lt>-12.9669444444</lt><ln>-056.1838888889</ln><t>SWPS - PORTO SãO SEBASTIãO</t><l>DIAMANTINO, MT</l></m>
+ <m> <lt>-11.6169444444</lt><ln>-046.8505555556</ln><t>SWDN - DIANóPOLIS</t><l>DIANÓPOLLS, TO</l></m>
+ <m> <lt>-26.3050000000</lt><ln>-053.6300000000</ln><t>SSDC - DIONíSIO CERQUEIRA</t><l>DIONÍSIO CERQUEIRA, SC</l></m>
+ <m> <lt>-20.1819444444</lt><ln>-044.8700000000</ln><t>SNDV - DIVINóPOLIS</t><l>DLVLNÓPOLLS, MG</l></m>
+ <m> <lt>-04.3027777778</lt><ln>-047.5816666667</ln><t>SJTZ - DOM ELISEU</t><l>DOM ELISEU, PA</l></m>
+ <m> <lt>-22.2005555556</lt><ln>-054.9255555556</ln><t>SBDO - DOURADOS</t><l>DOURADOS, MS</l></m>
+ <m> <lt>-21.4611111111</lt><ln>-051.6066666667</ln><t>SDDR - DRACENA</t><l>DRACENA, SP</l></m>
+ <m> <lt>-06.6375000000</lt><ln>-069.8830555556</ln><t>SWEI - EIRUNEPé</t><l>EIRUNEPÉ, AM</l></m>
+ <m> <lt>-15.7172222222</lt><ln>-041.0172222222</ln><t>SNDW - DIVISA</t><l>ENCRUZILHADA, BA</l></m>
+ <m> <lt>-30.5588888889</lt><ln>-052.5825000000</ln><t>SSES - ENCRUZILHADA DO SUL</t><l>ENCRUZILHADA DO SUL, RS</l></m>
+ <m> <lt>-27.6600000000</lt><ln>-052.2761111111</ln><t>SSER - ERECHIM</t><l>ERECHIM, RS</l></m>
+ <m> <lt>-11.7505555556</lt><ln>-037.9502777778</ln><t>SNES - ESPLANADA</t><l>ESPLANADA, BA</l></m>
+ <m> <lt>-28.7375000000</lt><ln>-052.8563888889</ln><t>SSEZ - ESPUMOSO</t><l>ESPUMOSO, RS</l></m>
+ <m> <lt>-29.4533333333</lt><ln>-051.9341666667</ln><t>SSEE - REGIONAL DO VALE DO TAQUARI</t><l>ESTRELA, RS</l></m>
+ <m> <lt>-10.5272222222</lt><ln>-039.0330555556</ln><t>SNCQ - COCOROBó</t><l>EUCLIDES DA CUNHA, BA</l></m>
+ <m> <lt>-10.5255555556</lt><ln>-039.0352777778</ln><t>SNEU - EUCLIDES DA CUNHA</t><l>EUCLIDES DA CUNHA, BA</l></m>
+ <m> <lt>-08.1669444444</lt><ln>-070.3505555556</ln><t>SWFJ - FEIJó</t><l>FEIJÓ, AC</l></m>
+ <m> <lt>-08.1408333333</lt><ln>-070.3472222222</ln><t>SNOU - NOVO AERóDROMO DE FEIJó</t><l>FEIJÓ, AC</l></m>
+ <m> <lt>-12.2030555556</lt><ln>-038.9066666667</ln><t>SNJD - JOãO DURVAL CARNEIRO </t><l>FEIRA DE SANTANA, BA</l></m>
+ <m> <lt>-03.8547222222</lt><ln>-032.4283333333</ln><t>SBFN - FERNANDO DE NORONHA</t><l>FERNANDO DE NORONHA, PE</l></m>
+ <m> <lt>-20.2766666667</lt><ln>-050.2138888889</ln><t>SDFD - FERNANDóPOLIS</t><l>FERNANDÓPOLIS, SP</l></m>
+ <m> <lt>-06.8461111111</lt><ln>-043.0780555556</ln><t>SNQG - CANGAPARA</t><l>FLORIANO, PI</l></m>
+ <m> <lt>-27.6702777778</lt><ln>-048.5525000000</ln><t>SBFL - HERCíLIO LUZ</t><l>FLORIANÓPOLIS, SC</l></m>
+ <m> <lt>-02.5336111111</lt><ln>-066.0672222222</ln><t>SWOB - FONTE BOA</t><l>FONTE BOA, AM</l></m>
+ <m> <lt>-20.3952777778</lt><ln>-045.4836111111</ln><t>SNFO - FORMIGA</t><l>FORMIGA, MG</l></m>
+ <m> <lt>-11.0225000000</lt><ln>-045.1916666667</ln><t>SDKJ - FORMOSA DO RIO PRETO</t><l>FORMOSA DO RIO PRETO, BA</l></m>
+ <m> <lt>-03.7758333333</lt><ln>-038.5322222222</ln><t>SBFZ - PINTO MARTINS</t><l>FORTALEZA, CE</l></m>
+ <m> <lt>-16.1669444444</lt><ln>-059.5005555556</ln><t>SWFU - FORTUNA</t><l>FORTUNA, MT</l></m>
+ <m> <lt>-25.6002777778</lt><ln>-054.4850000000</ln><t>SBFI - CATARATAS</t><l>FOZ DO IGUAÇU, PR</l></m>
+ <m> <lt>-20.5902777778</lt><ln>-047.3825000000</ln><t>SIMK - FRANCA</t><l>FRANCA, SP</l></m>
+ <m> <lt>-26.0594444444</lt><ln>-053.0638888889</ln><t>SSFB - FRANCISCO BELTRãO</t><l>FRANCISCO BELTRÃO, PR</l></m>
+ <m> <lt>-16.4383333333</lt><ln>-043.4694444444</ln><t>SNFK - FRANCISCO Sá</t><l>FRANCISCO SÁ, MG</l></m>
+ <m> <lt>-27.3477777778</lt><ln>-053.4025000000</ln><t>SSWF - FREDERICO WESTPHALEN</t><l>FREDERICO WESTPHALEN, RS</l></m>
+ <m> <lt>-07.1000000000</lt><ln>-040.6269444444</ln><t>SSFL - JOãO PEREIRA DOS SANTOS FILHO</t><l>FRONTEIRAS, PI</l></m>
+ <m> <lt>-20.0047222222</lt><ln>-048.9588888889</ln><t>SNFU - FRUTAL</t><l>FRUTAL, MG</l></m>
+ <m> <lt>-08.8344444444</lt><ln>-036.4713888889</ln><t>SNGN - GARANHUNS</t><l>GARANHUNS, PE</l></m>
+ <m> <lt>-22.1836111111</lt><ln>-049.6561111111</ln><t>SDGC - GARçA</t><l>GARÇA, SP</l></m>
+ <m> <lt>-29.2683333333</lt><ln>-051.5322222222</ln><t>SSGA - GARIBALDI</t><l>GARIBALDI, RS</l></m>
+ <m> <lt>-11.4402777778</lt><ln>-042.5255555556</ln><t>SNGT - GENTIO DE OURO</t><l>GENTIO DE OURO, BA</l></m>
+ <m> <lt>-09.8336111111</lt><ln>-045.3672222222</ln><t>SNGB - GILBUéS</t><l>GILBUÉS, PI</l></m>
+ <m> <lt>-21.5130555556</lt><ln>-043.1730555556</ln><t>SBZM - AEROPORTO REGIONAL DA ZONA DA MATA</t><l>GOIANÁ, MG</l></m>
+ <m> <lt>-16.6280555556</lt><ln>-049.3455555556</ln><t>SWNV - AERóDROMO NACIONAL DE AVIAçãO</t><l>GOIÂNIA, GO</l></m>
+ <m> <lt>-16.6297222222</lt><ln>-049.2266666667</ln><t>SBGO - SANTA GENOVEVA</t><l>GOIÂNIA, GO</l></m>
+ <m> <lt>-24.2205555556</lt><ln>-053.0438888889</ln><t>SSGW - GOIO-ERê</t><l>GOIO-ERÊ, PR</l></m>
+ <m> <lt>-07.7836111111</lt><ln>-051.1338888889</ln><t>SNGR - GOROTIRE</t><l>GOROTIRE, PA</l></m>
+ <m> <lt>-18.8969444444</lt><ln>-041.9861111111</ln><t>SBGV - GOVERNADOR VALADARES</t><l>GOVERNADOR VALADARES, MG</l></m>
+ <m> <lt>-06.7822222222</lt><ln>-043.5822222222</ln><t>SNGD - GUADALUPE </t><l>GUADALUPE, PI</l></m>
+ <m> <lt>-24.0797222222</lt><ln>-054.1880555556</ln><t>SSGY - GUAíRA</t><l>GUAÍRA, PR</l></m>
+ <m> <lt>-10.7883333333</lt><ln>-065.2816666667</ln><t>SBGM - GUAJARá-MIRIM</t><l>GUAJARÁ-MIRIM, RO</l></m>
+ <m> <lt>-14.2069444444</lt><ln>-042.7511111111</ln><t>SNGI - GUANAMBI</t><l>GUANAMBI, BA</l></m>
+ <m> <lt>-18.7072222222</lt><ln>-042.8388888889</ln><t>SNGH - GUANHãES</t><l>GUANHÃES, MG</l></m>
+ <m> <lt>-28.8947222222</lt><ln>-051.8552777778</ln><t>SSGR - GUAPORé</t><l>GUAPORÉ, RS</l></m>
+ <m> <lt>-20.6505555556</lt><ln>-040.4922222222</ln><t>SNGA - GUARAPARI</t><l>GUARAPARI, ES</l></m>
+ <m> <lt>-21.2630555556</lt><ln>-050.6530555556</ln><t>SDGR - GUARARAPES</t><l>GUARARAPES, SP</l></m>
+ <m> <lt>-22.7916666667</lt><ln>-045.2044444444</ln><t>SBGW - GUARATINGUETá</t><l>GUARATINGUETÁ, SP</l></m>
+ <m> <lt>-25.8805555556</lt><ln>-048.6122222222</ln><t>SSGB - GUARATUBA</t><l>GUARATUBA, PR</l></m>
+ <m> <lt>-23.9280555556</lt><ln>-046.2997222222</ln><t>SBST - BASE AéREA DE SANTOS</t><l>GUARUJÁ, SP</l></m>
+ <m> <lt>-21.3266666667</lt><ln>-046.7302777778</ln><t>SNGX - GUAXUPé</t><l>GUAXUPÉ, MG</l></m>
+ <m> <lt>-01.4169444444</lt><ln>-051.6338888889</ln><t>SNGU - GURUPá</t><l>GURUPÁ, PA</l></m>
+ <m> <lt>-11.7391666667</lt><ln>-049.1322222222</ln><t>SWGI - GURUPI</t><l>GURUPI, TO</l></m>
+ <m> <lt>-27.6388888889</lt><ln>-054.3411111111</ln><t>SSHZ - HORIZONTINA</t><l>HORIZONTINA, RS</l></m>
+ <m> <lt>-07.5336111111</lt><ln>-063.0505555556</ln><t>SWHT - HUMAITá</t><l>HUMAITÁ, AM</l></m>
+ <m> <lt>-14.1063888889</lt><ln>-046.6694444444</ln><t>SWIA - IACIARA</t><l>IACIARA, GO</l></m>
+ <m> <lt>-23.7630555556</lt><ln>-050.2647222222</ln><t>SSAB - IBAITI</t><l>IBAITI, PR</l></m>
+ <m> <lt>-08.5002777778</lt><ln>-037.6669444444</ln><t>SNIY - IBIMIRIM</t><l>IBIMIRIM, PE</l></m>
+ <m> <lt>-28.6041666667</lt><ln>-053.0788888889</ln><t>SSIR - IBIRUBá</t><l>IBIRUBÁ, RS</l></m>
+ <m> <lt>-21.7472222222</lt><ln>-048.8558333333</ln><t>SDIG - IBITINGA</t><l>IBITINGA, SP</l></m>
+ <m> <lt>-12.1697222222</lt><ln>-043.2216666667</ln><t>SNIT - IBOTIRAMA</t><l>IBOTIRAMA, BA</l></m>
+ <m> <lt>-01.1272222222</lt><ln>-047.5991666667</ln><t>SNIA - IGARAPé-AçU</t><l>IGARAPÉ-AÇU, PA</l></m>
+ <m> <lt>-06.3477777778</lt><ln>-039.2986111111</ln><t>SNIG - IGUATU</t><l>IGUATU, CE</l></m>
+ <m> <lt>-28.3700000000</lt><ln>-053.8455555556</ln><t>SSIJ - IJUí</t><l>IJUÍ, RS</l></m>
+ <m> <lt>-14.8150000000</lt><ln>-039.0333333333</ln><t>SBIL - BAHIA - JORGE AMADO</t><l>ILHÉUS, BA</l></m>
+ <m> <lt>-05.5305555556</lt><ln>-047.4583333333</ln><t>SBIZ - PREFEITO RENATO MOREIRA</t><l>IMPERATRIZ, MA</l></m>
+ <m> <lt>-17.6872222222</lt><ln>-048.1619444444</ln><t>SWIP - IPAMERI</t><l>IPAMERI, GO</l></m>
+ <m> <lt>-19.4705555556</lt><ln>-042.4880555556</ln><t>SBIP - USIMINAS</t><l>IPATINGA, MG</l></m>
+ <m> <lt>-14.1338888889</lt><ln>-039.7338888889</ln><t>SNIU - IPIAú</t><l>IPIAÚ, BA</l></m>
+ <m> <lt>-08.3633333333</lt><ln>-035.0086111111</ln><t>SNIJ - HELPN SUAPE</t><l>IPOJUCA, PE</l></m>
+ <m> <lt>-11.3400000000</lt><ln>-041.8527777778</ln><t>SNIC - IRECê</t><l>IRECÊ, BA</l></m>
+ <m> <lt>-12.5005555556</lt><ln>-040.2672222222</ln><t>SNIB - ITABERABA</t><l>ITABERABA, BA</l></m>
+ <m> <lt>-03.1263888889</lt><ln>-058.4816666667</ln><t>SBIC - ITACOATIARA</t><l>ITACOATIARA, AM</l></m>
+ <m> <lt>-04.2422222222</lt><ln>-056.0008333333</ln><t>SBIH - ITAITUBA</t><l>ITAITUBA, PA</l></m>
+ <m> <lt>-17.8505555556</lt><ln>-042.8505555556</ln><t>SNIK - ITAMARANDIBA</t><l>ITAMARANDIBA, MG</l></m>
+ <m> <lt>-24.1647222222</lt><ln>-046.7855555556</ln><t>SDIM - ITANHAéM</t><l>ITANHAÉM, SP</l></m>
+ <m> <lt>-21.2194444444</lt><ln>-041.8755555556</ln><t>SDUN - ITAPERUNA</t><l>ITAPERUNA, RJ</l></m>
+ <m> <lt>-15.2438888889</lt><ln>-040.2761111111</ln><t>SNIP - ITAPETINGA</t><l>ITAPETINGA, BA</l></m>
+ <m> <lt>-23.9416666667</lt><ln>-048.8827777778</ln><t>SDYW - ITAPEVA</t><l>ITAPEVA, SP</l></m>
+ <m> <lt>-07.3083333333</lt><ln>-038.1133333333</ln><t>SIBZ - ITAPORANGA</t><l>ITAPORANGA, PB</l></m>
+ <m> <lt>-29.1730555556</lt><ln>-056.5366666667</ln><t>SSIQ - ITAQUI</t><l>ITAQUI, RS</l></m>
+ <m> <lt>-24.1352777778</lt><ln>-049.3283333333</ln><t>SDID - ITARARé</t><l>ITARARÉ, SP</l></m>
+ <m> <lt>-23.3497222222</lt><ln>-047.3277777778</ln><t>SDIU - ITU</t><l>ITU, SP</l></m>
+ <m> <lt>-13.8283333333</lt><ln>-041.3033333333</ln><t>SNYT - ITUAçU</t><l>ITUAÇU, BA</l></m>
+ <m> <lt>-13.7322222222</lt><ln>-039.1416666667</ln><t>SNZW - ITUBERá</t><l>ITUBERÁ, BA</l></m>
+ <m> <lt>-19.0019444444</lt><ln>-049.4872222222</ln><t>SNYB - ITUIUTABA</t><l>ITUIUTABA, MG</l></m>
+ <m> <lt>-19.7177777778</lt><ln>-050.2175000000</ln><t>SNYU - ITURAMA</t><l>ITURAMA, MG</l></m>
+ <m> <lt>-20.3752777778</lt><ln>-047.7686111111</ln><t>SDIV - ITUVERAVA</t><l>ITUVERAVA, SP</l></m>
+ <m> <lt>-21.2300000000</lt><ln>-048.2847222222</ln><t>SDJC - JABOTICABAL</t><l>JABOTICABAL, SP</l></m>
+ <m> <lt>-07.5644444444</lt><ln>-057.7422222222</ln><t>SNQW - CURURU</t><l>JACAREACANGA, PA</l></m>
+ <m> <lt>-06.2352777778</lt><ln>-057.7758333333</ln><t>SBEK - JACAREACANGA</t><l>JACAREACANGA, PA</l></m>
+ <m> <lt>-11.1638888889</lt><ln>-040.5530555556</ln><t>SNJB - JACOBINA</t><l>JACOBINA, BA</l></m>
+ <m> <lt>-32.5405555556</lt><ln>-053.3841666667</ln><t>SSJR - JAGUARãO</t><l>JAGUARÃO, RS</l></m>
+ <m> <lt>-09.8347222222</lt><ln>-039.8833333333</ln><t>SNMI - MINA CARAíBA</t><l>JAGUARARI, BA</l></m>
+ <m> <lt>-15.0933333333</lt><ln>-043.9794444444</ln><t>SNMK - MOCAMBINHO</t><l>JAÍBA, MG</l></m>
+ <m> <lt>-20.2911111111</lt><ln>-050.5444444444</ln><t>SDJL - JALES</t><l>JALES, SP</l></m>
+ <m> <lt>-15.7330555556</lt><ln>-043.3238888889</ln><t>SNAP - JANAúBA</t><l>JANAÚBA, MG</l></m>
+ <m> <lt>-15.4747222222</lt><ln>-044.3863888889</ln><t>SNJN - JANUáRIA</t><l>JANUÁRIA, MG</l></m>
+ <m> <lt>-01.4038888889</lt><ln>-069.4236111111</ln><t>SWJP - JAPURá - VILA BITTENCOURT</t><l>JAPURÁ, AM</l></m>
+ <m> <lt>-21.4927777778</lt><ln>-056.1527777778</ln><t>SSJI - JARDIM</t><l>JARDIM, MS</l></m>
+ <m> <lt>-05.6386111111</lt><ln>-035.9566666667</ln><t>SNJA - JARDIM DE ANGICOS</t><l>JARDIM DE ANGICOS, RN</l></m>
+ <m> <lt>-06.5411111111</lt><ln>-036.7316666667</ln><t>SNJS - JARDIM DO SERIDó</t><l>JARDIM DO SERIDÓ, RN</l></m>
+ <m> <lt>-17.8300000000</lt><ln>-051.7752777778</ln><t>SWJW - JATAí</t><l>JATAÍ, GO</l></m>
+ <m> <lt>-13.8772222222</lt><ln>-040.0719444444</ln><t>SNJK - JEQUIé</t><l>JEQUIÉ, BA</l></m>
+ <m> <lt>-16.4722222222</lt><ln>-041.0250000000</ln><t>SNJQ - JEQUITINHONHA</t><l>JEQUITINHONHA, MG</l></m>
+ <m> <lt>-10.8705555556</lt><ln>-061.8466666667</ln><t>SBJI - JI-PARANá</t><l>JI-PARANÁ, RO</l></m>
+ <m> <lt>-27.1727777778</lt><ln>-051.5516666667</ln><t>SSJA - SANTA TEREZINHA</t><l>JOAÇABA, SC</l></m>
+ <m> <lt>-07.0919444444</lt><ln>-034.8425000000</ln><t>SNJO - AEROCLUBE</t><l>JOÃO PESSOA, PB</l></m>
+ <m> <lt>-07.1458333333</lt><ln>-034.9486111111</ln><t>SBJP - PRES. CASTRO PINTO</t><l>JOÃO PESSOA, PB</l></m>
+ <m> <lt>-17.7875000000</lt><ln>-046.1200000000</ln><t>SNJP - JOãO PINHEIRO</t><l>JOÃO PINHEIRO, MG</l></m>
+ <m> <lt>-26.2230555556</lt><ln>-048.7975000000</ln><t>SBJV - LAURO CARNEIRO DE LOYOLA</t><l>JOINVILLE, SC</l></m>
+ <m> <lt>-11.2866666667</lt><ln>-057.5388888889</ln><t>SIZX - JUARA SUL</t><l>JUARA, MT</l></m>
+ <m> <lt>-07.2183333333</lt><ln>-039.2716666667</ln><t>SBJU - ORLANDO BEZERRA DE MENEZES</t><l>JUAZEIRO DO NORTE, CE</l></m>
+ <m> <lt>-11.4194444444</lt><ln>-058.7016666667</ln><t>SWJN - JUíNA</t><l>JUÍNA, MT</l></m>
+ <m> <lt>-21.7930555556</lt><ln>-043.3855555556</ln><t>SBJF - FRANCISCO DE ASSIS</t><l>JUIZ DE FORA, MG</l></m>
+ <m> <lt>-29.1530555556</lt><ln>-053.7433333333</ln><t>SSJK - JúLIO DE CASTILHOS</t><l>JÚLIO DE CASTILHOS, RS</l></m>
+ <m> <lt>-23.1816666667</lt><ln>-046.9436111111</ln><t>SBJD - JUNDIAí</t><l>JUNDIAÍ, SP</l></m>
+ <m> <lt>-10.3058333333</lt><ln>-058.4894444444</ln><t>SWJU - JURUENA</t><l>JURUENA, MT</l></m>
+ <m> <lt>-02.1866666667</lt><ln>-056.0902777778</ln><t>SJOH - JURUTI</t><l>JURUTI, PA</l></m>
+ <m> <lt>-07.2502777778</lt><ln>-064.7838888889</ln><t>SWLB - LáBREA</t><l>LÁBREA, AM</l></m>
+ <m> <lt>-27.7822222222</lt><ln>-050.2816666667</ln><t>SBLJ - LAGES</t><l>LAGES, SC</l></m>
+ <m> <lt>-19.6611111111</lt><ln>-043.8977777778</ln><t>SBLS - LAGOA SANTA</t><l>LAGOA SANTA, MG</l></m>
+ <m> <lt>-28.3766666667</lt><ln>-048.7427777778</ln><t>SSLA - LAGUNA</t><l>LAGUNA, SC</l></m>
+ <m> <lt>-20.1402777778</lt><ln>-041.6091666667</ln><t>SNLH - LAJINHA</t><l>LAJINHA, MG</l></m>
+ <m> <lt>-07.9669444444</lt><ln>-050.0172222222</ln><t>SNLC - LAS CASAS</t><l>LAS CASAS, PA</l></m>
+ <m> <lt>-21.2438888889</lt><ln>-044.9694444444</ln><t>SSOL - LAVRAS</t><l>LAVRAS, MG</l></m>
+ <m> <lt>-17.7358333333</lt><ln>-043.4594444444</ln><t>ODIF - </t><l>RDODIF VALE DO SALGADO ZYH-609 770 LAVRINHAS, RD</l></m>
+ <m> <lt>-22.2269444444</lt><ln>-047.3822222222</ln><t>SDLL - LEME</t><l>LEME, SP</l></m>
+ <m> <lt>-12.4833333333</lt><ln>-041.2730555556</ln><t>SBLE - CHAPADA DIAMANTINA</t><l>LENÇÓIS, BA</l></m>
+ <m> <lt>-22.5772222222</lt><ln>-048.7752777778</ln><t>SDLP - LENçóIS PAULISTA</t><l>LENÇÓIS PAULISTA, SP</l></m>
+ <m> <lt>-21.4719444444</lt><ln>-042.7330555556</ln><t>SNDN - LEOPOLDINA</t><l>LEOPOLDINA, MG</l></m>
+ <m> <lt>-19.3544444444</lt><ln>-040.0688888889</ln><t>SNLN - AEROPORTO MUNICIPAL DE LINHARES</t><l>LINHARES, ES</l></m>
+ <m> <lt>-21.6627777778</lt><ln>-049.7311111111</ln><t>SWXQ - LINS</t><l>LINS, SP</l></m>
+ <m> <lt>-13.6505555556</lt><ln>-041.8338888889</ln><t>SNLB - LIVRAMENTO DO BRUMADO</t><l>LIVRAMENTO DO BRUMADO, BA</l></m>
+ <m> <lt>-22.9177777778</lt><ln>-053.1497222222</ln><t>SSLO - LOANDA</t><l>LOANDA, PR</l></m>
+ <m> <lt>-23.3302777778</lt><ln>-051.1366666667</ln><t>SBLO - GOVERNADOR JOSé RICHA</t><l>LONDRINA, PR</l></m>
+ <m> <lt>-27.1602777778</lt><ln>-049.5433333333</ln><t>SSLN - HELMUTH BAUNGARTEM</t><l>LONTRAS, SC</l></m>
+ <m> <lt>-13.0372222222</lt><ln>-055.9422222222</ln><t>SILC - MUNICIPAL BOM FUTURO</t><l>LUCAS DO RIO VERDE, MT</l></m>
+ <m> <lt>-21.7494444444</lt><ln>-051.0183333333</ln><t>SDLC - LUCéLIA</t><l>LUCÉLIA, SP</l></m>
+ <m> <lt>-11.2002777778</lt><ln>-050.6838888889</ln><t>SWUC - LUCIARA</t><l>LUCIARA, MT</l></m>
+ <m> <lt>-16.2616666667</lt><ln>-047.9686111111</ln><t>SWUZ - BRIGADEIRO ARARIPE MACEDO</t><l>LUZIÂNIA, GO</l></m>
+ <m> <lt>-22.3877777778</lt><ln>-041.7725000000</ln><t>SDDT - HELPN DE IMBETIBA</t><l>MACAÉ, RJ</l></m>
+ <m> <lt>-22.3427777778</lt><ln>-041.7638888889</ln><t>SBME - MACAé</t><l>MACAÉ, RJ</l></m>
+ <m> <lt>00.0508333333</lt><ln>-051.0702777778</ln><t>SBMQ - ALBERTO ALCOLUMBRE</t><l>MACAPÁ, AP</l></m>
+ <m> <lt>-13.0255555556</lt><ln>-042.6730555556</ln><t>SNMC - MACAúBAS</t><l>MACAÚBAS, BA</l></m>
+ <m> <lt>-09.5172222222</lt><ln>-035.7836111111</ln><t>SBMO - ZUMBI DOS PALMARES</t><l>MACEIÓ, AL</l></m>
+ <m> <lt>-21.6780555556</lt><ln>-045.8411111111</ln><t>SNXA - MACHADO</t><l>MACHADO, MG</l></m>
+ <m> <lt>-26.1588888889</lt><ln>-049.8322222222</ln><t>SSMF - MAFRA</t><l>MAFRA, SC</l></m>
+ <m> <lt>-03.0411111111</lt><ln>-060.0505555556</ln><t>SBEG - EDUARDO GOMES</t><l>MANAUS, AM</l></m>
+ <m> <lt>-03.0727777778</lt><ln>-060.0211111111</ln><t>SWFN - FLORES</t><l>MANAUS, AM</l></m>
+ <m> <lt>-03.1427777778</lt><ln>-059.9500000000</ln><t>SWRN - HELPN ESTAçãO NAVAL DO RIO NEGRO</t><l>MANAUS, AM</l></m>
+ <m> <lt>-03.1458333333</lt><ln>-059.9850000000</ln><t>SBMN - PONTA PELADA</t><l>MANAUS, AM</l></m>
+ <m> <lt>-20.2597222222</lt><ln>-042.1838888889</ln><t>SNJM - ELIAS BREDER</t><l>MANHUAÇU, MG</l></m>
+ <m> <lt>-05.8169444444</lt><ln>-061.2838888889</ln><t>SBMY - MANICORé</t><l>MANICORÉ, AM</l></m>
+ <m> <lt>-24.5288888889</lt><ln>-051.6472222222</ln><t>SSMR - MANOEL RIBAS</t><l>MANOEL RIBAS, PR</l></m>
+ <m> <lt>-05.3677777778</lt><ln>-049.1383333333</ln><t>SBMA - PARá - JOãO CORRêA DA ROCHA</t><l>MARABÁ, PA</l></m>
+ <m> <lt>-21.6338888889</lt><ln>-055.1450000000</ln><t>SSMJ - MARACAJU</t><l>MARACAJU, MS</l></m>
+ <m> <lt>-13.4333333333</lt><ln>-040.4333333333</ln><t>SNMJ - MARACáS</t><l>MARACÁS, BA</l></m>
+ <m> <lt>-14.1172222222</lt><ln>-038.9838888889</ln><t>SNMR - MARAú</t><l>MARAÚ, BA</l></m>
+ <m> <lt>-24.5127777778</lt><ln>-054.0538888889</ln><t>SSCR - MARECHAL CâNDIDO RONDON</t><l>MARECHAL CÂNDIDO RONDON, PR</l></m>
+ <m> <lt>-22.9180555556</lt><ln>-042.8288888889</ln><t>SDMC - MARICá</t><l>MARICÁ, RJ</l></m>
+ <m> <lt>-22.1955555556</lt><ln>-049.9269444444</ln><t>SBML - MARíLIA</t><l>MARÍLIA, SP</l></m>
+ <m> <lt>-23.4794444444</lt><ln>-052.0122222222</ln><t>SBMG - SíLVIO NAME JúNIOR</t><l>MARINGÁ, PR</l></m>
+ <m> <lt>-21.6230555556</lt><ln>-048.3525000000</ln><t>SDLY - MATãO</t><l>MATÃO, SP</l></m>
+ <m> <lt>-10.1702777778</lt><ln>-054.9527777778</ln><t>SWXM - REGIONAL ORLANDO VILLAS BOAS</t><l>MATUPÁ, MT</l></m>
+ <m> <lt>-03.3569444444</lt><ln>-057.7122222222</ln><t>SWMW - MAUéS</t><l>MAUÉS, AM</l></m>
+ <m> <lt>-05.3819444444</lt><ln>-035.5308333333</ln><t>SNXX - MAXARANGUAPE</t><l>MAXARANGUAPE, RN</l></m>
+ <m> <lt>-25.3094444444</lt><ln>-054.0730555556</ln><t>SSMD - MEDIANEIRA</t><l>MEDIANEIRA, PR</l></m>
+ <m> <lt>-12.1066666667</lt><ln>-045.8966666667</ln><t>SSQZ - LUIS EDUARDO MAGALHãES</t><l>MIMOSO DO OESTE, BA</l></m>
+ <m> <lt>-13.5505555556</lt><ln>-048.2005555556</ln><t>SWIQ - MINAçU</t><l>MINAÇU, GO</l></m>
+ <m> <lt>-17.2338888889</lt><ln>-042.5838888889</ln><t>SNMN - MINAS NOVAS</t><l>MINAS NOVAS, MG</l></m>
+ <m> <lt>-17.5519444444</lt><ln>-052.5561111111</ln><t>SWME - MINEIROS</t><l>MINEIROS, GO</l></m>
+ <m> <lt>-20.8072222222</lt><ln>-049.4861111111</ln><t>SDMH - MIRASSOL</t><l>MIRASSOL, SP</l></m>
+ <m> <lt>-21.4877777778</lt><ln>-047.0344444444</ln><t>SDKK - MOCOCA</t><l>MOCOCA, SP</l></m>
+ <m> <lt>-22.4100000000</lt><ln>-046.9052777778</ln><t>SDMJ - MOGI-MIRIM</t><l>MOGI-MIRIM, SP</l></m>
+ <m> <lt>-05.7441666667</lt><ln>-039.6213888889</ln><t>SNMB - MOMBAçA</t><l>MOMBAÇA, CE</l></m>
+ <m> <lt>-01.9966666667</lt><ln>-054.0713888889</ln><t>SNMA - MONTE ALEGRE</t><l>MONTE ALEGRE, PA</l></m>
+ <m> <lt>-13.2497222222</lt><ln>-046.8713888889</ln><t>SWML - MONTE ALEGRE DE GOIáS</t><l>MONTE ALEGRE DE GOIÁS, GO</l></m>
+ <m> <lt>-21.2613888889</lt><ln>-048.5297222222</ln><t>SDMO - MONTE ALTO</t><l>MONTE ALTO, SP</l></m>
+ <m> <lt>-18.7172222222</lt><ln>-047.4830555556</ln><t>SNTK - MONTE CARMELO</t><l>MONTE CARMELO, MG</l></m>
+ <m> <lt>-10.4783333333</lt><ln>-039.2875000000</ln><t>SSQP - MONTE SANTO</t><l>MONTE SANTO, BA</l></m>
+ <m> <lt>-21.1758333333</lt><ln>-046.9588888889</ln><t>SNMS - MONTE SANTO DE MINAS</t><l>MONTE SANTO DE MINAS, MG</l></m>
+ <m> <lt>-07.8783333333</lt><ln>-037.1366666667</ln><t>SIBY - MONTEIRO</t><l>MONTEIRO, PB</l></m>
+ <m> <lt>-29.7194444444</lt><ln>-051.4894444444</ln><t>SSNG - MONTENEGRO</t><l>MONTENEGRO, RS</l></m>
+ <m> <lt>-16.7061111111</lt><ln>-043.8219444444</ln><t>SBMK - MáRIO RIBEIRO</t><l>MONTES CLAROS, MG</l></m>
+ <m> <lt>-05.0836111111</lt><ln>-038.3836111111</ln><t>SNMO - MORADA NOVA</t><l>MORADA NOVA, CE</l></m>
+ <m> <lt>-18.5938888889</lt><ln>-045.3530555556</ln><t>SNMM - MORADA NOVA DE MINAS</t><l>MORADA NOVA DE MINAS, MG</l></m>
+ <m> <lt>-17.7658333333</lt><ln>-049.1227777778</ln><t>SWMX - MORRINHOS</t><l>MORRINHOS, GO</l></m>
+ <m> <lt>-11.5344444444</lt><ln>-041.1797222222</ln><t>SNOC - MORRO DO CHAPéU</t><l>MORRO DO CHAPÉU, BA</l></m>
+ <m> <lt>-14.2505555556</lt><ln>-048.0838888889</ln><t>SWMR - MORRO REDONDO</t><l>MORRO REDONDO, GO</l></m>
+ <m> <lt>-05.1958333333</lt><ln>-037.3616666667</ln><t>SBMS - DIX-SEPT ROSADO</t><l>MOSSORÓ, RN</l></m>
+ <m> <lt>-31.1041666667</lt><ln>-050.9122222222</ln><t>SSMT - MOSTARDAS</t><l>MOSTARDAS, RS</l></m>
+ <m> <lt>-01.4669444444</lt><ln>-061.6172222222</ln><t>SWOW - MOURA</t><l>MOURA, AM</l></m>
+ <m> <lt>-14.7447222222</lt><ln>-050.5705555556</ln><t>SDOV - MOZARLâNDIA</t><l>MOZARLÂNDIA, GO</l></m>
+ <m> <lt>02.7269444444</lt><ln>-062.9505555556</ln><t>SWMV - PAA-PIU</t><l>MUCAJAÍ, RR</l></m>
+ <m> <lt>-13.0344444444</lt><ln>-041.4450000000</ln><t>SNQU - MUCUGê</t><l>MUCUGÊ, BA</l></m>
+ <m> <lt>-11.7722222222</lt><ln>-040.4194444444</ln><t>SSQN - MUNDO NOVO</t><l>MUNDO NOVO, BA</l></m>
+ <m> <lt>-21.1288888889</lt><ln>-042.3669444444</ln><t>SNBM - CRISTIANO FERREIRA VARELLA</t><l>MURIAÉ, MG</l></m>
+ <m> <lt>-17.8172222222</lt><ln>-040.3338888889</ln><t>SNNU - NANUQUE</t><l>NANUQUE, MG</l></m>
+ <m> <lt>-05.9083333333</lt><ln>-035.2491666667</ln><t>SBNT - AUGUSTO SEVERO</t><l>NATAL, RN</l></m>
+ <m> <lt>-26.8786111111</lt><ln>-048.6508333333</ln><t>SBNF - MINISTRO VICTOR KONDER</t><l>NAVEGANTES, SC</l></m>
+ <m> <lt>-23.0413888889</lt><ln>-054.1850000000</ln><t>SSNB - NAVIRAí</t><l>NAVIRAÍ, MS</l></m>
+ <m> <lt>-08.0669444444</lt><ln>-052.1672222222</ln><t>SNNP - NILO PEçANHA</t><l>NILO PEÇANHA, PA</l></m>
+ <m> <lt>-21.1847222222</lt><ln>-055.8302777778</ln><t>SSNQ - NIOAQUE</t><l>NIOAQUE, MS</l></m>
+ <m> <lt>-14.4363888889</lt><ln>-048.4919444444</ln><t>SWNQ - NIQUELâNDIA</t><l>NIQUELÂNDIA, GO</l></m>
+ <m> <lt>-27.3672222222</lt><ln>-052.7338888889</ln><t>SSNO - NONOAí</t><l>NONOAÍ, RS</l></m>
+ <m> <lt>03.8663888889</lt><ln>-059.6172222222</ln><t>SWNM - NORMANDIA</t><l>NORMANDIA, RR</l></m>
+ <m> <lt>-14.4836111111</lt><ln>-056.7672222222</ln><t>SWNR - NORTELâNDIA</t><l>NORTELÂNDIA, MT</l></m>
+ <m> <lt>-22.7466666667</lt><ln>-043.4647222222</ln><t>SDNY - AEROCLUBE</t><l>NOVA IGUAÇU, RJ</l></m>
+ <m> <lt>-03.8877777778</lt><ln>-059.0783333333</ln><t>SWNO - NOVA OLINDA DO NORTE</t><l>NOVA OLINDA DO NORTE, AM</l></m>
+ <m> <lt>-28.8025000000</lt><ln>-051.6041666667</ln><t>SSNP - NOVA PRATA</t><l>NOVA PRATA, RS</l></m>
+ <m> <lt>-14.6908333333</lt><ln>-052.3491666667</ln><t>SWXV - XAVANTINA</t><l>NOVA XAVANTINA, MT</l></m>
+ <m> <lt>-05.1175000000</lt><ln>-060.3644444444</ln><t>SWNA - NOVO ARIPUANã</t><l>NOVO ARIPUANÃ, AM</l></m>
+ <m> <lt>-29.6961111111</lt><ln>-051.0816666667</ln><t>SSNH - NOVO HAMBURGO</t><l>NOVO HAMBURGO, RS</l></m>
+ <m> <lt>-21.4977777778</lt><ln>-049.2344444444</ln><t>SDNH - NOVO HORIZONTE</t><l>NOVO HORIZONTE, SP</l></m>
+ <m> <lt>-09.3361111111</lt><ln>-054.9669444444</ln><t>SBCC - CACHIMBO</t><l>NOVO PROGRESSO, PA</l></m>
+ <m> <lt>-07.1258333333</lt><ln>-055.4008333333</ln><t>SJNP - NOVO PROGRESSO</t><l>NOVO PROGRESSO, PA</l></m>
+ <m> <lt>-01.8677777778</lt><ln>-055.5141666667</ln><t>ODIF - </t><l>RDODIF - ATALAIA ZYI-539 670 ÓBIDOS, RD</l></m>
+ <m> <lt>02.2238888889</lt><ln>-055.9472222222</ln><t>SBTS - TIRIóS</t><l>ÓBIDOS, PA</l></m>
+ <m> <lt>-07.0188888889</lt><ln>-042.1672222222</ln><t>SNOE - OEIRAS</t><l>OEIRAS, PI</l></m>
+ <m> <lt>03.8613888889</lt><ln>-051.7961111111</ln><t>SBOI - OIAPOQUE</t><l>OIAPOQUE, AP</l></m>
+ <m> <lt>-20.7144444444</lt><ln>-044.8652777778</ln><t>SNRZ - OLIVEIRA</t><l>OLIVEIRA, MG</l></m>
+ <m> <lt>-01.7136111111</lt><ln>-055.8358333333</ln><t>SNOX - ORIXIMINá</t><l>ORIXIMINÁ, PA</l></m>
+ <m> <lt>-01.4844444444</lt><ln>-056.3991666667</ln><t>SBTB - TROMBETAS</t><l>ORIXIMINÁ, PA</l></m>
+ <m> <lt>-29.9022222222</lt><ln>-050.2505555556</ln><t>SSOS - OSóRIO</t><l>OSÓRLO, RS</l></m>
+ <m> <lt>-07.8766666667</lt><ln>-040.0922222222</ln><t>SNOY - OURICURI</t><l>OURICURI, PE</l></m>
+ <m> <lt>-06.7758333333</lt><ln>-051.0600000000</ln><t>SDOW - OURILâNDIA DO NORTE</t><l>OURILÂNDIA DO NORTE, PA</l></m>
+ <m> <lt>-22.9736111111</lt><ln>-049.9113888889</ln><t>SDOU - OURINHOS</t><l>OURINHOS, SP</l></m>
+ <m> <lt>-22.2975000000</lt><ln>-046.3933333333</ln><t>SNOF - OURO FINO</t><l>OURO FINO, MG</l></m>
+ <m> <lt>-10.9744444444</lt><ln>-041.0694444444</ln><t>SDLG - SALVIANO INáCIO ROCHA</t><l>OUROLÂNDIA, BA</l></m>
+ <m> <lt>-10.2900000000</lt><ln>-048.3577777778</ln><t>SBPJ - BRIGADEIRO LYSIAS RODRIGUES</t><l>PALMAS, TO</l></m>
+ <m> <lt>-26.4722222222</lt><ln>-051.9755555556</ln><t>SSPS - PALMAS</t><l>PALMAS, PR</l></m>
+ <m> <lt>-27.9016666667</lt><ln>-053.3288888889</ln><t>SSPL - PALMEIRA DAS MISSõES</t><l>PALMEIRA DAS MISSÕES, RS</l></m>
+ <m> <lt>-12.5005555556</lt><ln>-041.5838888889</ln><t>SNPM - PALMEIRAS</t><l>PALMEIRAS, BA</l></m>
+ <m> <lt>-24.3447222222</lt><ln>-053.8288888889</ln><t>SSPT - PALOTINA</t><l>PALOTINA, PR</l></m>
+ <m> <lt>-19.8427777778</lt><ln>-044.6011111111</ln><t>SNPA - PARá DE MINAS</t><l>PARÁ DE MINAS, MG</l></m>
+ <m> <lt>-17.2430555556</lt><ln>-046.8813888889</ln><t>SNZR - PARACATU</t><l>PARACATU, MG</l></m>
+ <m> <lt>-03.0197222222</lt><ln>-047.3163888889</ln><t>SNEB - PARAGOMINAS</t><l>PARAGOMINAS, PA</l></m>
+ <m> <lt>-21.5591666667</lt><ln>-045.7516666667</ln><t>SNPU - PARAGUAçU</t><l>PARAGUAÇU, MG</l></m>
+ <m> <lt>-22.4269444444</lt><ln>-050.6069444444</ln><t>SDUQ - PARAGUAçU PAULISTA</t><l>PARAGUAÇU PAULISTA, SP</l></m>
+ <m> <lt>-10.1738888889</lt><ln>-048.9327777778</ln><t>SWTO - PARAíSO DO TOCANTINS</t><l>PARAÍSO DO TOCANTINS, TO</l></m>
+ <m> <lt>-13.4461111111</lt><ln>-042.2491666667</ln><t>SNBZ - PARAMIRIM</t><l>PARAMIRIM, BA</l></m>
+ <m> <lt>-25.5405555556</lt><ln>-048.5311111111</ln><t>SSPG - PARANAGUá</t><l>PARANAGUÁ, PR</l></m>
+ <m> <lt>-19.6511111111</lt><ln>-051.1988888889</ln><t>SSPN - PARANAíBA</t><l>PARANAÍBA, MS</l></m>
+ <m> <lt>-23.0916666667</lt><ln>-052.4844444444</ln><t>SSPI - PARANAVAí</t><l>PARANAVAÍ, PR</l></m>
+ <m> <lt>-23.2244444444</lt><ln>-044.7202777778</ln><t>SDTK - PARATI</t><l>PARATI, RJ</l></m>
+ <m> <lt>-06.1152777778</lt><ln>-050.0013888889</ln><t>SBCJ - CARAJáS</t><l>PARAUAPEBAS, PA</l></m>
+ <m> <lt>-06.0816666667</lt><ln>-050.0733333333</ln><t>SNAK - HELPN CARAJáS</t><l>PARAUAPEBAS, PA</l></m>
+ <m> <lt>-02.6694444444</lt><ln>-056.7711111111</ln><t>SWPI - PARINTINS</t><l>PARINTINS, AM</l></m>
+ <m> <lt>-02.8930555556</lt><ln>-041.7297222222</ln><t>SBPB - PREFEITO DOUTOR JOãO SILVA FILHO</t><l>PARNAÍBA, PI</l></m>
+ <m> <lt>-20.6505555556</lt><ln>-044.5005555556</ln><t>SNPT - PASSA TEMPO</t><l>PASSA TEMPO, MG</l></m>
+ <m> <lt>-28.2505555556</lt><ln>-052.5166666667</ln><t>SSAQ - AEROCLUBE</t><l>PASSO FUNDO, RS</l></m>
+ <m> <lt>-28.2452777778</lt><ln>-052.3286111111</ln><t>SBPF - LAURO KURTZ</t><l>PASSO FUNDO, RS</l></m>
+ <m> <lt>-20.7333333333</lt><ln>-046.6597222222</ln><t>SNOS - MUNICIPAL JOSé FIGUEIREDO</t><l>PASSOS, MG</l></m>
+ <m> <lt>-26.2177777778</lt><ln>-052.6941666667</ln><t>SSPB - PATO BRANCO</t><l>PATO BRANCO, PR</l></m>
+ <m> <lt>-07.0377777778</lt><ln>-037.2575000000</ln><t>SNTS - PATOS</t><l>PATOS, PB</l></m>
+ <m> <lt>-18.6722222222</lt><ln>-046.4913888889</ln><t>SNPD - PATOS DE MINAS</t><l>PATOS DE MINAS, MG</l></m>
+ <m> <lt>-18.9091666667</lt><ln>-046.9827777778</ln><t>SNPJ - PATROCíNIO</t><l>PATROCÍNIO, MG</l></m>
+ <m> <lt>-07.7225000000</lt><ln>-067.0283333333</ln><t>SWUI - PAUINI</t><l>PAUINI, AM</l></m>
+ <m> <lt>-08.1663888889</lt><ln>-041.1538888889</ln><t>SNLT - PAULISTANA</t><l>PAULISTANA, PI</l></m>
+ <m> <lt>-09.4022222222</lt><ln>-038.2541666667</ln><t>SBUF - PAULO AFONSO</t><l>PAULO AFONSO, BA</l></m>
+ <m> <lt>-22.3072222222</lt><ln>-048.7719444444</ln><t>SSOI - PEDERNEIRAS</t><l>PEDERNEIRAS, SP</l></m>
+ <m> <lt>-16.0672222222</lt><ln>-041.1672222222</ln><t>SNPZ - PEDRA AZUL</t><l>PEDRA AZUL, MG</l></m>
+ <m> <lt>-31.7161111111</lt><ln>-052.3311111111</ln><t>SBPK - PELOTAS</t><l>PELOTAS, RS</l></m>
+ <m> <lt>-21.4102777778</lt><ln>-050.0319444444</ln><t>SDPN - PENáPOLIS</t><l>PENÁPOLIS, SP</l></m>
+ <m> <lt>-10.2672222222</lt><ln>-036.5669444444</ln><t>SNPE - PENEDO</t><l>PENEDO, AL</l></m>
+ <m> <lt>-08.3741666667</lt><ln>-036.6377777778</ln><t>SNPQ - PESQUEIRA</t><l>PESQUEIRA, PE</l></m>
+ <m> <lt>-09.3675000000</lt><ln>-040.5636111111</ln><t>SBPL - SENADOR NILO COELHO</t><l>PETROLINA, PE</l></m>
+ <m> <lt>-13.0005555556</lt><ln>-041.7750000000</ln><t>SNPI - PIATã</t><l>PIATÃ, BA</l></m>
+ <m> <lt>-08.8336111111</lt><ln>-050.0005555556</ln><t>SNPW - PIAUS</t><l>PIAUS, PA</l></m>
+ <m> <lt>-07.0652777778</lt><ln>-041.5194444444</ln><t>SNPC - PICOS</t><l>PICOS, PI</l></m>
+ <m> <lt>-10.0669444444</lt><ln>-042.4505555556</ln><t>SNYD - PILãO ARCADO</t><l>PILÃO ARCADO, BA</l></m>
+ <m> <lt>-11.6416666667</lt><ln>-061.1811111111</ln><t>SWPM - PIMENTA BUENO</t><l>PIMENTA BUENO, RO</l></m>
+ <m> <lt>-22.9436111111</lt><ln>-045.4313888889</ln><t>SDPD - PINDAMONHANGABA</t><l>PINDAMONHANGABA, SP</l></m>
+ <m> <lt>-02.4836111111</lt><ln>-045.0672222222</ln><t>SNYE - PINHEIRO</t><l>PINHEIRO, MA</l></m>
+ <m> <lt>-22.7105555556</lt><ln>-047.6194444444</ln><t>SDPW - PIRACICABA</t><l>PIRACICABA, SP</l></m>
+ <m> <lt>-22.0055555556</lt><ln>-049.4111111111</ln><t>SDZA - FAZ. SANTA MARIA</t><l>PIRAJUÍ, SP</l></m>
+ <m> <lt>-17.3169444444</lt><ln>-044.8602777778</ln><t>SNPX - PIRAPORA</t><l>PIRAPORA, MG</l></m>
+ <m> <lt>-21.9844444444</lt><ln>-047.3441666667</ln><t>SBYS - CAMPO FONTENELLE</t><l>PIRASSUNUNGA, SP</l></m>
+ <m> <lt>-22.0263888889</lt><ln>-047.4194444444</ln><t>SDPY - PIRASSUNUNGA</t><l>PIRASSUNUNGA, SP</l></m>
+ <m> <lt>-15.8480555556</lt><ln>-048.9802777778</ln><t>SNMH - PIRENóPOLIS</t><l>PIRENÓPOLIS, GO</l></m>
+ <m> <lt>-17.3191666667</lt><ln>-048.3347222222</ln><t>SWPR - PIRES DO RIO</t><l>PIRES DO RIO, GO</l></m>
+ <m> <lt>-11.7402777778</lt><ln>-040.5677777778</ln><t>SNTR - PIRITIBA</t><l>PIRITIBA, BA</l></m>
+ <m> <lt>-20.4386111111</lt><ln>-045.9927777778</ln><t>SNUH - PIUMHI</t><l>PIUMHI, MG</l></m>
+ <m> <lt>-15.6788888889</lt><ln>-047.5441666667</ln><t>SWPV - PLANALTINA</t><l>PLANALTINA, DF</l></m>
+ <m> <lt>-14.5252777778</lt><ln>-040.3425000000</ln><t>SNZP - POçõES</t><l>POÇÕES, BA</l></m>
+ <m> <lt>-16.2727777778</lt><ln>-056.6508333333</ln><t>SWPK - POCONé</t><l>POCONÉ, MT</l></m>
+ <m> <lt>-17.8338888889</lt><ln>-057.1672222222</ln><t>SWCR - PORTO CARACARá</t><l>POCONÉ, MT</l></m>
+ <m> <lt>-21.8377777778</lt><ln>-046.5661111111</ln><t>SBPC - POçOS DE CALDAS</t><l>POÇOS DE CALDAS, MG</l></m>
+ <m> <lt>-19.2033333333</lt><ln>-045.0233333333</ln><t>SNPO - POMPEU</t><l>POMPEU, MG</l></m>
+ <m> <lt>-25.1877777778</lt><ln>-050.1444444444</ln><t>SSZW - PONTA GROSSA</t><l>PONTA GROSSA, PR</l></m>
+ <m> <lt>-22.5497222222</lt><ln>-055.7030555556</ln><t>SBPP - PONTA PORã</t><l>PONTA PORÃ, MS</l></m>
+ <m> <lt>-20.4030555556</lt><ln>-042.9166666667</ln><t>SNCZ - PONTE NOVA</t><l>PONTE NOVA, MG</l></m>
+ <m> <lt>-15.1933333333</lt><ln>-059.3852777778</ln><t>SWBG - UNIãO DO VALE</t><l>PONTES E LACERDA, MT</l></m>
+ <m> <lt>-13.4044444444</lt><ln>-049.1572222222</ln><t>SWWA - PORANGATU</t><l>PORANGATU, GO</l></m>
+ <m> <lt>-30.1877777778</lt><ln>-051.1827777778</ln><t>SSBN - BELéM NOVO</t><l>PORTO ALEGRE, RS</l></m>
+ <m> <lt>-29.9455555556</lt><ln>-051.1436111111</ln><t>SBCO - CANOAS</t><l>PORTO ALEGRE, RS</l></m>
+ <m> <lt>-29.9938888889</lt><ln>-051.1711111111</ln><t>SBPA - SALGADO FILHO</t><l>PORTO ALEGRE, RS</l></m>
+ <m> <lt>-01.7391666667</lt><ln>-052.2450000000</ln><t>SNMZ - PORTO DE MOZ</t><l>PORTO DE MOZ, PA</l></m>
+ <m> <lt>-11.5169444444</lt><ln>-057.3338888889</ln><t>SWPG - PORTO DOS GAúCHOS</t><l>PORTO DOS GAÚCHOS, MT</l></m>
+ <m> <lt>-21.7108333333</lt><ln>-057.8791666667</ln><t>SSPM - PORTO MURTINHO</t><l>PORTO MURTINHO, MS</l></m>
+ <m> <lt>-10.7169444444</lt><ln>-048.4002777778</ln><t>SBPN - PORTO NACIONAL</t><l>PORTO NACIONAL, TO</l></m>
+ <m> <lt>-16.4380555556</lt><ln>-039.0838888889</ln><t>SBPS - PORTO SEGURO</t><l>PORTO SEGURO, BA</l></m>
+ <m> <lt>-08.7936111111</lt><ln>-063.8580555556</ln><t>SWRO - AEROCLUBE DE RONDôNLA</t><l>PORTO VELHO, RO</l></m>
+ <m> <lt>-08.7136111111</lt><ln>-063.9027777778</ln><t>SBPV - GOVERNADOR JORGE TEIXEIRA DE OLIVEIRA</t><l>PORTO VELHO, RO</l></m>
+ <m> <lt>-14.1238888889</lt><ln>-046.3419444444</ln><t>SWPZ - ORIçANGA DE ABREU</t><l>POSSE, GO</l></m>
+ <m> <lt>-22.2888888889</lt><ln>-045.9194444444</ln><t>SNZA - POUSO ALEGRE</t><l>POUSO ALEGRE, MG</l></m>
+ <m> <lt>-17.3505555556</lt><ln>-039.2172222222</ln><t>SNRD - PRADO</t><l>PRADO, BA</l></m>
+ <m> <lt>-01.8002777778</lt><ln>-053.4838888889</ln><t>SNIN - PRAINHA</t><l>PRAINHA, PA</l></m>
+ <m> <lt>-21.7755555556</lt><ln>-052.1630555556</ln><t>SDEP - PRESIDENTE EPITáCIO</t><l>PRESIDENTE EPITÁCIO, SP</l></m>
+ <m> <lt>-22.1783333333</lt><ln>-051.4188888889</ln><t>SBDN - PRESIDENTE PRUDENTE</t><l>PRESIDENTE PRUDENTE, SP</l></m>
+ <m> <lt>-21.8933333333</lt><ln>-051.8844444444</ln><t>SDPV - PRESIDENTE VENCESLAU</t><l>PRESIDENTE VENCESLAU, SP</l></m>
+ <m> <lt>-15.5655555556</lt><ln>-054.3377777778</ln><t>SWPY - PRIMAVERA DO LESTE</t><l>PRIMAVERA DO LESTE, MT</l></m>
+ <m> <lt>-10.2672222222</lt><ln>-036.8336111111</ln><t>SNOP - PROPRIá</t><l>PROPRIÁ, SE</l></m>
+ <m> <lt>-10.9883333333</lt><ln>-039.6205555556</ln><t>SNQM - QUEIMADAS</t><l>QUEIMADAS, BA</l></m>
+ <m> <lt>-18.4461111111</lt><ln>-050.4091666667</ln><t>SJQN - QUIRINóPOLIS</t><l>QULRLNÓPOLLS, GO</l></m>
+ <m> <lt>-04.9669444444</lt><ln>-039.0002777778</ln><t>SNQX - QUIXADá</t><l>QUIXADÁ, CE</l></m>
+ <m> <lt>-25.8005555556</lt><ln>-053.5138888889</ln><t>SSRE - REALEZA</t><l>REALEZA, PR</l></m>
+ <m> <lt>-08.1263888889</lt><ln>-034.9227777778</ln><t>SBRF - GUARARAPES - GILBERTO FREYRE</t><l>RECIFE, PE</l></m>
+ <m> <lt>-08.0305555556</lt><ln>-049.9805555556</ln><t>SNDC - REDENçãO</t><l>REDENÇÃO, PA</l></m>
+ <m> <lt>-09.6502777778</lt><ln>-042.1172222222</ln><t>SNRM - REMANSO</t><l>REMANSO, BA</l></m>
+ <m> <lt>-22.4786111111</lt><ln>-044.4816666667</ln><t>SDRS - RESENDE</t><l>RESENDE, RJ</l></m>
+ <m> <lt>-07.3502777778</lt><ln>-046.6338888889</ln><t>SNRX - RIACHãO</t><l>RIACHÃO, MA</l></m>
+ <m> <lt>-16.1941666667</lt><ln>-043.0733333333</ln><t>SSTX - FAZ. LAGOA DOS PATOS</t><l>RIACHO DOS MACHADOS, MG</l></m>
+ <m> <lt>-21.1363888889</lt><ln>-047.7766666667</ln><t>SBRP - LEITE LOPES</t><l>RIBEIRÃO PRETO, SP</l></m>
+ <m> <lt>-09.8688888889</lt><ln>-067.8980555556</ln><t>SBRB - PLáCIDO DE CASTRO</t><l>RIO BRANCO, AC</l></m>
+ <m> <lt>-21.8477777778</lt><ln>-054.5277777778</ln><t>SSRB - RIO BRILHANTE</t><l>RIO BRILHANTE, MS</l></m>
+ <m> <lt>-22.4311111111</lt><ln>-047.5641666667</ln><t>SDRK - RIO CLARO</t><l>RIO CLARO, SP</l></m>
+ <m> <lt>-13.5875000000</lt><ln>-041.7891666667</ln><t>SDLE - RIO DE CONTAS</t><l>RIO DE CONTAS, BA</l></m>
+ <m> <lt>-22.8755555556</lt><ln>-043.3844444444</ln><t>SBAF - CAMPO DéLIO JARDIM DE MATTOS</t><l>RIO DE JANEIRO, RJ</l></m>
+ <m> <lt>-22.8100000000</lt><ln>-043.2505555556</ln><t>SBGL - GALEãO ANTôNIO CARLOS JOBIM</t><l>RIO DE JANEIRO, RJ</l></m>
+ <m> <lt>-22.9172222222</lt><ln>-043.2694444444</ln><t>SDCN - HELPN CENTRO MéDICO NAVAL MARCíLIO DIAS</t><l>RIO DE JANEIRO, RJ</l></m>
+ <m> <lt>-22.9450000000</lt><ln>-043.1969444444</ln><t>SDDM - HELPN DONA MARTA</t><l>RIO DE JANEIRO, RJ</l></m>
+ <m> <lt>-22.9197222222</lt><ln>-043.1947222222</ln><t>SIGJ - HELPN HOSPITAL HCA</t><l>RIO DE JANEIRO, RJ</l></m>
+ <m> <lt>-22.7672222222</lt><ln>-043.1130555556</ln><t>SDPU - HELPN PAQUETá</t><l>RIO DE JANEIRO, RJ</l></m>
+ <m> <lt>-22.9875000000</lt><ln>-043.3700000000</ln><t>SBJR - JACAREPAGUá - ROBERTO MARINHO</t><l>RIO DE JANEIRO, RJ</l></m>
+ <m> <lt>-23.0663888889</lt><ln>-043.8797222222</ln><t>SDMR - MARAMBAIA</t><l>RIO DE JANEIRO, RJ</l></m>
+ <m> <lt>-22.9327777778</lt><ln>-043.7194444444</ln><t>SBSC - SANTA CRUZ</t><l>RIO DE JANEIRO, RJ</l></m>
+ <m> <lt>-22.9102777778</lt><ln>-043.1627777778</ln><t>SBRJ - SANTOS DUMONT</t><l>RIO DE JANEIRO, RJ</l></m>
+ <m> <lt>-32.0327777778</lt><ln>-052.0727777778</ln><t>SJJZ - HELPN ILHA DE TERRAPLENO</t><l>RIO GRANDE, RS</l></m>
+ <m> <lt>-32.0816666667</lt><ln>-052.1633333333</ln><t>SJRG - RIO GRANDE</t><l>RIO GRANDE, RS</l></m>
+ <m> <lt>-19.2125000000</lt><ln>-046.2405555556</ln><t>SNRP - RIO PARANAíBA</t><l>RIO PARANAÍBA, MG</l></m>
+ <m> <lt>-29.9727777778</lt><ln>-052.3611111111</ln><t>SSRY - RIO PARDO</t><l>RIO PARDO, RS</l></m>
+ <m> <lt>-17.8347222222</lt><ln>-050.9561111111</ln><t>SWLC - GEN. LEITE DE CASTRO</t><l>RIO VERDE, GO</l></m>
+ <m> <lt>-16.5852777778</lt><ln>-054.7241666667</ln><t>SWRD - RONDONóPOLIS</t><l>RONDONÓPOLLS, MT</l></m>
+ <m> <lt>-14.8169444444</lt><ln>-056.4172222222</ln><t>SWDO - ROSáRIO DO OESTE</t><l>ROSÁRIO DO OESTE, MT</l></m>
+ <m> <lt>-30.2775000000</lt><ln>-054.9252777778</ln><t>SSRZ - ROSáRIO DO SUL</t><l>ROSÁRIO DO SUL, RS</l></m>
+ <m> <lt>-04.0855555556</lt><ln>-054.9108333333</ln><t>SNDB - RURóPOLIS</t><l>RURÓPOLIS, PA</l></m>
+ <m> <lt>-04.9391666667</lt><ln>-038.0119444444</ln><t>SNRS - RUSSAS</t><l>RUSSAS, CE</l></m>
+ <m> <lt>-20.0411111111</lt><ln>-047.4222222222</ln><t>SNJW - JAGUARá</t><l>SACRAMENTO, MG</l></m>
+ <m> <lt>-19.8930555556</lt><ln>-047.4222222222</ln><t>SNSC - SACRAMENTO</t><l>SACRAMENTO, MG</l></m>
+ <m> <lt>-08.0466666667</lt><ln>-039.1338888889</ln><t>SNSG - SALGUEIRO</t><l>SALGUEIRO, PE</l></m>
+ <m> <lt>-16.2077777778</lt><ln>-042.3222222222</ln><t>SNSS - SALINAS</t><l>SALINAS, MG</l></m>
+ <m> <lt>-00.6969444444</lt><ln>-047.3377777778</ln><t>SNSM - SALINóPOLIS</t><l>SALLNÓPOLLS, PA</l></m>
+ <m> <lt>-12.9086111111</lt><ln>-038.3225000000</ln><t>SBSV - DEPUTADO LUíS EDUARDO MAGALHãES</t><l>SALVADOR, BA</l></m>
+ <m> <lt>-13.0083333333</lt><ln>-038.5308333333</ln><t>SNHM - HELPN MORRO DA GAVAZZA</t><l>SALVADOR, BA</l></m>
+ <m> <lt>-29.6836111111</lt><ln>-052.4122222222</ln><t>SSSC - SANTA CRUZ DO SUL</t><l>SANTA CRUZ DO SUL, RS</l></m>
+ <m> <lt>-17.8838888889</lt><ln>-050.5672222222</ln><t>SWHG - SANTA HELENA DE GOIáS</t><l>SANTA HELENA DE GOIÁS, GO</l></m>
+ <m> <lt>-03.6538888889</lt><ln>-045.3450000000</ln><t>SJBY - JOãO SILVA</t><l>SANTA INÊS, MA</l></m>
+ <m> <lt>-00.4169444444</lt><ln>-065.0338888889</ln><t>SWTP - TAPURUQUARA</t><l>SANTA ISABEL DO RIO NEGRO, AM</l></m>
+ <m> <lt>-29.7108333333</lt><ln>-053.6922222222</ln><t>SBSM - SANTA MARIA</t><l>SANTA MARIA, RS</l></m>
+ <m> <lt>-13.4005555556</lt><ln>-044.2172222222</ln><t>SNVD - SANTA MARIA DA VITóRIA</t><l>SANTA MARIA DA VLTÓRLA, BA</l></m>
+ <m> <lt>-18.1986111111</lt><ln>-042.4661111111</ln><t>SNSI - SANTA MARIA DO SUAçUí</t><l>SANTA MARIA DO SUAÇUÍ, MG</l></m>
+ <m> <lt>-10.9502777778</lt><ln>-044.4672222222</ln><t>SNKS - SANTA RITA DE CáSSIA</t><l>SANTA RITA DE CÁSSIA, BA</l></m>
+ <m> <lt>-17.3252777778</lt><ln>-053.1969444444</ln><t>SIFH - SANTA RITA DO ARAGUAIA</t><l>SANTA RITA DO ARAGUAIA, GO</l></m>
+ <m> <lt>-27.9088888889</lt><ln>-054.5222222222</ln><t>SSZR - SANTA ROSA</t><l>SANTA ROSA, RS</l></m>
+ <m> <lt>-09.4463888889</lt><ln>-070.4827777778</ln><t>SSPQ - SANTA ROSA DO PURUS</t><l>SANTA ROSA DO PURUS, AC</l></m>
+ <m> <lt>-10.4647222222</lt><ln>-050.5186111111</ln><t>SWST - SANTA TEREZINHA</t><l>SANTA TEREZINHA, MT</l></m>
+ <m> <lt>-33.5022222222</lt><ln>-053.3441666667</ln><t>SSVP - SANTA VITóRIA DO PALMAR</t><l>SANTA VLTÓRLA DO PALMAR, RS</l></m>
+ <m> <lt>-09.3352777778</lt><ln>-050.3502777778</ln><t>SNKE - SANTANA DO ARAGUAIA</t><l>SANTANA DO ARAGUAIA, PA</l></m>
+ <m> <lt>-12.9761111111</lt><ln>-044.0391666667</ln><t>SNDJ - SANTANA DOS BREJOS</t><l>SANTANA DOS BREJOS, BA</l></m>
+ <m> <lt>-02.4247222222</lt><ln>-054.7858333333</ln><t>SBSN - MAESTRO WILSON FONSECA</t><l>SANTARÉM, PA</l></m>
+ <m> <lt>-29.2150000000</lt><ln>-054.8422222222</ln><t>SSST - SANTIAGO</t><l>SANTIAGO, RS</l></m>
+ <m> <lt>-28.2822222222</lt><ln>-054.1688888889</ln><t>SBNM - SANTO ÂNGELO</t><l>SANTO ÂNGELO, RS</l></m>
+ <m> <lt>-20.9113888889</lt><ln>-044.8944444444</ln><t>SNAM - SANTO ANTôNIO DO AMPARO</t><l>SANTO ANTÔNLO DO AMPARO, MG</l></m>
+ <m> <lt>-02.9336111111</lt><ln>-069.6947222222</ln><t>SWII - LPIRANGA</t><l>SANTO ANTÔNLO DO IÇÁ, AM</l></m>
+ <m> <lt>-02.7044444444</lt><ln>-044.8447222222</ln><t>SNSB - SãO BENTO</t><l>SÃO BENTO, MA</l></m>
+ <m> <lt>-28.6530555556</lt><ln>-056.0327777778</ln><t>SSSB - SãO BORJA</t><l>SÃO BORJA, RS</l></m>
+ <m> <lt>-21.8763888889</lt><ln>-047.9033333333</ln><t>SDSC - SãO CARLOS</t><l>SÃO CARLOS, SP</l></m>
+ <m> <lt>-11.6319444444</lt><ln>-050.6883333333</ln><t>SWFX - SãO FéLIX DO ARAGUAIA</t><l>SÃO FÉLIX DO ARAGUAIA, MT</l></m>
+ <m> <lt>-06.6402777778</lt><ln>-051.9900000000</ln><t>SNFX - SãO FéLIX DO XINGU</t><l>SÃO FÉLIX DO XINGU, PA</l></m>
+ <m> <lt>-26.2211111111</lt><ln>-048.5644444444</ln><t>SSSS - SãO FRANCISCO DO SUL</t><l>SÃO FRANCISCO DO SUL, SC</l></m>
+ <m> <lt>-30.3450000000</lt><ln>-054.2677777778</ln><t>SSSG - SãO GABRIEL</t><l>SÃO GABRIEL, RS</l></m>
+ <m> <lt>01.7997222222</lt><ln>-067.3838888889</ln><t>SWAO - ANAMOIM</t><l>SÃO GABRIEL DA CACHOEIRA, AM</l></m>
+ <m> <lt>01.0663888889</lt><ln>-067.6005555556</ln><t>SWAK - ASSUNçãO DO LçANA</t><l>SÃO GABRIEL DA CACHOEIRA, AM</l></m>
+ <m> <lt>01.1205555556</lt><ln>-066.8416666667</ln><t>SWKU - CUCUí</t><l>SÃO GABRIEL DA CACHOEIRA, AM</l></m>
+ <m> <lt>00.6069444444</lt><ln>-069.2013888889</ln><t>SBYA - LAUARETê</t><l>SÃO GABRIEL DA CACHOEIRA, AM</l></m>
+ <m> <lt>00.6163888889</lt><ln>-066.1311111111</ln><t>SWMK - MATURACá</t><l>SÃO GABRIEL DA CACHOEIRA, AM</l></m>
+ <m> <lt>00.2630555556</lt><ln>-069.7955555556</ln><t>SWPC - PARI - CACHOEIRA</t><l>SÃO GABRIEL DA CACHOEIRA, AM</l></m>
+ <m> <lt>01.0913888889</lt><ln>-069.8505555556</ln><t>SWQE - QUERARI</t><l>SÃO GABRIEL DA CACHOEIRA, AM</l></m>
+ <m> <lt>00.3997222222</lt><ln>-069.3005555556</ln><t>SWAZ - SANTO ATANáZIO</t><l>SÃO GABRIEL DA CACHOEIRA, AM</l></m>
+ <m> <lt>-00.1480555556</lt><ln>-066.9858333333</ln><t>SBUA - SãO GABRIEL DA CACHOEIRA</t><l>SÃO GABRIEL DA CACHOEIRA, AM</l></m>
+ <m> <lt>01.7330555556</lt><ln>-069.3838888889</ln><t>SWSQ - SãO JOAQUIM</t><l>SÃO GABRIEL DA CACHOEIRA, AM</l></m>
+ <m> <lt>00.1247222222</lt><ln>-068.5455555556</ln><t>SWTR - TARAQUá</t><l>SÃO GABRIEL DA CACHOEIRA, AM</l></m>
+ <m> <lt>01.2163888889</lt><ln>-069.2005555556</ln><t>SWUK - UAPUI-CACHOEIRA</t><l>SÃO GABRIEL DA CACHOEIRA, AM</l></m>
+ <m> <lt>-22.0172222222</lt><ln>-046.8408333333</ln><t>SDJV - SãO JOãO DA BOA VISTA</t><l>SÃO JOÃO DA BOA VISTA, SP</l></m>
+ <m> <lt>-21.0850000000</lt><ln>-044.2247222222</ln><t>SNJR - PREFEITO OCTáVIO DE ALMEIDA NEVES</t><l>SÃO JOÃO DEL REI, MG</l></m>
+ <m> <lt>-06.7041666667</lt><ln>-038.5027777778</ln><t>SICA - BREJO DAS FREIRAS</t><l>SÃO JOÃO DO RIO DO PEIXE, PB</l></m>
+ <m> <lt>-21.5422222222</lt><ln>-043.0211111111</ln><t>SNNE - SãO JOãO NEPOMUCENO</t><l>SÃO JOÃO NEPOMUCENO, MG</l></m>
+ <m> <lt>-28.2588888889</lt><ln>-049.9158333333</ln><t>SSSQ - SãO JOAQUIM</t><l>SÃO JOAQUIM, SC</l></m>
+ <m> <lt>-20.5933333333</lt><ln>-047.8422222222</ln><t>SDJO - SãO JOAQUIM DA BARRA</t><l>SÃO JOAQUIM DA BARRA, SP</l></m>
+ <m> <lt>-11.4527777778</lt><ln>-040.0422222222</ln><t>SNJH - SãO JOSé DO JACUíPE</t><l>SÃO JOSÉ DO JACUÍPE, BA</l></m>
+ <m> <lt>-20.8161111111</lt><ln>-049.4047222222</ln><t>SBSR - SãO JOSé DO RIO PRETO</t><l>SÃO JOSÉ DO RIO PRETO, SP</l></m>
+ <m> <lt>-23.2288888889</lt><ln>-045.8711111111</ln><t>SBSJ - PROFESSOR URBANO ERNESTO STUMPF</t><l>SÃO JOSÉ DOS CAMPOS, SP</l></m>
+ <m> <lt>-22.0916666667</lt><ln>-045.0452777778</ln><t>SNLO - SãO LOURENçO</t><l>SÃO LOURENÇO, MG</l></m>
+ <m> <lt>-31.3833333333</lt><ln>-052.0327777778</ln><t>SSRU - SãO LOURENçO DO SUL</t><l>SÃO LOURENÇO DO SUL, RS</l></m>
+ <m> <lt>-02.5869444444</lt><ln>-044.2361111111</ln><t>SBSL - MARECHAL CUNHA MACHADO</t><l>SÃO LUÍS, MA</l></m>
+ <m> <lt>-28.3763888889</lt><ln>-055.0375000000</ln><t>SSLG - SãO LUíS GONZAGA</t><l>SÃO LUÍS GONZAGA, RS</l></m>
+ <m> <lt>-22.6961111111</lt><ln>-048.5761111111</ln><t>SDNO - SãO MANUEL</t><l>SÃO MANUEL, SP</l></m>
+ <m> <lt>-18.7208333333</lt><ln>-039.8330555556</ln><t>SNMX - SãO MATEUS</t><l>SÃO MATEUS, ES</l></m>
+ <m> <lt>-13.3338888889</lt><ln>-050.2058333333</ln><t>SWUA - SãO MIGUEL DO ARAGUAIA</t><l>SÃO MIGUEL DO ARAGUAIA, GO</l></m>
+ <m> <lt>-26.7811111111</lt><ln>-053.5033333333</ln><t>SSOE - SãO MIGUEL DO OESTE</t><l>SÃO MIGUEL DO OESTE, SC</l></m>
+ <m> <lt>-23.5069444444</lt><ln>-046.6341666667</ln><t>SBMT - CAMPO DE MARTE</t><l>SÃO PAULO, SP</l></m>
+ <m> <lt>-23.6261111111</lt><ln>-046.6563888889</ln><t>SBSP - CONGONHAS</t><l>SÃO PAULO, SP</l></m>
+ <m> <lt>-23.4355555556</lt><ln>-046.4730555556</ln><t>SBGR - GUARULHOS - GOVERNADOR ANDRé FRANCO MONTORO</t><l>SÃO PAULO, SP</l></m>
+ <m> <lt>-23.5941666667</lt><ln>-046.6466666667</ln><t>SDMI - HELPN DO COMANDO DO 8º DISTRITO NAVAL</t><l>SÃO PAULO, SP</l></m>
+ <m> <lt>-23.5133333333</lt><ln>-046.6441666667</ln><t>SDHA - HELPN HASP</t><l>SÃO PAULO, SP</l></m>
+ <m> <lt>-23.6005555556</lt><ln>-046.7130555556</ln><t>SDPM - HELPN PALáCIO DOS BANDEIRANTES</t><l>SÃO PAULO, SP</l></m>
+ <m> <lt>-23.5638888889</lt><ln>-046.6125000000</ln><t>SDQC - HELPN QUARTO COMAR</t><l>SÃO PAULO, SP</l></m>
+ <m> <lt>-03.4694444444</lt><ln>-068.9583333333</ln><t>SDCG - SENADORA EUNICE MICHILES</t><l>SÃO PAULO DE OLIVENÇA, AM</l></m>
+ <m> <lt>-22.5836111111</lt><ln>-047.8961111111</ln><t>SDAE - SãO PEDRO</t><l>SÃO PEDRO, SP</l></m>
+ <m> <lt>-22.8166666667</lt><ln>-042.0925000000</ln><t>SBES - SãO PEDRO DA ALDEIA</t><l>SÃO PEDRO DA ALDEIA, RJ</l></m>
+ <m> <lt>-20.9491666667</lt><ln>-046.9841666667</ln><t>SNPY - SãO SEBASTIãO DO PARAíSO</t><l>SÃO SEBASTIÃO DO PARAÍSO, MG</l></m>
+ <m> <lt>-30.1822222222</lt><ln>-053.5794444444</ln><t>SSEP - SãO SEPé</t><l>SÃO SEPÉ, RS</l></m>
+ <m> <lt>-22.9297222222</lt><ln>-042.5069444444</ln><t>SDSK - SAQUAREMA</t><l>SAQUAREMA, RJ</l></m>
+ <m> <lt>-27.9811111111</lt><ln>-052.8636111111</ln><t>SSXD - SARANDI</t><l>SARANDI, RS</l></m>
+ <m> <lt>-09.7413888889</lt><ln>-041.8411111111</ln><t>SNSE - SENTO Sé</t><l>SENTO SÉ, BA</l></m>
+ <m> <lt>-08.0613888889</lt><ln>-038.3286111111</ln><t>SNHS - SANTA MAGALHãES</t><l>SERRA TALHADA, PE</l></m>
+ <m> <lt>-18.6111111111</lt><ln>-043.4238888889</ln><t>SNSO - SERRO</t><l>SERRO, MG</l></m>
+ <m> <lt>-13.7502777778</lt><ln>-055.6338888889</ln><t>SWSR - SERTâNIA</t><l>SERTÂNIA, MT</l></m>
+ <m> <lt>-08.0575000000</lt><ln>-037.2894444444</ln><t>SNUW - SERTâNIA</t><l>SERTÂNIA, PE</l></m>
+ <m> <lt>-23.0622222222</lt><ln>-051.0138888889</ln><t>SSSZ - SERTANóPOLIS</t><l>SERTANÓPOLLS, PR</l></m>
+ <m> <lt>-11.8850000000</lt><ln>-055.5861111111</ln><t>SWSI - PRESIDENTE JOãO BATISTA FIGUEIREDO</t><l>SINOP, MT</l></m>
+ <m> <lt>-23.6744444444</lt><ln>-049.8188888889</ln><t>SSQC - SIQUEIRA CAMPOS</t><l>SIQUEIRA CAMPOS, PR</l></m>
+ <m> <lt>-29.3963888889</lt><ln>-052.9916666667</ln><t>SSBD - SOBRADINHO</t><l>SOBRADINHO, RS</l></m>
+ <m> <lt>-03.6783333333</lt><ln>-040.3369444444</ln><t>SNOB - SOBRAL</t><l>SOBRAL, CE</l></m>
+ <m> <lt>-28.8630555556</lt><ln>-052.5405555556</ln><t>SSSD - SOLEDADE</t><l>SOLEDADE, RS</l></m>
+ <m> <lt>-23.4830555556</lt><ln>-047.4863888889</ln><t>SDCO - SOROCABA</t><l>SOROCABA, SP</l></m>
+ <m> <lt>-00.6983333333</lt><ln>-048.5180555556</ln><t>SNSW - SOURE</t><l>SOURE, PA</l></m>
+ <m> <lt>-06.7836111111</lt><ln>-038.2336111111</ln><t>SNQD - SOUSA</t><l>SOUSA, PB</l></m>
+ <m> <lt>-12.1013888889</lt><ln>-041.6347222222</ln><t>SNST - SOUTO SOARES</t><l>SOUTO SOARES, BA</l></m>
+ <m> <lt>-04.2505555556</lt><ln>-069.9377777778</ln><t>SBTT - TABATINGA</t><l>TABATINGA, AM</l></m>
+ <m> <lt>-12.4338888889</lt><ln>-046.4005555556</ln><t>SWTY - TAGUATINGA</t><l>TAGUATINGA, TO</l></m>
+ <m> <lt>-04.8502777778</lt><ln>-040.3505555556</ln><t>SNTL - TAMBORIL </t><l>TAMBORIL, CE</l></m>
+ <m> <lt>-14.6619444444</lt><ln>-057.4438888889</ln><t>SWTS - TANGARá DA SERRA</t><l>TANGARÁ DA SERRA, MT</l></m>
+ <m> <lt>-13.5458333333</lt><ln>-042.4800000000</ln><t>SSQM - TANQUE NOVO</t><l>TANQUE NOVO, BA</l></m>
+ <m> <lt>-08.1547222222</lt><ln>-070.7827777778</ln><t>SBTK - TARAUACá</t><l>TARAUACÁ, AC</l></m>
+ <m> <lt>-23.3319444444</lt><ln>-047.8800000000</ln><t>SDTF - TATUí</t><l>TATUÍ, SP</l></m>
+ <m> <lt>-05.9300000000</lt><ln>-040.2908333333</ln><t>SDZG - PEDRO TEIXEIRA CASTELO REGIONAL TAUá</t><l>TAUÁ, CE</l></m>
+ <m> <lt>-23.0388888889</lt><ln>-045.5158333333</ln><t>SBTA - BASE DE AVIAçãO DE TAUBATé</t><l>TAUBATÉ, SP</l></m>
+ <m> <lt>-04.5502777778</lt><ln>-065.5672222222</ln><t>SWTF - HELPN PORTO MOURA</t><l>TEFÉ, AM</l></m>
+ <m> <lt>-03.3802777778</lt><ln>-064.7252777778</ln><t>SBTF - TEFé</t><l>TEFÉ, AM</l></m>
+ <m> <lt>-17.5244444444</lt><ln>-039.6705555556</ln><t>SNTF - TEIXEIRA DE FREITAS</t><l>TEIXEIRA DE FREITAS, BA</l></m>
+ <m> <lt>-24.3163888889</lt><ln>-050.6522222222</ln><t>SBTL - TELêMACO BORBA</t><l>TELÊMACO BORBA, PR</l></m>
+ <m> <lt>-17.8908333333</lt><ln>-041.5150000000</ln><t>SNTO - JUSCELINO KUBITSCHEK</t><l>TEÓFILO OTONI, MG</l></m>
+ <m> <lt>-05.0605555556</lt><ln>-042.8244444444</ln><t>SBTE - SENADOR PETRôNIO PORTELLA</t><l>TERESINA, PI</l></m>
+ <m> <lt>-02.0727777778</lt><ln>-056.4888888889</ln><t>SJTS - TERRA SANTA</t><l>TERRA SANTA, PA</l></m>
+ <m> <lt>-15.5563888889</lt><ln>-053.0752777778</ln><t>SWRU - MERURI</t><l>TESOURO, MT</l></m>
+ <m> <lt>-23.1047222222</lt><ln>-047.7244444444</ln><t>SDET - TIETê</t><l>TIETÊ, SP</l></m>
+ <m> <lt>-09.5836111111</lt><ln>-048.4505555556</ln><t>SWTC - TOCANTíNIA</t><l>TOCANTÍNIA, TO</l></m>
+ <m> <lt>-24.6852777778</lt><ln>-053.6966666667</ln><t>SBTD - TOLEDO</t><l>TOLEDO, PR</l></m>
+ <m> <lt>-29.4100000000</lt><ln>-049.8102777778</ln><t>SBTR - TORRES</t><l>TORRES, RS</l></m>
+ <m> <lt>-26.1327777778</lt><ln>-050.3097222222</ln><t>SSTB - TRêS BARRAS</t><l>TRÊS BARRAS, SC</l></m>
+ <m> <lt>-21.7905555556</lt><ln>-045.2691666667</ln><t>SNVI - MELLO VIANA</t><l>TRÊS CORAÇÕES, MG</l></m>
+ <m> <lt>-20.7544444444</lt><ln>-051.6838888889</ln><t>SSTL - TRêS LAGOAS</t><l>TRÊS LAGOAS, MS</l></m>
+ <m> <lt>-18.2250000000</lt><ln>-045.1905555556</ln><t>SNAS - TRêS MARIAS</t><l>TRÊS MARIAS, MG</l></m>
+ <m> <lt>-27.5125000000</lt><ln>-053.8983333333</ln><t>SSTO - TRêS PASSOS</t><l>TRÊS PASSOS, RS</l></m>
+ <m> <lt>-21.3719444444</lt><ln>-045.4941666667</ln><t>SIAB - LEDA MELLO RESENDE</t><l>TRÊS PONTAS, MG</l></m>
+ <m> <lt>-11.0441666667</lt><ln>-038.7841666667</ln><t>SDLH - CALDAS DO JORRO</t><l>TUCANO, BA</l></m>
+ <m> <lt>-03.7769444444</lt><ln>-049.7197222222</ln><t>SBTU - TUCURUí</t><l>TUCURUÍ, PA</l></m>
+ <m> <lt>-21.8900000000</lt><ln>-050.5058333333</ln><t>SDTP - TUPã</t><l>TUPÃ, SP</l></m>
+ <m> <lt>-21.3930555556</lt><ln>-051.5988888889</ln><t>SDTI - TUPI PAULISTA</t><l>TUPI PAULISTA, SP</l></m>
+ <m> <lt>-01.7669444444</lt><ln>-045.4505555556</ln><t>SNTU - TURIAçU</t><l>TURIAÇU, MA</l></m>
+ <m> <lt>-17.2338888889</lt><ln>-042.7338888889</ln><t>SNTM - TURMALINA</t><l>TURMALINA, MG</l></m>
+ <m> <lt>-09.8350000000</lt><ln>-039.4944444444</ln><t>SNUU - UAUá</t><l>UAUÁ, BA</l></m>
+ <m> <lt>-21.1225000000</lt><ln>-042.8822222222</ln><t>SNUB - UBá</t><l>UBÁ, MG</l></m>
+ <m> <lt>-23.4413888889</lt><ln>-045.0761111111</ln><t>SDUB - UBATUBA</t><l>UBATUBA, SP</l></m>
+ <m> <lt>-19.7647222222</lt><ln>-047.9661111111</ln><t>SBUR - MáRIO DE ALMEIDA FRANCO</t><l>UBERABA, MG</l></m>
+ <m> <lt>-18.8836111111</lt><ln>-048.2252777778</ln><t>SBUL - TEN.-CEL.-AV. CéSAR BOMBONATO</t><l>UBERLÂNDIA, MG</l></m>
+ <m> <lt>-14.0169444444</lt><ln>-059.3672222222</ln><t>SWUP - UIRAPURU</t><l>UIRAPURU, MT</l></m>
+ <m> <lt>-23.7991666667</lt><ln>-053.3138888889</ln><t>SSUM - UMUARAMA</t><l>UMUARAMA, PR</l></m>
+ <m> <lt>-16.3538888889</lt><ln>-046.9269444444</ln><t>SNUN - UNAí</t><l>UNAÍ, MG</l></m>
+ <m> <lt>-26.2316666667</lt><ln>-051.0688888889</ln><t>SSUV - UNIãO DA VITóRIA</t><l>UNIÃO DA VITÓRIA, PR</l></m>
+ <m> <lt>-03.1997222222</lt><ln>-043.3863888889</ln><t>SNUD - URBANO SANTOS</t><l>URBANO SANTOS, MA</l></m>
+ <m> <lt>-14.5255555556</lt><ln>-049.1377777778</ln><t>SWWU - URUAçU</t><l>URUAÇU, GO</l></m>
+ <m> <lt>-02.5297222222</lt><ln>-057.7561111111</ln><t>SWWK - URUCARá</t><l>URUCARÁ, AM</l></m>
+ <m> <lt>-29.7819444444</lt><ln>-057.0383333333</ln><t>SBUG - RUBEM BERTA</t><l>URUGUAIANA, RS</l></m>
+ <m> <lt>-12.1041666667</lt><ln>-041.0713888889</ln><t>SNUT - UTINGA</t><l>UTINGA, BA</l></m>
+ <m> <lt>-28.5097222222</lt><ln>-050.9183333333</ln><t>SSVC - VACARIA</t><l>VACARIA, RS</l></m>
+ <m> <lt>-13.2963888889</lt><ln>-038.9925000000</ln><t>SNVB - VALENçA</t><l>VALENÇA, BA</l></m>
+ <m> <lt>-22.2427777778</lt><ln>-043.7136111111</ln><t>SDVL - VALENçA</t><l>VALENÇA, RJ</l></m>
+ <m> <lt>-11.4111111111</lt><ln>-039.4433333333</ln><t>SNVV - VALENTE</t><l>VALENTE, BA</l></m>
+ <m> <lt>-21.5888888889</lt><ln>-045.4733333333</ln><t>SBVG - MAJOR BRIGADEIRO TROMPOWSKY</t><l>VARGINHA, MG</l></m>
+ <m> <lt>-17.6450000000</lt><ln>-044.7105555556</ln><t>SNVZ - VáRZEA DA PALMA</t><l>VÁRZEA DA PALMA, MG</l></m>
+ <m> <lt>-29.6130555556</lt><ln>-052.2172222222</ln><t>SSWA - VENâNCIO AIRES</t><l>VENÂNCIO AIRES, RS</l></m>
+ <m> <lt>-22.2302777778</lt><ln>-049.8186111111</ln><t>SDVE - VERA CRUZ</t><l>VERA CRUZ, SP</l></m>
+ <m> <lt>-28.9350000000</lt><ln>-051.5683333333</ln><t>SSVN - VERANóPOLIS</t><l>VERANÓPOLIS, RS</l></m>
+ <m> <lt>-20.7447222222</lt><ln>-042.8419444444</ln><t>SNVC - VIçOSA</t><l>VIÇOSA, MG</l></m>
+ <m> <lt>-27.0000000000</lt><ln>-051.1575000000</ln><t>SSVI - VIDEIRA</t><l>VIDEIRA, SC</l></m>
+ <m> <lt>-13.7336111111</lt><ln>-059.7172222222</ln><t>SWBQ - BARRACãO QUEIMADO</t><l>VILA BELA DA SS. TRINDADE, MT</l></m>
+ <m> <lt>-15.4894444444</lt><ln>-060.0855555556</ln><t>SWCV - CASALVASCO</t><l>VILA BELA DA SS. TRINDADE, MT</l></m>
+ <m> <lt>-15.9086111111</lt><ln>-060.1547222222</ln><t>SWSY - SãO SIMãO</t><l>VILA BELA DA SS. TRINDADE, MT</l></m>
+ <m> <lt>-15.0152777778</lt><ln>-059.9672222222</ln><t>SWVB - VILA BELA DA SS. TRINDADE</t><l>VILA BELA DA SS. TRINDADE, MT</l></m>
+ <m> <lt>-09.9794444444</lt><ln>-051.1422222222</ln><t>SWVC - VILA RICA</t><l>VILA RICA, MT</l></m>
+ <m> <lt>-12.6941666667</lt><ln>-060.0972222222</ln><t>SBVH - VILHENA</t><l>VILHENA, RO</l></m>
+ <m> <lt>-16.7738888889</lt><ln>-042.3875000000</ln><t>SNVL - VIRGEM DA LAPA</t><l>VIRGEM DA LAPA, MG</l></m>
+ <m> <lt>-20.2580555556</lt><ln>-040.2863888889</ln><t>SBVT - EURICO DE AGUIAR SALLES</t><l>VITÓRIA, ES</l></m>
+ <m> <lt>-14.8636111111</lt><ln>-040.8630555556</ln><t>SBQV - VITóRIA DA CONQUISTA</t><l>VITÓRIA DA CONQUISTA, BA</l></m>
+ <m> <lt>-20.4572222222</lt><ln>-050.0025000000</ln><t>SDVG - VOTUPORANGA</t><l>VOTUPORANGA, SP</l></m>
+ <m> <lt>-26.8755555556</lt><ln>-052.3730555556</ln><t>SSXX - XANXERê</t><l>XANXERÊ, SC</l></m>
+ <m> <lt>-10.6336111111</lt><ln>-068.5505555556</ln><t>SWXU - XAPURI</t><l>XAPURI, AC</l></m>
+ <m> <lt>-10.8369444444</lt><ln>-042.6825000000</ln><t>SNXQ - XIQUE-XIQUE</t><l>XIQUE-XIQUE, BA</l></m>
+ <m> <lt>-22.0288888922</lt><ln>-041.0697222200</ln><t>SBFS - Farol de São Tomé</t><l>Campos dos Goytacazes, RJ</l></m>
+ <m> <lt>-22.1094444400</lt><ln>-039.9169444400</ln><t>SBLB - PLATAFORMA P-25</t><l>Macaé, RJ</l></m>
+ <m> <lt>-22.3572222200</lt><ln>-040.0902777800</ln><t>SBMM - PLATAFORMA P-20</t><l>Macaé, RJ</l></m>
+ <m> <lt>-22.7080555600</lt><ln>-040.6930555600</ln><t>SBEN - Plataforma Fixa Central de Enchova PCE-1</t><l>Macaé, RJ</l></m>
+ <m> <lt>-28.6752777800</lt><ln>-049.0602777800</ln><t>SBJA - Regional Sul</t><l>Jaguaruna, SC</l></m>
+ <m> <lt>-22.9180555600</lt><ln>-042.8288888900</ln><t>SBMI - MARICÁ</t><l>MARICÁ, RJ</l></m>
+ <m> <lt>-14.9077777800</lt><ln>-040.9147222200</ln><t>SBVC - Glauber de Andrade Rocha</t><l>Vitória da Conquista, BA</l></m>
+ <m> <lt>-02.9066666700</lt><ln>-040.3580555600</ln><t>SBJE - Comandante Ariston Pessoa</t><l>CRUZ, CE</l></m>
+ <m> <lt>-05.7688888900</lt><ln>-035.3663888900</ln><t>SBSG - Governador Aluizio Alves</t><l>São Gonçalo do Amarante, RN </l></m>
+ <m> <lt>-09.4011111100</lt><ln>-038.2511111100</ln><t>SBUF - Paulo Afonso</t><l>Paulo Afonso, BA</l></m>
+ <m> <lt>-18.4450000000</lt><ln>-049.2141666700</ln><t>SBIT - Hidrelétrica de Itumbiara</t><l>Itumbiara, GO</l></m>
+ <m> <lt>-26.2172222200</lt><ln>-052.6944444400</ln><t>SBPO - JUVENAL LOUREIRO CARDOSO</t><l>PATO BRANCO, PR</l></m>
+ <m> <lt>-12.2005555600</lt><ln>-038.9005555600</ln><t>SDIY - João Durval Carneiro</t><l>FEIRA DE SANTANA, BA</l></m>
+ <m> <lt>-25.3883333300</lt><ln>-051.5236111100</ln><t>SSGG - Tancredo Thomas de Faria</t><l>GUARAPUAVA, PR</l></m>
+ <m> <lt>-16.5413888900</lt><ln>-039.1080555600</ln><t>SBTV - Aeroporto Terravista</t><l>Porto Seguro, BA</l></m>
+ <m> <lt>-16.6255555600</lt><ln>-049.3494444400</ln><t>SBNV - Aeródromo Nacional de Aviação</t><l>Goiânia, GO</l></m>
+ <m> <lt>-25.1844444400</lt><ln>-050.1438888900</ln><t>SBPG - Comandante Antônio Amilton Beraldo</t><l>PONTA GROSSA, PR</l></m>
+ <m> <lt>-16.5880555600</lt><ln>-054.7216666700</ln><t>SBRD - Maestro Marinho Franco</t><l>RONDONÓPOLIS, MT</l></m>
+ <m> <lt>-21.7644444400</lt><ln>-048.4047222200</ln><t>SBGP - EMBRAER - Unidade Gavião Peixoto</t><l>GAVIÃO PEIXOTO, SP</l></m>
+ <m> <lt>-20.7513888900</lt><ln>-051.6802777800</ln><t>SBTG - Três Lagoas</t><l>TRÊS LAGOAS, MS</l></m>
+ <m> <lt>-12.4727777800</lt><ln>-055.6688888900</ln><t>SBSO - REGIONAL DE SORRISO ADOLINO BEDIN</t><l>SORRISO, MT</l></m>
+ <m> <lt>-22.8591666700</lt><ln>-047.1080555600</ln><t>SDAM - Estadual de Campos dos Amarais - Prefeito Francisco Amaral</t><l>CAMPINAS, SP</l></m>
+ <m> <lt>-15.3533333300</lt><ln>-038.9972222200</ln><t>SBTC - Hotel Transamérica</t><l>UNA, BA</l></m>
+ <m> <lt>-23.4269444400</lt><ln>-047.1658333300</ln><t>SBJH - CATARINA AEROPORTO EXECUTIVO</t><l>SÃO ROQUE, SP</l></m>
+ <m> <lt>-04.5686110000</lt><ln>-037.8047220000</ln><t>SBAC - Aeroporto Regional de Canoa Quebrada Dragão do Mar</t><l>ARACATI, CE</l></m>
+ <m> <lt>-11.8850000000</lt><ln>-055.5861111100</ln><t>SBSI - PRESIDENTE JOÃO BATISTA FIGUEIREDO</t><l>SINOP, MT</l></m>
+
+
+
+</markers>
