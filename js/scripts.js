@@ -9,6 +9,10 @@ function removeEspacos(str){
     return str.replace(/ /g,"")
 }
 
+function getTipoAlerta(loc){
+    return false
+}
+
 function addMarker(m, loc, restricao, pulse = false) {
     // if (pulse)
     //     return m.addTo(map)
@@ -327,7 +331,7 @@ function plotaMarca(lat, lng, loc) {
 
         if (descU.includes("DESCOBERTO")) {
           let strDescoberto = descU.split("DESCOBERTO")[1].split("<")[0]
-          ///let alerta = getTipoAlerta(loc, strDescoberto);
+          let alerta = getTipoAlerta(loc, strDescoberto);
           //icon = redIcon
           icon = getSvgIcon(loc, alerta.strAlerta, adWRNGPertoDoFim, true) //vento trovoada teto visib
 
