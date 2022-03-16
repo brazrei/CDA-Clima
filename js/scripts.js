@@ -490,13 +490,13 @@ function getTempMetar(metar) { //programado apenas para pressao em Q
 function getUR(temp){
     let neper = 2.7182818285
     
-	console.log("=>" + temp.t+" "+temp.td)
+	//console.log("=>" + temp.t+" "+temp.td)
 
     let n1 = 6.112 * Math.pow(neper, (17.67 * temp.td) / (temp.td + 243.5)  )
 
-    console.log(n1)
+    //console.log(n1)
     let n2 = 6.112 * Math.pow( neper, (17.67*temp.t) / (temp.t + 243.5) )
-    console.log(n2)
+    //console.log(n2)
     let UR = 100 * ( n1 / n2) 
     return UR
 }
