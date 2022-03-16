@@ -384,7 +384,7 @@ function plotaMarca(lat, lng, loc) {
         let restricao = false
 
         restricao = true
-        desc = desc.substr(1)
+        //desc = desc.substr(1)
         let descU = desc.toUpperCase();
         let alerta;
 
