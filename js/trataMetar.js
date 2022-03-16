@@ -552,9 +552,9 @@ function trataMetarRedemet(response, idxFIR, onLine = true) {
         //strToCell(["NENHUMA LOCALIDADE COM RESTRIÇÃO", ""], idxFIR, false, false, onLine);
         cont = cont + 1;
     }
-    limpaArrayStatusGamet(idxFIR)
+    //limpaArrayStatusGamet(idxFIR)
 
-    trataGametRedemet(lastGamet)
+    //trataGametRedemet(lastGamet)
     exportaMetares(idxFIR);
     return cont; //retorna o total de metares lidos +1
 }
