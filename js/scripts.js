@@ -434,15 +434,23 @@ function plotaMarca(lat, lng, loc) {
                 //    addMarker(L.marker([lat, lng], { icon: cssIconYellow }), "", restricao, true)
         }
         let icon = false
-	
-	if (indiceI > 0 && indiceI <= 3.34)
+	let strAlerta
+	if (indiceI > 0 && indiceI <= 3.34) {
           icon = greenIcon
-	else if (indiceI >= 3.35 && indiceI <= 3.47)
+	  strAlerta = "Risco Baixo"
+	}
+	else if (indiceI >= 3.35 && indiceI <= 3.47) {
+	  strAlerta = "Risco Moderado"
           icon = yellowIcon
-	else if (indiceI >= 3.48 && indiceI <= 3.54)
+	}
+	else if (indiceI >= 3.48 && indiceI <= 3.54) {
+	  strAlerta = "Risco Alto"
           icon = redIcon
-	else if (indiceI >= 3.55)
+	}
+	else if (indiceI >= 3.55) {
+	  strAlerta = "Risco Muito Alto"
           icon = grayIcon
+	}
 
 	if (!icon)
 	  return false
