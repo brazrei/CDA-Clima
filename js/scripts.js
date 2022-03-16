@@ -3,6 +3,19 @@ var groupMarkers=false
 var groupMarkersHide=false
 var arrayMetaresGeral = []
 
+function getMetaresGeral(){
+	for (let i = 0; i < 4; i++) {
+		getMetar(localidadesFIR[i],"",i,true)
+	}
+}
+
+function start() {
+  plotaAeroportos();
+  getMetaresGeral();
+  setInterval(getMetaresGeral,60000)
+	
+}
+
 function removeInfo(desc){
     return desc
 }
@@ -125,7 +138,7 @@ function exportaMetares(arrayMetares) {
     let loc = getLocalidade(metar)
     updateArrayMetaresGeral(loc, metar)
   }
-	
+  plotaAeroportos();	
 }
 
 function plotaAeroportos() {
