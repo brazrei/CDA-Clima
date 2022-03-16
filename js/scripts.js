@@ -13,3 +13,262 @@ function loadMap(){
 $(document).ready(function(){
         loadMap()
   });
+
+function plotaAeroportos() {
+    if (groupMarkersHide) {
+        map.removeLayer(groupMarkersHide); // corrige o problema de não apagar os markers com o zoom out no inicio
+        groupMarkersHide = false
+    }
+    if (groupMarkers) {
+        map.removeLayer(groupMarkers); // corrige o problema de não apagar os markers com o zoom out no inicio
+        groupMarkers = false
+    }
+    updateDescobertos(false)
+    for (var i in localidadesFIR) {
+        var fir = removeEspacos(localidadesFIR[i])
+        var aloc = fir.split(",")
+        for (var j in aloc) {
+            var loc = aloc[j]
+            var long = getLatL(loc)
+            var lat = getLngL(loc)
+            plotaMarca(long, lat, loc)
+            //var busca = checaPontoA([long,lat])
+            //console.log("busca >",loc + " / "+busca)
+        }
+    }
+
+    if (map.getZoom() > 5)
+        map.addLayer(groupMarkersHide); // corrige o problema de não apagar os markers com o zoom out no inicio
+    map.addLayer(groupMarkers); // corrige o problema de não apagar os markers com o zoom out no inicio
+    bringRedMarkersToFront(groupMarkers)
+
+}
+
+function plotaMarca(lat, lng, loc) {
+    function getSvgIcon(loc, strAlerta) {
+        //inicio x = 78
+        let inicioX = 78;
+        let offSetX = 0;
+        let alt = 0
+        let color = "yellow"
+        let boxOpacity = "0.8";
+        let backGroundColor = "#444";
+        let classSvgIcon
+
+        //if (adWRNGPertoDoFim)
+
+        let iconColor = color
+
+        if (strAlerta.includes("***")) {
+            svgTeto = `<g transform="matrix(0.35 0 0 0.35 ${inicioX}.02 67.61)"  >
+        <g style=""   >
+                <g transform="matrix(1 0 0 1 43.46 21.75)" id="Capa_1"  >
+        <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: ${iconColor}; fill-rule: nonzero; opacity: 1;"  transform=" translate(-231.57, -209.86)" d="M 338.103 201.978 c 1.733 -6.085 2.61 -12.372 2.61 -18.756 c 0 -37.746 -30.708 -68.455 -68.454 -68.455 c -15.702 0 -31.042 5.453 -43.193 15.354 c -10.807 8.805 -18.705 20.773 -22.558 34.057 c -25.26 -2.36 -48.097 13.667 -55.234 37.059 c -3.824 -0.87 -7.731 -1.309 -11.671 -1.309 c -29.051 0 -52.686 23.464 -52.686 52.514 c 0 29.051 23.635 52.515 52.686 52.515 h 183.931 c 29.051 0 52.685 -23.464 52.685 -52.515 C 376.22 228.676 360.49 208.367 338.103 201.978 z" stroke-linecap="round" />
+        </g>
+                <g transform="matrix(1 0 0 1 -90.95 -34)" id="Capa_1"  >
+        <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: ${iconColor}; fill-rule: nonzero; opacity: 1;"  transform=" translate(-97.16, -154.11)" d="M 130.402 177.248 l 2.936 0.016 l 1.444 -2.556 c 10.411 -18.427 29.165 -30.778 50.168 -33.04 l 2.788 -0.3 l 1.197 -2.535 c 0.995 -2.106 2.117 -4.23 3.334 -6.313 l 2.045 -3.498 l -2.998 -2.725 c -8.986 -8.17 -20.753 -12.669 -33.131 -12.669 c -1.311 0 -2.637 0.054 -3.968 0.162 c -7.85 -24.892 -32.261 -42.525 -59.755 -42.525 c -34.414 0 -62.412 26.82 -62.412 59.787 c 0 5.289 0.718 10.5 2.141 15.555 C 14.072 152.409 0 170.187 0 190.789 c 0 25.457 21.612 46.167 48.178 46.167 h 16.221 l 0.648 -4.244 c 4.906 -32.088 32.06 -55.398 64.612 -55.512 C 129.907 177.229 130.155 177.247 130.402 177.248 z" stroke-linecap="round" />
+        </g>
+        </g>
+        </g>`;
+            offSetX += 150;
+            contRestricoes += 1
+        }
+
+        if (strAlerta.includes("***")) {
+            //inicio x= 84
+
+            inicioX = 84 + offSetX;
+
+            svgVisibilidade = `<g transform="matrix(0.67 0 0 0.67 ${inicioX}.6 68.6)"  >
+        <g style=""   >
+        <g transform="matrix(1 0 0 1 -36.32 -61.62)" id="Capa_1"  >
+        
+        <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: ${iconColor}; fill-rule: nonzero; opacity: 1;"  transform=" translate(-72.4, -47.09)" d="M 144.797 47.095 c 0 -4.142 -3.358 -7.5 -7.5 -7.5 H 7.5 c -4.142 0 -7.5 3.358 -7.5 7.5 c 0 4.142 3.358 7.5 7.5 7.5 h 129.797 C 141.439 54.595 144.797 51.237 144.797 47.095 z" stroke-linecap="round" />
+        </g>
+                <g transform="matrix(1 0 0 1 25.57 -30.81)" id="Capa_1"  >
+        <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: ${iconColor}; fill-rule: nonzero; opacity: 1;"  transform=" translate(-134.28, -77.91)" d="M 209.93 70.405 H 58.632 c -4.142 0 -7.5 3.358 -7.5 7.5 s 3.358 7.5 7.5 7.5 H 209.93 c 4.142 0 7.5 -3.358 7.5 -7.5 S 214.072 70.405 209.93 70.405 z" stroke-linecap="round" />
+        </g>
+                <g transform="matrix(1 0 0 1 -10.23 0)" id="Capa_1"  >
+        <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: ${iconColor}; fill-rule: nonzero; opacity: 1;"  transform=" translate(-98.49, -108.71)" d="M 174.53 116.214 c 4.142 0 7.5 -3.358 7.5 -7.5 c 0 -4.142 -3.358 -7.5 -7.5 -7.5 H 22.446 c -4.142 0 -7.5 3.358 -7.5 7.5 c 0 4.142 3.358 7.5 7.5 7.5 H 174.53 z" stroke-linecap="round" />
+        </g>
+        
+                <g transform="matrix(1 0 0 1 14.81 30.81)" id="Capa_1"  >
+        <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: ${iconColor}; fill-rule: nonzero; opacity: 1;"  transform=" translate(-123.53, -139.52)" d="M 199.441 132.024 H 47.619 c -4.142 0 -7.5 3.358 -7.5 7.5 s 3.358 7.5 7.5 7.5 h 151.822 c 4.142 0 7.5 -3.358 7.5 -7.5 S 203.583 132.024 199.441 132.024 z" stroke-linecap="round" />
+        </g>
+                <g transform="matrix(1 0 0 1 -33.3 61.62)" id="Capa_1"  >
+        <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: ${iconColor}; fill-rule: nonzero; opacity: 1;"  transform=" translate(-75.41, -170.34)" d="M 125.759 162.835 H 25.068 c -4.142 0 -7.5 3.358 -7.5 7.5 c 0 4.142 3.358 7.5 7.5 7.5 h 100.69 c 4.142 0 7.5 -3.358 7.5 -7.5 C 133.259 166.193 129.901 162.835 125.759 162.835 z" stroke-linecap="round" />
+        </g>
+        </g>
+        </g>`
+            offSetX += 150;
+            contRestricoes += 1
+
+        }
+
+        if (strAlerta.includes("***")) {
+
+            //inicio x =83    
+            inicioX = 83 + offSetX;
+
+            svgVento = `<g transform="matrix(8.81 0 0 8.81 ${inicioX}.23 70.15)"  >
+        <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: ${iconColor}; fill-rule: nonzero; opacity: 1;"  transform=" translate(-8, -8)" d="M 12.5 2 A 2.5 2.5 0 0 0 10 4.5 a 0.5 0.5 0 0 1 -1 0 A 3.5 3.5 0 1 1 12.5 8 H 0.5 a 0.5 0.5 0 0 1 0 -1 h 12 a 2.5 2.5 0 0 0 0 -5 z m -7 1 a 1 1 0 0 0 -1 1 a 0.5 0.5 0 0 1 -1 0 a 2 2 0 1 1 2 2 h -5 a 0.5 0.5 0 0 1 0 -1 h 5 a 1 1 0 0 0 0 -2 z M 0 9.5 A 0.5 0.5 0 0 1 0.5 9 h 10.042 a 3 3 0 1 1 -3 3 a 0.5 0.5 0 0 1 1 0 a 2 2 0 1 0 2 -2 H 0.5 a 0.5 0.5 0 0 1 -0.5 -0.5 z" stroke-linecap="round" />
+        </g>`;
+            offSetX += 150;
+
+            contRestricoes += 1
+        }
+
+        if (strAlerta.includes("TROVOADA")) {
+            inicioX = 68 + offSetX;
+
+            //inicio x=60
+            svgTrovoada = `<g transform="matrix(0.27 0 0 0.24 ${inicioX}.3 71.1)" id="Capa_1"  >
+        <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: ${iconColor}; fill-rule: nonzero; opacity: 1;"  transform=" translate(-256, -256)" d="M 412.324 209.102 C 406.777 198.586 395.886 192 383.996 192 h -60.219 l 72.844 -145.688 c 4.953 -9.922 4.422 -21.703 -1.406 -31.133 C 389.386 5.742 379.09 0 367.996 0 h -160 c -13.781 0 -26 8.813 -30.359 21.883 l -80 240 c -3.25 9.758 -1.609 20.484 4.406 28.828 c 6.016 8.344 15.672 13.289 25.953 13.289 h 74.703 l -26.328 171.133 c -2.266 14.75 5.953 29.117 19.828 34.617 c 3.844 1.523 7.844 2.25 11.781 2.25 c 10.297 0 20.266 -4.977 26.391 -13.867 l 176 -256 C 417.105 232.336 417.855 219.617 412.324 209.102 z" stroke-linecap="round" />
+        </g>`;
+            offSetX += 150;
+            contRestricoes += 1
+
+        }
+
+        //let tamIconeX = offSetX - 
+        let widthX = contRestricoes * 25;
+        let viewBoxX = (contRestricoes < 1) ? 0 : (contRestricoes * 150) - 1;
+        //viewBoxX = viewBoxX<0?0:viewBoxX;
+
+        var svgIcon = new L.divIcon({//vento trovoada teto visib
+            // Specify a class name we can refer to in CSS.
+            className: 'css-icon',
+            html: `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class = "${classSvgIcon}" width="${widthX}" height="50" viewBox="0 0 ${viewBoxX} 140" xml:space="preserve">
+            <desc>Created with Fabric.js 3.6.3</desc>
+            <defs>
+            </defs>
+            <rect x="0" y="0"  rx="30" ry ="30" width="100%" height="100%" fill="${backGroundColor}" fill-opacity="${boxOpacity}";></rect>
+            ${svgVisibilidade}
+            ${svgVento}
+            ${svgTrovoada}
+            ${svgTeto}
+            </svg>`
+            // Set marker width and height
+            , iconSize: [25, 35] //tamanho minimo. O restante eh ajustado pelo tamanho do SVG
+            , iconAnchor: [6, 6]
+            , alt: parseInt(`${alt}`)
+
+        });
+        return svgIcon;
+    }
+
+
+    if (!isNaN(lat) && !isNaN(lng)) {
+
+        desc = getMetar(loc)
+
+        var greenIcon = new L.Icon({
+            //            iconUrl: 'png/marker-icon-green.png',
+            iconUrl: 'png/condicao_verde.png',
+            //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [8, 8],
+            //iconAnchor: [0, 0],
+            popupAnchor: [1, -12],
+            shadowSize: [6, 6],
+            alt: 0
+        });
+
+        var yellowIcon = new L.Icon({
+            iconUrl: 'png/condicao_amarelo.png',
+            //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [12, 12],
+            iconAnchor: [0, 0],
+            popupAnchor: [1, -12],
+            shadowSize: [6, 6],
+            alt: 500
+        });
+
+        var orangeIcon = new L.Icon({
+            iconUrl: 'png/condicao_laranja.png',
+            //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [12, 12],
+            iconAnchor: [0, 0],
+            popupAnchor: [1, -12],
+            shadowSize: [6, 6],
+            alt: 500
+        });
+
+        var redIcon = new L.Icon({
+            //            iconUrl: 'png/marker-icon-green.png',
+            iconUrl: 'png/condicao_vermelho.png',
+            //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [12, 12],
+            iconAnchor: [0, 0],
+            popupAnchor: [1, -12],
+            shadowSize: [6, 6],
+            alt: 1000
+        });
+
+        var cssIconRed = new L.divIcon({
+            // Specify a class name we can refer to in CSS.
+            className: 'css-icon',
+            html: '<div class="gps_ring"></div>'
+            // Set marker width and height
+            , iconSize: [24, 24]
+            , iconAnchor: [6, 6]
+        });
+
+        var cssIconYellow = new L.divIcon({
+            // Specify a class name we can refer to in CSS.
+            className: 'css-icon',
+            html: '<div class="gps_ringYellow"></div>'
+            // Set marker width and height
+            , iconSize: [24, 24]
+            , iconAnchor: [6, 6]
+        });
+
+        let restricao = false
+        let adWRNG = opener.getStatusAdWRNG(loc)
+
+        let adWRNGPertoDoFim = isCloseToValidOff(adWRNG.textoFull)
+
+        if (desc[0] == "*") {
+            restricao = true
+            desc = desc.substr(1)
+            let descU = desc.toUpperCase();
+            let alerta;
+
+            if (descU.includes("DESCOBERTO")) {
+                let strDescoberto = descU.split("DESCOBERTO")[1].split("<")[0]
+                let alerta = getTipoAlerta(loc, strDescoberto);
+                //icon = redIcon
+                icon = getSvgIcon(loc, alerta.strAlerta, adWRNGPertoDoFim, true) //vento trovoada teto visib
+
+                //if (alerta.ad)
+                addMarker(L.marker([lat, lng], { icon: cssIconRed }), "", restricao, true)
+                updateDescobertos(loc, alerta)
+            } else {
+                let alerta = getTipoAlerta(loc);
+                //if (descU.includes("DEGRADA"))
+                // icon = orangeIcon
+                //else {
+                //icon = yellowIcon
+                icon = getSvgIcon(loc, alerta.strAlerta, adWRNGPertoDoFim, false) //vento trovoada teto visib
+
+                //}
+                //if (alerta.ad)
+                //    addMarker(L.marker([lat, lng], { icon: cssIconYellow }), "", restricao, true)
+            }
+        } else
+            icon = greenIcon
+
+
+        var m = addMarker(L.marker([lat, lng], { icon: icon }), loc, restricao)
+        //m._icon.classList.add("svgRedIcon");
+
+
+        m.on('contextmenu', function (event) {
+            let d
+            d = removeEspacos(event.target.getTooltip()._content)
+            selectedMarker = d.replace("METARCOR", "").replace("SPECICOR", "").replace("METAR", "").replace("SPECI", "").substr(0, 4)
+            openContextMenuMarker(event, event.target);
+        }, this);
+        desc = removeInfo(desc)
+        m.bindTooltip(desc, { closeButton: false, offset: L.point(0, -20) })
+    }
+}
