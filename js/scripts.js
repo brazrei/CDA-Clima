@@ -1,5 +1,62 @@
+function makeMap() {
+  //  Init Overlays
+  var overlays = {};
+  var aeroIntern = "SBBG* SBBE SBCF SBBV SBBR SBKP SBCG SBCR SBCZ SBCY SBCT SBFL SBFZ SBFI SBJP SBMQ SBEG SBNF SBPK SBPP SBPA SBPV SBRF SBRP* SBRB* SBGL SBSV SBSN SBSG SBSJ SBSP* SBVT* SBSL SBGR SBTT SBPB SBPL* SBPS* SBCB*	SBMO* SBMG*"
+
+  //
+  //Init BaseMaps
+  var basemaps = {
+    "OpenStreetMaps": L.tileLayer(
+      "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      {
+        minZoom: 2,
+        maxZoom: 19,
+        id: "osm.streets"
+      }
+    ),
+    "Google-Map": L.tileLayer(
+      "https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}",
+      {
+        minZoom: 2,
+        maxZoom: 19,
+        id: "google.street"
+      }
+    ),
+    "Google-Satellite": L.tileLayer(
+      "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
+      {
+        minZoom: 2,
+        maxZoom: 19,
+        id: "google.satellite"
+      }
+    ),
+    "Google-Hybrid": L.tileLayer(
+      "https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}",
+      {
+        minZoom: 2,
+        maxZoom: 19,
+        id: "google.hybrid"
+      }
+    )
+  };
+
+  //Map Options
+  var mapOptions = {
+    zoomControl: false,
+    attributionControl: false,
+    center: [-21.0529434318608, -48.01910972595218],
+    zoom: 5,
+    layers: [basemaps.OpenStreetMaps]
+  };
+
+  //Render Main Map
+
+  map = L.map("map", mapOptions);
+    
+}
+
 function loadMap(){
-    var map = L.map('map', {
+/*    var map = L.map('map', {
         center: [-15.505, -53.09],
         zoom: 4
     });
@@ -8,10 +65,14 @@ function loadMap(){
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     });
     osm.addTo(map);
+    */
+    makeMap();
+    
 };
 
 $(document).ready(function(){
-        loadMap()
+    loadMap();
+    plotaAeroportos();
   });
 
 function plotaAeroportos() {
