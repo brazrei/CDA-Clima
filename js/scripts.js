@@ -434,7 +434,7 @@ function plotaMarca(lat, lng, loc) {
                 //    addMarker(L.marker([lat, lng], { icon: cssIconYellow }), "", restricao, true)
         }
         let icon = false
-	let strAlerta
+	//let strAlerta
 	if (indiceI > 0 && indiceI <= 3.34) {
           icon = greenIcon
 	  strAlerta = "Risco Baixo"
@@ -451,7 +451,7 @@ function plotaMarca(lat, lng, loc) {
 	  strAlerta = "Risco Muito Alto"
           icon = grayIcon
 	}
-
+	desc = desc + "<br><br>" +  strAlerta
 	if (!icon)
 	  return false
 	    
