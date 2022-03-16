@@ -323,7 +323,12 @@ function plotaMarca(lat, lng, loc) {
 
     if (!isNaN(lat) && !isNaN(lng)) {
 	let metar = getMetarFromLoc(loc)
-	let indiceI = getI(metar)
+	let indiceI
+	if (metar.length<5)
+	  indiceI = -1
+	else
+	  indiceI = getI(metar)
+	    
         desc = getDescricao(loc) + '<br><br>'+ metar
 
         var greenIcon = new L.Icon({
