@@ -1,3 +1,10 @@
+var localidadesFIR = [
+    "SBEG,SBMN,SBBV,SBPV,SBRB,SBCY,SBSL,SBBE,SBJC,SBSN,SBMQ,SBCZ,SBTF,SBMY,SBAT,SBUA,SBCC,SBSO,SBIH,SBTT,SBTK,SBJI,SBHT,SBMA,SBVH,SBTU,SBOI,SBCJ,SBCI,SBIZ,SBTS,SBTB,SBUY,SBIC,SBEK,SBGM,SBMD,SBAA,SBRD,SSKW,SBSI",
+    "SBAN, SBBH, SBBR, SBBW, SBCF, SBCN, SBGO, SBIP, SBIT, SBLS, SBMK, SBNV, SBPJ, SBPR, SBYS, SBAQ, SBAX, SBBP, SBGP, SBJD, SBKP,SBSJ, SBPC, SBRP, SBSR, SBUL, SBUR, SBVG, SNDV, SDAM, SWLC,SBML,SBBU,SBAE,SBAU",
+    "SBFZ, SBSG, SBNT, SBJP, SBKG, SBRF, SBMO, SBAR, SBPL, SBJU, SBSV, SBIL, SBPS, SBVC, SBLP, SBVT, SBTE, SBFN, SBPB, SBGV, SBMS, SBUF, SBLE, SBTC, SBFE,SBTV,SBAC,SBJE,SNBR,SNTF,SDIY,SNVB,SNHS",
+    "SAEZ,SUMU,SGAS,SARE,SBUG,SBBG,SBPK,SBSM,SBNM,SBPF,SBPA,SBCO,SBCX,SBTR,SBCM,SBJA,SBLJ,SBCH,SBCD,SBFL,SBNF,SBJV,SBCT,SBBI,SBFI,SBPG,SSGG,SBPO,SBCA,SBTD,SBPP,SBDB,SBDO,SBCG,SBCR,SBTG,SBMG,SBLO,SBDN,SBSP,SBMT,SBGR,SBST,SBTA,SBGW,SBSC,SBJR,SBAF,SBRJ,SBGL,SBBQ,SBZM,SBJF,SBES,SBBZ,SBCB,SBME,SBMM,SBEC,SBLB,SBCP,SBFS,SBEN,SDAG,SBMI,SBGU,SDCO,SBJH"
+];
+
 function makeMap() {
   //  Init Overlays
   var overlays = {};
@@ -76,7 +83,7 @@ $(document).ready(function(){
   });
 
 function plotaAeroportos() {
-    if (groupMarkersHide) {
+    /*if (groupMarkersHide) {
         map.removeLayer(groupMarkersHide); // corrige o problema de não apagar os markers com o zoom out no inicio
         groupMarkersHide = false
     }
@@ -84,7 +91,7 @@ function plotaAeroportos() {
         map.removeLayer(groupMarkers); // corrige o problema de não apagar os markers com o zoom out no inicio
         groupMarkers = false
     }
-    updateDescobertos(false)
+    updateDescobertos(false)*/
     for (var i in localidadesFIR) {
         var fir = removeEspacos(localidadesFIR[i])
         var aloc = fir.split(",")
@@ -104,7 +111,9 @@ function plotaAeroportos() {
     bringRedMarkersToFront(groupMarkers)
 
 }
-
+function getMetar(loc){
+  return ""
+}
 function plotaMarca(lat, lng, loc) {
     function getSvgIcon(loc, strAlerta) {
         //inicio x = 78
@@ -284,27 +293,23 @@ function plotaMarca(lat, lng, loc) {
         });
 
         let restricao = false
-        let adWRNG = opener.getStatusAdWRNG(loc)
 
-        let adWRNGPertoDoFim = isCloseToValidOff(adWRNG.textoFull)
+        restricao = true
+        desc = desc.substr(1)
+        let descU = desc.toUpperCase();
+        let alerta;
 
-        if (desc[0] == "*") {
-            restricao = true
-            desc = desc.substr(1)
-            let descU = desc.toUpperCase();
-            let alerta;
+        if (descU.includes("DESCOBERTO")) {
+          let strDescoberto = descU.split("DESCOBERTO")[1].split("<")[0]
+          let alerta = getTipoAlerta(loc, strDescoberto);
+          //icon = redIcon
+          icon = getSvgIcon(loc, alerta.strAlerta, adWRNGPertoDoFim, true) //vento trovoada teto visib
 
-            if (descU.includes("DESCOBERTO")) {
-                let strDescoberto = descU.split("DESCOBERTO")[1].split("<")[0]
-                let alerta = getTipoAlerta(loc, strDescoberto);
-                //icon = redIcon
-                icon = getSvgIcon(loc, alerta.strAlerta, adWRNGPertoDoFim, true) //vento trovoada teto visib
-
-                //if (alerta.ad)
-                addMarker(L.marker([lat, lng], { icon: cssIconRed }), "", restricao, true)
-                updateDescobertos(loc, alerta)
-            } else {
-                let alerta = getTipoAlerta(loc);
+          //if (alerta.ad)
+          addMarker(L.marker([lat, lng], { icon: cssIconRed }), "", restricao, true)
+          updateDescobertos(loc, alerta)
+        } else {
+            let alerta = getTipoAlerta(loc);
                 //if (descU.includes("DEGRADA"))
                 // icon = orangeIcon
                 //else {
@@ -314,12 +319,12 @@ function plotaMarca(lat, lng, loc) {
                 //}
                 //if (alerta.ad)
                 //    addMarker(L.marker([lat, lng], { icon: cssIconYellow }), "", restricao, true)
-            }
-        } else
-            icon = greenIcon
+        }
+        let icon = greenIcon
 
 
         var m = addMarker(L.marker([lat, lng], { icon: icon }), loc, restricao)
+        
         //m._icon.classList.add("svgRedIcon");
 
 
