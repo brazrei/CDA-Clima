@@ -450,18 +450,18 @@ function plotaMarca(lat, lng, loc) {
 	let strAlerta
 	if (indiceI > 0 && indiceI <= 3.34) {
           icon = greenIcon
-	  strAlerta = "Risco Baixo"
+	  strAlerta = spanColor("Risco Baixo", "green")
 	}
 	else if (indiceI >= 3.35 && indiceI <= 3.47) {
-	  strAlerta = "Risco Moderado"
+	  strAlerta = spanColor("Risco Moderado","yellow")
           icon = yellowIcon
 	}
 	else if (indiceI >= 3.48 && indiceI <= 3.54) {
-	  strAlerta = "Risco Alto"
+	  strAlerta = spanColor("Risco Alto","red")
           icon = redIcon
 	}
 	else if (indiceI >= 3.55) {
-	  strAlerta = "Risco Muito Alto"
+	  strAlerta = spanBold("Risco Muito Alto")
           icon = grayIcon
 	}
 	desc = desc + "<br><br>" +  strAlerta
