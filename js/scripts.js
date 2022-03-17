@@ -487,9 +487,12 @@ function plotaMarca(lat, lng, loc) {
 */
 
 function getTempMetar(metar) { //programado apenas para pressao em Q
+
     let patt2 = /\d{2}\/\d{2} Q/;
     let t = metar.match(patt2)    
     //console.log(t)
+    if (!Array.isArray(t))
+      return false
     t = t[0].split("/")
     
     return {t:parseInt(t[0]),td:parseInt(t[1].split(" ")[0])}
@@ -511,6 +514,8 @@ function getUR(temp){
 
 function getI (metar){
     let temp = getTempMetar(metar)
+    if (!temp)
+      return -1
     let UR = getUR(temp)	
 	
     let i = Math.pow(temp.t,(1/4)) * Math.pow(UR,(3/32))
