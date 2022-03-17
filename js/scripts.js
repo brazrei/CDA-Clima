@@ -8,7 +8,7 @@ var arrayMetaresGeral = []
 }*/
 
 function insertSpanClass(str, classe) {
-	return str.replace("<span",`<span class = "${classe}"`+
+	return str.replace("<span",`<span class = "${classe}"`);
 }
 
 function spanBold(texto) {
