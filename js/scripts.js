@@ -477,7 +477,7 @@ function plotaMarca(lat, lng, loc) {
 	  strAlerta = spanBold("Risco Muito Alto")
           icon = grayIcon
 	  strLegenda =  "- Atividade física suspensa para todos.<br>"+
-			"- Não realizar o TACF. +
+			"- Não realizar o TACF."
 	}
 	desc = desc + "<br><br>" + strCDA + strAlerta + "<br><br>" + strLegenda
 	    
