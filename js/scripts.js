@@ -3,6 +3,14 @@ var groupMarkers=false
 var groupMarkersHide=false
 var arrayMetaresGeral = []
 
+function spanColor(texto, cor) {
+    return `<span style="color:${cor}"> ${texto} + </span>`
+}
+
+function spanBold(texto) {
+    return `<b>${texto}</b>`
+}
+
 function getMetaresGeral(){
 	for (let i = 0; i < 4; i++) {
 		getMetar(localidadesFIR[i],"",i,true)
