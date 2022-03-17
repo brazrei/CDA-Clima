@@ -456,11 +456,13 @@ function plotaMarca(lat, lng, loc) {
 	if (indiceI > 0 && indiceI <= 3.34) {
           icon = greenIcon
 	  strAlerta = spanColor("Risco Baixo", "Risco Baixo", false, "green",true)
+	  strAlerta = insertSpanClass(strAlerta,"sombra3")
 	  strLegenda = "Atividade física liberada."
 	}
 	else if (indiceI >= 3.35 && indiceI <= 3.47) {
           icon = yellowIcon
 	  strAlerta = spanColor("Risco Moderado","Risco Moderado",false, "yellow",true)
+	  strAlerta = insertSpanClass(strAlerta,"sombra3")
 	  strLegenda = "- Atividade física vigiada para não aclimatados ao calor (10 dias)<br>"+
 		"- Cautela! Use água.<br>" +
 		"- 1 copo 200 ml/20 min, beba gelada.<br>" +
@@ -469,6 +471,7 @@ function plotaMarca(lat, lng, loc) {
 	}
 	else if (indiceI >= 3.48 && indiceI <= 3.54) {
 	  strAlerta = spanColor("Risco Alto","Risco Alto",false, "red",true)
+	  strAlerta = insertSpanClass(strAlerta,"sombra3")
           icon = redIcon
 	  strLegenda = "- Atividade física suspensa para destreinados e não aclimatados (12 semanas)<br>"+
 		"- Atividade física leve para treinados e aclimatados.<br>" +
