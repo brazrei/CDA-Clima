@@ -451,12 +451,12 @@ function plotaMarca(lat, lng, loc) {
 	let strCDA = "<h5>Orientações do CDA</h5>"
 	if (indiceI > 0 && indiceI <= 3.34) {
           icon = greenIcon
-	  strAlerta = spanColor("Risco Baixo", "Risco Baixo", "green",true)
+	  strAlerta = spanColor("Risco Baixo", "Risco Baixo", false, "green",true)
 	  strLegenda = "Atividade física liberada."
 	}
 	else if (indiceI >= 3.35 && indiceI <= 3.47) {
           icon = yellowIcon
-	  strAlerta = spanColor("Risco Moderado","Risco Moderado","yellow",true)
+	  strAlerta = spanColor("Risco Moderado","Risco Moderado",false, "yellow",true)
 	  strLegenda = "- Atividade física vigiada para não aclimatados ao calor (10 dias)<br>"+
 		"- Cautela! Use água.<br>" +
 		"- 1 copo 200 ml/20 min, beba gelada.<br>" +
@@ -464,7 +464,7 @@ function plotaMarca(lat, lng, loc) {
 		"- Alerta para os distúrbios térmicos."
 	}
 	else if (indiceI >= 3.48 && indiceI <= 3.54) {
-	  strAlerta = spanColor("Risco Alto","Risco Alto","red",true)
+	  strAlerta = spanColor("Risco Alto","Risco Alto",false, "red",true)
           icon = redIcon
 	  strLegenda = "- Atividade física suspensa para destreinados e não aclimatados (12 semanas)<br>"+
 		"- Atividade física leve para treinados e aclimatados.<br>" +
