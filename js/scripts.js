@@ -329,9 +329,14 @@ function plotaMarca(lat, lng, loc) {
 	let indiceI
 	if (metar.length<5)
 	  indiceI = -1
-	else
-	  indiceI = getI(metar)
-	    
+	else {
+		
+	    try { 
+	       indiceI = getI(metar)
+	    } catch (e) {
+	    	indiceI = -1
+	    }
+	}
         desc = getDescricao(loc) + '<br><br>'+ metar
 
         var greenIcon = new L.Icon({
