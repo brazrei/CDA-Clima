@@ -1,42 +1,47 @@
 var aeroIntern = "SBBG* SBBE SBCF SBBV SBBR SBKP SBCG SBCR SBCZ SBCY SBCT SBFL SBFZ SBFI SBJP SBMQ SBEG SBNF SBPK SBPP SBPA SBPV SBRF SBRP* SBRB* SBGL SBSV SBSN SBSG SBSJ SBSP* SBVT* SBSL SBGR SBTT SBPB SBPL* SBPS* SBCB*	SBMO* SBMG*"
-var groupMarkers=false
-var groupMarkersHide=false
+var groupMarkers = false
+var groupMarkersHide = false
 var arrayMetaresGeral = []
+var strRiscoBaixo = "Risco Baixo (Verde)"
+var strRiscoModerado = "Risco Moderado (Amarelo)"
+var strRiscoAlto = "Risco Alto (Vermelho)"
+var strRiscoMuitoAlto = "Risco Muito Alto (Preto)"
+
+var sombra1 = "text-shadow: 0px 0px 1px black;"
+var sombra2 = "text-shadow: 0px 0px 2px black;"
+var sombra3 = "text-shadow: 0px 0px 3px black;"
+var iconSize = 18
 
 /*function spanColor(texto, cor) {
     return `<span style="color:${cor}"> ${texto} + </span>`
 }*/
 
 function insertSpanClass(str, classe) {
-	return str.replace("<span",`<span class = "${classe}"`);
+    return str.replace(/style="/g, `style="${classe}`);
 }
 
 function spanBold(texto) {
     return `<b>${texto}</b>`
 }
 
-function getMetaresGeral(){
-	for (let i = 0; i < 4; i++) {
-		getMetar(localidadesFIR[i],"",i,true)
-	}
+function getMetaresGeral() {
+    for (let i = 0; i < 4; i++) {
+        getMetar(localidadesFIR[i], "", i, true)
+    }
 }
 
 function start() {
-  plotaAeroportos();
-  getMetaresGeral();
-  setInterval(getMetaresGeral,60000)
-	
+    plotaAeroportos();
+    getMetaresGeral();
+    setInterval(getMetaresGeral, 60000)
+
 }
 
-function removeInfo(desc){
-    return desc
+function removeEspacos(str) {
+    return str.replace(/ /g, "")
 }
 
-function removeEspacos(str){
-    return str.replace(/ /g,"")
-}
-
-function getTipoAlerta(loc){
+function getTipoAlerta(loc) {
     return false
 }
 
@@ -71,87 +76,87 @@ function addMarker(m, loc, restricao, pulse = false) {
 
 
 function makeMap() {
-  //  Init Overlays
-  var overlays = {};
-  //
-  //Init BaseMaps
-  var basemaps = {
-    "OpenStreetMaps": L.tileLayer(
-      "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-      {
-        minZoom: 2,
-        maxZoom: 19,
-        id: "osm.streets"
-      }
-    ),
-    "Google-Map": L.tileLayer(
-      "https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}",
-      {
-        minZoom: 2,
-        maxZoom: 19,
-        id: "google.street"
-      }
-    ),
-    "Google-Satellite": L.tileLayer(
-      "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
-      {
-        minZoom: 2,
-        maxZoom: 19,
-        id: "google.satellite"
-      }
-    ),
-    "Google-Hybrid": L.tileLayer(
-      "https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}",
-      {
-        minZoom: 2,
-        maxZoom: 19,
-        id: "google.hybrid"
-      }
-    )
-  };
+    //  Init Overlays
+    var overlays = {};
+    //
+    //Init BaseMaps
+    var basemaps = {
+        "OpenStreetMaps": L.tileLayer(
+            "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            {
+                minZoom: 2,
+                maxZoom: 19,
+                id: "osm.streets"
+            }
+        ),
+        "Google-Map": L.tileLayer(
+            "https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}",
+            {
+                minZoom: 2,
+                maxZoom: 19,
+                id: "google.street"
+            }
+        ),
+        "Google-Satellite": L.tileLayer(
+            "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
+            {
+                minZoom: 2,
+                maxZoom: 19,
+                id: "google.satellite"
+            }
+        ),
+        "Google-Hybrid": L.tileLayer(
+            "https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}",
+            {
+                minZoom: 2,
+                maxZoom: 19,
+                id: "google.hybrid"
+            }
+        )
+    };
 
-  //Map Options
-  var mapOptions = {
-    zoomControl: false,
-    attributionControl: false,
-    center: [-21.0529434318608, -48.01910972595218],
-    zoom: 5,
-    layers: [basemaps.OpenStreetMaps]
-  };
+    //Map Options
+    var mapOptions = {
+        zoomControl: false,
+        attributionControl: false,
+        center: [-21.0529434318608, -48.01910972595218],
+        zoom: 5,
+        layers: [basemaps.OpenStreetMaps]
+    };
 
-  //Render Main Map
+    //Render Main Map
 
-  map = L.map("map", mapOptions);
-    
+    map = L.map("map", mapOptions);
+
 }
 
-function loadMap(){
-/*    var map = L.map('map', {
-        center: [-15.505, -53.09],
-        zoom: 4
-    });
-    
-    var osm = new L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-    });
-    osm.addTo(map);
-    */
+function loadMap() {
+    /*    var map = L.map('map', {
+            center: [-15.505, -53.09],
+            zoom: 4
+        });
+        
+        var osm = new L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        });
+        osm.addTo(map);
+        */
     makeMap();
-    
+
 };
 
-$(document).ready(function(){
+$(document).ready(function () {
     loadMap();
     getAeroportos();
-  });
+});
 
 function exportaMetares(arrayMetares) {
-  for (let i in arrayMetares) {
-    let metar = arrayMetares[i]
-    let loc = getLocalidade(metar)
-    updateArrayMetaresGeral(loc, metar)
-  }
-  plotaAeroportos();	
+    for (let i in arrayMetares) {
+        let metar = arrayMetares[i]
+        let loc = getLocalidade(metar)
+        updateArrayMetaresGeral(loc, metar)
+    }
+    plotaAeroportos();
 }
 
 function plotaAeroportos() {
@@ -179,10 +184,10 @@ function plotaAeroportos() {
 
     if (map.getZoom() > 5 && groupMarkersHide)
         map.addLayer(groupMarkersHide); // corrige o problema de não apagar os markers com o zoom out no inicio
-    
-    if  (groupMarkers){
-    	map.addLayer(groupMarkers); // corrige o problema de não apagar os markers com o zoom out no inicio
-    	bringRedMarkersToFront(groupMarkers)
+
+    if (groupMarkers) {
+        map.addLayer(groupMarkers); // corrige o problema de não apagar os markers com o zoom out no inicio
+        bringRedMarkersToFront(groupMarkers)
     }
 
 }
@@ -337,25 +342,36 @@ function plotaMarca(lat, lng, loc) {
 
 
     if (!isNaN(lat) && !isNaN(lng)) {
-	let metar = getMetarFromLoc(loc)
-	let indiceI
-	if (metar.length<5)
-	  indiceI = -1
-	else {
-		
-	    try { 
-	       indiceI = getI(metar)
-	    } catch (e) {
-	    	indiceI = -1
-	    }
-	}
-        desc = spanBold(getDescricao(loc)) + '<br><br>'+ metar
+        let metar = getMetarFromLoc(loc)
+        let indiceI
+        let metarData
+        if (metar.length < 5)
+            indiceI = -1
+        else {
+
+            try {
+                metarData = getI(metar)
+                indiceI = metarData.indice
+            } catch (e) {
+                indiceI = -1
+            }
+        }
+        desc = `<h5 style="${sombra3}">${spanBold(getDescricao(loc).toUpperCase())}</h5>`
+        if (metarData && metarData.temp) {
+            let strTemp = metarData.temp.t + "º"
+            strTemp = insertSpanClass(spanColor(strTemp, strTemp, false, "black", true), sombra2)
+            let strUR = parseInt(metarData.UR) + "%"
+            strUR = insertSpanClass(spanColor(strUR, strUR, false, "black", true), sombra2)
+            desc += `Temperatura do Ar: ${strTemp}<br>Umidade Relativa: ${strUR}` //+ '<br><br>'+ metar
+            desc = spanBold(desc)
+        }
+
 
         var greenIcon = new L.Icon({
             //            iconUrl: 'png/marker-icon-green.png',
             iconUrl: 'png/condicao_verde.png',
             //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-            iconSize: [8, 8],
+            iconSize: [iconSize, iconSize],
             //iconAnchor: [0, 0],
             popupAnchor: [1, -12],
             shadowSize: [6, 6],
@@ -366,7 +382,7 @@ function plotaMarca(lat, lng, loc) {
             //            iconUrl: 'png/marker-icon-green.png',
             iconUrl: 'png/condicao_cinza.png',
             //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-            iconSize: [8, 8],
+            iconSize: [iconSize, iconSize],
             //iconAnchor: [0, 0],
             popupAnchor: [1, -12],
             shadowSize: [6, 6],
@@ -376,7 +392,7 @@ function plotaMarca(lat, lng, loc) {
         var yellowIcon = new L.Icon({
             iconUrl: 'png/condicao_amarelo.png',
             //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-            iconSize: [12, 12],
+            iconSize: [iconSize, iconSize],
             iconAnchor: [0, 0],
             popupAnchor: [1, -12],
             shadowSize: [6, 6],
@@ -386,7 +402,7 @@ function plotaMarca(lat, lng, loc) {
         var orangeIcon = new L.Icon({
             iconUrl: 'png/condicao_laranja.png',
             //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-            iconSize: [12, 12],
+            iconSize: [iconSize, iconSize],
             iconAnchor: [0, 0],
             popupAnchor: [1, -12],
             shadowSize: [6, 6],
@@ -397,7 +413,7 @@ function plotaMarca(lat, lng, loc) {
             //            iconUrl: 'png/marker-icon-green.png',
             iconUrl: 'png/condicao_vermelho.png',
             //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-            iconSize: [12, 12],
+            iconSize: [iconSize, iconSize],
             iconAnchor: [0, 0],
             popupAnchor: [1, -12],
             shadowSize: [6, 6],
@@ -409,8 +425,8 @@ function plotaMarca(lat, lng, loc) {
             className: 'css-icon',
             html: '<div class="gps_ring"></div>'
             // Set marker width and height
-            , iconSize: [24, 24]
-            , iconAnchor: [6, 6]
+            , iconSize: [28, 28]
+            , iconAnchor: [13, 13]
         });
 
         var cssIconYellow = new L.divIcon({
@@ -419,7 +435,7 @@ function plotaMarca(lat, lng, loc) {
             html: '<div class="gps_ringYellow"></div>'
             // Set marker width and height
             , iconSize: [24, 24]
-            , iconAnchor: [6, 6]
+            , iconAnchor: [48, 48]
         });
 
         let restricao = false
@@ -427,72 +443,89 @@ function plotaMarca(lat, lng, loc) {
         restricao = true
         //desc = desc.substr(1)
         let descU = desc.toUpperCase();
-        let alerta;
 
         if (descU.includes("DESCOBERTO")) {
-          let strDescoberto = descU.split("DESCOBERTO")[1].split("<")[0]
-          let alerta = getTipoAlerta(loc, strDescoberto);
-          //icon = redIcon
-          icon = getSvgIcon(loc, alerta.strAlerta, adWRNGPertoDoFim, true) //vento trovoada teto visib
+            let strDescoberto = descU.split("DESCOBERTO")[1].split("<")[0]
+            let alerta = getTipoAlerta(loc, strDescoberto);
+            //icon = redIcon
+            icon = getSvgIcon(loc, alerta.strAlerta, adWRNGPertoDoFim, true) //vento trovoada teto visib
 
-          //if (alerta.ad)
-          addMarker(L.marker([lat, lng], { icon: cssIconRed }), "", restricao, true)
-          updateDescobertos(loc, alerta)
+            //if (alerta.ad)
+            addMarker(L.marker([lat, lng], { icon: cssIconRed }), "", restricao, true)
+            updateDescobertos(loc, alerta)
         } else {
             let alerta = getTipoAlerta(loc);
-                //if (descU.includes("DEGRADA"))
-                // icon = orangeIcon
-                //else {
-                //icon = yellowIcon
-                //icon = getSvgIcon(loc, alerta.strAlerta, adWRNGPertoDoFim, false) //vento trovoada teto visib
+            //if (descU.includes("DEGRADA"))
+            // icon = orangeIcon
+            //else {
+            //icon = yellowIcon
+            //icon = getSvgIcon(loc, alerta.strAlerta, adWRNGPertoDoFim, false) //vento trovoada teto visib
 
-                //}
-                //if (alerta.ad)
-                //    addMarker(L.marker([lat, lng], { icon: cssIconYellow }), "", restricao, true)
+            //}
+            //if (alerta.ad)
+            //    addMarker(L.marker([lat, lng], { icon: cssIconYellow }), "", restricao, true)
         }
         let icon = false
-	let strAlerta,strLegenda
-	let strCDA = "<h5>Orientações do CDA</h5>"
-	if (indiceI > 0 && indiceI <= 3.34) {
-          icon = greenIcon
-	  strAlerta = spanColor("Risco Baixo", "Risco Baixo", false, "green",true)
-	  strAlerta = insertSpanClass(strAlerta,"sombra3")
-	  strLegenda = "Atividade física liberada."
-	}
-	else if (indiceI >= 3.35 && indiceI <= 3.47) {
-          icon = yellowIcon
-	  strAlerta = spanColor("Risco Moderado","Risco Moderado",false, "yellow",true)
-	  strAlerta = insertSpanClass(strAlerta,"sombra3")
-	  strLegenda = "- Atividade física vigiada para não aclimatados ao calor (10 dias)<br>"+
-		"- Cautela! Use água.<br>" +
-		"- 1 copo 200 ml/20 min, beba gelada.<br>" +
-		"- Borrifique água no corpo, molhe a cabeça e a nuca.<br>" +
-		"- Alerta para os distúrbios térmicos."
-	}
-	else if (indiceI >= 3.48 && indiceI <= 3.54) {
-	  strAlerta = spanColor("Risco Alto","Risco Alto",false, "red",true)
-	  strAlerta = insertSpanClass(strAlerta,"sombra3")
-          icon = redIcon
-	  strLegenda = "- Atividade física suspensa para destreinados e não aclimatados (12 semanas)<br>"+
-		"- Atividade física leve para treinados e aclimatados.<br>" +
-		"- Cautelas! Pausas freqüentes! Use água.<br>" +
-		"- Alerta para os distúrbios térmicos.<br>" +
-		"- Não realizar o TACF."
-		
-	}
-	else if (indiceI >= 3.55) {
-	  strAlerta = spanBold("Risco Muito Alto")
-          icon = grayIcon
-	  strLegenda =  "- Atividade física suspensa para todos.<br>"+
-			"- Não realizar o TACF."
-	}
-	desc = desc + "<br><br>" + strCDA + strAlerta + "<br><br>" + strLegenda
-	    
-	if (!icon)
-	  return false
-	    
-       	var m = addMarker(L.marker([lat, lng], { icon: icon }), loc, restricao)
-        
+        let strAlerta, strLegenda
+        let strCDA = `<h5 style="${sombra2}">Orientações do CDA:</h5>`
+        if (indiceI > 0 && indiceI <= 3.34) {
+            icon = greenIcon
+            strAlerta = spanColor(strRiscoBaixo, strRiscoBaixo, false, "green", true)
+            strAlerta = insertSpanClass(strAlerta, sombra2)
+            strLegenda = "Atividade física liberada."
+            strLegenda = spanBold(strLegenda)
+        }
+        else if (indiceI >= 3.35 && indiceI <= 3.47) {
+            icon = yellowIcon
+            strAlerta = spanColor(strRiscoModerado, strRiscoModerado, false, "yellow", true)
+            strAlerta = insertSpanClass(strAlerta, sombra3)
+            strLegenda = "- Atividade física vigiada para não aclimatados ao calor (10 dias)<br>" +
+                "- Cautela! Use água.<br>" +
+                "- 1 copo 200 ml/20 min, beba gelada.<br>" +
+                "- Borrifique água no corpo, molhe a cabeça e a nuca.<br>" +
+                "- Alerta para os distúrbios térmicos."
+            strLegenda = spanColor(strLegenda, "vigiada", false, "black", true)
+            strLegenda = spanColor(strLegenda, "não aclimatados", false, "black", true)
+            strLegenda = insertSpanClass(strLegenda, sombra2)
+        }
+        else if (indiceI >= 3.48 && indiceI <= 3.54) {
+            strAlerta = spanColor(strRiscoAlto, strRiscoAlto, false, "red", true)
+            strAlerta = insertSpanClass(strAlerta, sombra2)
+            icon = redIcon
+            strLegenda = "- Atividade física suspensa para destreinados e não aclimatados (12 semanas)<br>" +
+                "- Atividade física leve para treinados e aclimatados.<br>" +
+                "- Cautelas! Pausas freqüentes! Use água.<br>" +
+                "- Alerta para os distúrbios térmicos.<br>" +
+                "- Não realizar o TACF."
+            strLegenda = spanColor(strLegenda, "suspensa", false, "black", true)
+            strLegenda = spanColor(strLegenda, "destreinados e não aclimatados", false, "black", true)
+            strLegenda = spanColor(strLegenda, "Não realizar o TACF", false, "red", true)
+            strLegenda = insertSpanClass(strLegenda, sombra2)
+
+        }
+        else if (indiceI >= 3.55) {
+            strAlerta = spanColor(strRiscoMuitoAlto, strRiscoMuitoAlto, false, "black", true)
+            icon = grayIcon
+            strLegenda = "- Atividade física suspensa para todos.<br>" +
+                "- Não realizar o TACF."
+
+            strLegenda = spanColor(strLegenda, "suspensa para todos", false, "black", true)
+            strLegenda = spanColor(strLegenda, "Não realizar o TACF", false, "red", true)
+            strLegenda = insertSpanClass(strLegenda, sombra2)
+
+            addMarker(L.marker([lat, lng], { icon: cssIconRed }), "", true, true)
+
+
+        }
+
+        if (!icon)
+            return false
+
+        let strInfoICA = spanBold("Fonte:") + " * Quadro 3.1, Página 21 - ICA 54-3/2007"
+        desc = `${desc}<br><br>${strCDA}<h5>${strAlerta}</h5>${strLegenda}<br><br>${strInfoICA}`
+
+        var m = addMarker(L.marker([lat, lng], { icon: icon }), loc, restricao)
+
         //m._icon.classList.add("svgRedIcon");
 
 
@@ -502,7 +535,7 @@ function plotaMarca(lat, lng, loc) {
             selectedMarker = d.replace("METARCOR", "").replace("SPECICOR", "").replace("METAR", "").replace("SPECI", "").substr(0, 4)
             openContextMenuMarker(event, event.target);
         }, this);
-        desc = removeInfo(desc)
+
         m.bindTooltip(desc, { closeButton: false, offset: L.point(0, -20) })
     }
 }
@@ -514,46 +547,46 @@ function plotaMarca(lat, lng, loc) {
     temp = getTempMetar("METAR SBGM 161400Z 25003KT 200V290 6000 BKN004 40/17 Q1013=")
     let UR = getUR(temp)
 	
-	console.log("Umidade: " + parseInt(UR) + "%")
+    console.log("Umidade: " + parseInt(UR) + "%")
 	
-	console.log("I:" + getI(temp,UR))
-	   
-	   
+    console.log("I:" + getI(temp,UR))
+       
+       
 });
 */
 
 function getTempMetar(metar) { //programado apenas para pressao em Q
 
     let patt2 = /\d{2}\/\d{2} Q/;
-    let t = metar.match(patt2)    
+    let t = metar.match(patt2)
     //console.log(t)
     if (!Array.isArray(t))
-      return false
+        return false
     t = t[0].split("/")
-    
-    return {t:parseInt(t[0]),td:parseInt(t[1].split(" ")[0])}
+
+    return { t: parseInt(t[0]), td: parseInt(t[1].split(" ")[0]) }
 }
 
-function getUR(temp){
+function getUR(temp) {
     let neper = 2.7182818285
-    
-	//console.log("=>" + temp.t+" "+temp.td)
 
-    let n1 = 6.112 * Math.pow(neper, (17.67 * temp.td) / (temp.td + 243.5)  )
+    //console.log("=>" + temp.t+" "+temp.td)
+
+    let n1 = 6.112 * Math.pow(neper, (17.67 * temp.td) / (temp.td + 243.5))
 
     //console.log(n1)
-    let n2 = 6.112 * Math.pow( neper, (17.67*temp.t) / (temp.t + 243.5) )
+    let n2 = 6.112 * Math.pow(neper, (17.67 * temp.t) / (temp.t + 243.5))
     //console.log(n2)
-    let UR = 100 * ( n1 / n2) 
+    let UR = 100 * (n1 / n2)
     return UR
 }
 
-function getI (metar){
+function getI(metar) {
     let temp = getTempMetar(metar)
     if (!temp)
-      return -1
-    let UR = getUR(temp)	
-	
-    let i = Math.pow(temp.t,(1/4)) * Math.pow(UR,(3/32))
-    return i   
+        return { temp: false, UR: false, indice: -1 }
+    let UR = getUR(temp)
+
+    let i = Math.pow(temp.t, (1 / 4)) * Math.pow(UR, (3 / 32))
+    return { temp, UR, indice: i }
 }

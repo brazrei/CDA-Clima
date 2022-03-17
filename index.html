@@ -1,69 +1,104 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Mapa de Estresse Térmico</title>
-    <link rel="icon" type="image/x-icon" href="png/icons8-umidade-30.png">
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v3.8.5">
+  <title>Mapa de Estresse Térmico</title>
+  <link rel="icon" type="image/x-icon" href="png/icons8-umidade-30.png">
 
-    <script type="text/javascript" src="js/jquery.min.js"> </script>
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
 
-
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script type="text/javascript" src="js/jquery.min.js"> </script>
 
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .gps_ring {
+      border: 3px solid rgb(235, 9, 9);
+      -webkit-border-radius: 30px;
+      box-shadow: 0 0 3pt 2pt gray;
+      height: 28px;
+      width: 28px;
+      -webkit-animation: pulsateM 1s ease-out;
+      -webkit-animation-iteration-count: infinite;
+      /*opacity: 0.0*/
+    }
+
+    sombra1 {
+      text-shadow: 0px 0px 1px black;
+    }
+
+    sombra3 {
+      text-shadow: 0px 0px 3px black;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
-      
-      sombra1 {
-        text-shadow: 0px 0px 1px black;
+
+    }
+
+    @keyframes pulsateM {
+      0% {
+        -webkit-transform: scale(0.1, 0.1);
+        opacity: 0.0;
       }
 
-      sombra3 {
-        text-shadow: 0px 0px 3px black;
+      50% {
+        opacity: 1.0;
       }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
+      100% {
+        -webkit-transform: scale(1.2, 1.2);
+        opacity: 0.0;
       }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="starter-template.css" rel="stylesheet">
 
-    <!-- LeaFlet-->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+  <!-- LeaFlet-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+    integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+    crossorigin=""></script>
 
-    <script src="js/scripts.js"></script>
-    <script src="js/aeroportos.js"></script>
-    <script src="js/trataMetar.js"></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#">Mapa de Estresse Térmico</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <script src="js/scripts.js"></script>
+  <script src="js/aeroportos.js"></script>
+  <script src="js/trataMetar.js"></script>
+</head>
 
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
-      <!--
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Mapa de Estresse Térmico</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <!--
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
@@ -82,25 +117,30 @@
         </div>
       </li>
     -->
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Busca" aria-label="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Busca</button>
-    </form>
-  </div>
-</nav>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Busca" aria-label="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Busca</button>
+      </form>
+    </div>
+  </nav>
 
-<main role="main" class="container">
+  <main role="main" class="container">
 
-  <div class="mapContainer" id="map" style="width: 100%;height: 95%; background-color: aqua;position: absolute;left: 0px;top:50px">
-  </div>
+    <div class="mapContainer" id="map"
+      style="width: 100%;height: 95%; background-color: aqua;position: absolute;left: 0px;top:50px">
+    </div>
 
-</main><!-- /.container -->
+  </main><!-- /.container -->
 
-<!--
+  <!--
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 -->
-    
-<script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script></body>
+
+  <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
