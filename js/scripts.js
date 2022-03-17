@@ -459,7 +459,7 @@ function plotaMarca(lat, lng, loc) {
 	  strLegenda = "- Atividade física vigiada para não aclimatados ao calor (10 dias)<br>"+
 		"- Cautela! Use água.<br>" +
 		"- 1 copo 200 ml/20 min, beba gelada.<br>" +
-		'- Borrifique água no corpo, molhe a cabeça e a nuca.<br>" +
+		"- Borrifique água no corpo, molhe a cabeça e a nuca.<br>" +
 		"- Alerta para os distúrbios térmicos."
 	}
 	else if (indiceI >= 3.48 && indiceI <= 3.54) {
