@@ -448,6 +448,7 @@ function plotaMarca(lat, lng, loc) {
         }
         let icon = false
 	let strAlerta,strLegenda
+	let strCDA = "<h2>Orientações do CDA<h2>"
 	if (indiceI > 0 && indiceI <= 3.34) {
           icon = greenIcon
 	  strAlerta = spanBold(spanColor("Risco Baixo", "green"))
@@ -470,7 +471,8 @@ function plotaMarca(lat, lng, loc) {
 	  strAlerta = spanBold("Risco Muito Alto")
           icon = grayIcon
 	}
-	desc = desc + "<br><br>" +  strAlerta + "<br><br>" + strLegenda
+	desc = desc + "<br><br>" + strCDA + "<br><br>" +  strAlerta + "<br><br>" + strLegenda
+	    
 	if (!icon)
 	  return false
 	    
