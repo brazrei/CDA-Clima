@@ -3,9 +3,9 @@ var groupMarkers=false
 var groupMarkersHide=false
 var arrayMetaresGeral = []
 
-function spanColor(texto, cor) {
+/*function spanColor(texto, cor) {
     return `<span style="color:${cor}"> ${texto} + </span>`
-}
+}*/
 
 function spanBold(texto) {
     return `<b>${texto}</b>`
@@ -345,7 +345,7 @@ function plotaMarca(lat, lng, loc) {
 	    	indiceI = -1
 	    }
 	}
-        desc = getDescricao(loc) + '<br><br>'+ metar
+        desc = spanBold(getDescricao(loc)) + '<br><br>'+ metar
 
         var greenIcon = new L.Icon({
             //            iconUrl: 'png/marker-icon-green.png',
@@ -448,15 +448,15 @@ function plotaMarca(lat, lng, loc) {
         }
         let icon = false
 	let strAlerta,strLegenda
-	let strCDA = "<h2>Orientações do CDA<h2>"
+	let strCDA = "<h5>Orientações do CDA</h5>"
 	if (indiceI > 0 && indiceI <= 3.34) {
           icon = greenIcon
-	  strAlerta = spanBold(spanColor("Risco Baixo", "green"))
+	  strAlerta = spanColor("Risco Baixo", "Risco Baixo", "green",true)
 	  strLegenda = "Atividade física liberada."
 	}
 	else if (indiceI >= 3.35 && indiceI <= 3.47) {
           icon = yellowIcon
-	  strAlerta = spanBold(spanColor("Risco Moderado","yellow"))
+	  strAlerta = spanColor("Risco Moderado","Risco Moderado","yellow",true)
 	  strLegenda = "- Atividade física vigiada para não aclimatados ao calor (10 dias)<br>"+
 		"- Cautela! Use água.<br>" +
 		"- 1 copo 200 ml/20 min, beba gelada.<br>" +
@@ -464,14 +464,22 @@ function plotaMarca(lat, lng, loc) {
 		"- Alerta para os distúrbios térmicos."
 	}
 	else if (indiceI >= 3.48 && indiceI <= 3.54) {
-	  strAlerta = spanBold(spanColor("Risco Alto","red"))
+	  strAlerta = spanColor("Risco Alto","Risco Alto","red",true)
           icon = redIcon
+	  strLegenda = "- Atividade física suspensa para destreinados e não aclimatados (12 semanas)<br>"+
+		"- Atividade física leve para treinados e aclimatados.<br>" +
+		"- Cautelas! Pausas freqüentes! Use água.<br>" +
+		"- Alerta para os distúrbios térmicos.<br>" +
+		"- Não realizar o TACF."
+		
 	}
 	else if (indiceI >= 3.55) {
 	  strAlerta = spanBold("Risco Muito Alto")
           icon = grayIcon
+	  strLegenda =  "- Atividade física suspensa para todos.<br>"+
+			"- Não realizar o TACF. +
 	}
-	desc = desc + "<br><br>" + strCDA + "<br><br>" +  strAlerta + "<br><br>" + strLegenda
+	desc = desc + "<br><br>" + strCDA + strAlerta + "<br><br>" + strLegenda
 	    
 	if (!icon)
 	  return false
