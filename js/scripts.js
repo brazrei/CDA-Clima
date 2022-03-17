@@ -7,6 +7,10 @@ var arrayMetaresGeral = []
     return `<span style="color:${cor}"> ${texto} + </span>`
 }*/
 
+function insertSpanClass(str, classe) {
+	return str.replace("<span",`<span class = "${classe}"`+
+}
+
 function spanBold(texto) {
     return `<b>${texto}</b>`
 }
