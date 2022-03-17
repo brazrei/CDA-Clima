@@ -447,24 +447,30 @@ function plotaMarca(lat, lng, loc) {
                 //    addMarker(L.marker([lat, lng], { icon: cssIconYellow }), "", restricao, true)
         }
         let icon = false
-	let strAlerta
+	let strAlerta,strLegenda
 	if (indiceI > 0 && indiceI <= 3.34) {
           icon = greenIcon
-	  strAlerta = spanColor("Risco Baixo", "green")
+	  strAlerta = spanBold(spanColor("Risco Baixo", "green"))
+	  strLegenda = "Atividade física liberada."
 	}
 	else if (indiceI >= 3.35 && indiceI <= 3.47) {
-	  strAlerta = spanColor("Risco Moderado","yellow")
           icon = yellowIcon
+	  strAlerta = spanBold(spanColor("Risco Moderado","yellow"))
+	  strLegenda = "- Atividade física vigiada para não aclimatados ao calor (10 dias)<br>"+
+		"- Cautela! Use água.<br>" +
+		"- 1 copo 200 ml/20 min, beba gelada.<br>" +
+		'- Borrifique água no corpo, molhe a cabeça e a nuca.<br>" +
+		"- Alerta para os distúrbios térmicos."
 	}
 	else if (indiceI >= 3.48 && indiceI <= 3.54) {
-	  strAlerta = spanColor("Risco Alto","red")
+	  strAlerta = spanBold(spanColor("Risco Alto","red"))
           icon = redIcon
 	}
 	else if (indiceI >= 3.55) {
 	  strAlerta = spanBold("Risco Muito Alto")
           icon = grayIcon
 	}
-	desc = desc + "<br><br>" +  strAlerta
+	desc = desc + "<br><br>" +  strAlerta + "<br><br>" + strLegenda
 	if (!icon)
 	  return false
 	    
