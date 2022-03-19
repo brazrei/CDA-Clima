@@ -588,5 +588,6 @@ function getI(metar) {
     let UR = getUR(temp)
 
     let i = Math.pow(temp.t, (1 / 4)) * Math.pow(UR, (3 / 32))
+    i = Math.round(i*100)/100
     return { temp, UR, indice: i }
 }
