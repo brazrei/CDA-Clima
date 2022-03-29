@@ -503,7 +503,7 @@ function plotaMarca(lat, lng, loc) {
             strLegenda = insertSpanClass(strLegenda, sombra2)
 
         }
-        else if (indiceI >= 3.55 || metarData.temp>39) {
+        else if (indiceI >= 3.55 || (metarData && metarData.temp>39)) {
             strAlerta = spanColor(strRiscoMuitoAlto, strRiscoMuitoAlto, false, "black", true)
             icon = grayIcon
             strLegenda = "- Atividade física suspensa para todos.<br>" +
