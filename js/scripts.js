@@ -468,14 +468,14 @@ function plotaMarca(lat, lng, loc) {
         let icon = false
         let strAlerta, strLegenda
         let strCDA = `<h5 style="${sombra2}">Orientações do CDA:</h5>`
-        if (indiceI > 0 && indiceI <= 3.34) {
+        if (indiceI > 0 && indiceI < 3.35) {
             icon = greenIcon
             strAlerta = spanColor(strRiscoBaixo, strRiscoBaixo, false, "green", true)
             strAlerta = insertSpanClass(strAlerta, sombra2)
             strLegenda = "Atividade física liberada."
             strLegenda = spanBold(strLegenda)
         }
-        else if (indiceI >= 3.35 && indiceI <= 3.47) {
+        else if (indiceI >= 3.35 && indiceI < 3.48) {
             icon = yellowIcon
             strAlerta = spanColor(strRiscoModerado, strRiscoModerado, false, "yellow", true)
             strAlerta = insertSpanClass(strAlerta, sombra3)
@@ -488,7 +488,7 @@ function plotaMarca(lat, lng, loc) {
             strLegenda = spanColor(strLegenda, "não aclimatados", false, "black", true)
             strLegenda = insertSpanClass(strLegenda, sombra2)
         }
-        else if (indiceI >= 3.48 && indiceI <= 3.54) {
+        else if (indiceI >= 3.48 && indiceI < 3.55) {
             strAlerta = spanColor(strRiscoAlto, strRiscoAlto, false, "red", true)
             strAlerta = insertSpanClass(strAlerta, sombra2)
             icon = redIcon
@@ -503,7 +503,7 @@ function plotaMarca(lat, lng, loc) {
             strLegenda = insertSpanClass(strLegenda, sombra2)
 
         }
-        else if (indiceI >= 3.55) {
+        else if (indiceI >= 3.55 || metarData.temp>39) {
             strAlerta = spanColor(strRiscoMuitoAlto, strRiscoMuitoAlto, false, "black", true)
             icon = grayIcon
             strLegenda = "- Atividade física suspensa para todos.<br>" +
