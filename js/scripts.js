@@ -520,19 +520,20 @@ function plotaMarca(lat, lng, loc) {
         }
         let strLegendaDC=""
         if (metarData && metarData.UR) {
-            if (metarData.UR >= 20 && metarData.UR <= 30) {
+            let UR = parseInt(metarData.UR)
+            if (UR >= 20 && UR <= 30) {
                 strLegendaDC += "<p>Possível estado de Atenção em sua região.</p>" 
                 strLegendaDC += "<p>Recomendações: </p>" 
                 strLegendaDC += "<p>Evitar exercícios físicos ao ar livre entre 11h e 15h; <br>permanecer em locais protegidos do sol, em áreas vegetadas.</p>" 
                 strLegendaDC += "<p>Consulte a Defesa Civil de seu estado para confirmação.</p>" 
             }
-            if (metarData.UR >= 12 && metarData.UR < 20) {
+            if (UR >= 12 && UR < 20) {
                 strLegendaDC += "<p>Possível estado de Alerta em sua região.</p>" 
                 strLegendaDC += "<p>Recomendações: </p>" 
                 strLegendaDC += "<p>Suprimir exercícios físicos e trabalhos ao ar livre entre 10h e 16h; <br>evitar aglomerações em ambientes fechados.</p>" 
                 strLegendaDC += "<p>Consulte a Defesa Civil de seu estado para confirmação.</p>" 
             }
-            if (metarData.UR < 12) {
+            if (UR < 12) {
                 strLegendaDC += "<p>Possível estado de Emergência em sua região.</p>" 
                 strLegendaDC += "<p>Recomendações: </p>" 
                 strLegendaDC += "<p>Suprimir exercícios físicos e trabalhos ao ar livre entre 10h e 16h; <br>suspender atividades que exijam aglomeração de pessoas em recintos fechados entre 10h e 16h.</p>" 
