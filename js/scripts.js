@@ -146,6 +146,7 @@ function loadMap() {
 };
 
 $(document).ready(function () {
+    document.getElementById('btnMainPopUp').click();
     loadMap();
     getAeroportos();
 });
@@ -503,7 +504,7 @@ function plotaMarca(lat, lng, loc) {
             strLegenda = insertSpanClass(strLegenda, sombra2)
 
         }
-        else if (indiceI >= 3.55 || (metarData && metarData.temp>39)) {
+        else if (indiceI >= 3.55 || (metarData && metarData.temp > 39)) {
             strAlerta = spanColor(strRiscoMuitoAlto, strRiscoMuitoAlto, false, "black", true)
             icon = grayIcon
             strLegenda = "- Atividade física suspensa para todos.<br>" +
@@ -517,13 +518,36 @@ function plotaMarca(lat, lng, loc) {
 
 
         }
+        let strLegendaDC=""
+        if (metarData && metarData.UR) {
+            if (metarData.UR >= 20 && metarData.UR <= 30) {
+                strLegendaDC += "<p>Possível estado de Atenção em sua região.</p>" 
+                strLegendaDC += "<p>Recomendações: </p>" 
+                strLegendaDC += "<p>Evitar exercícios físicos ao ar livre entre 11h e 15h; <br>permanecer em locais protegidos do sol, em áreas vegetadas.</p>" 
+                strLegendaDC += "<p>Consulte a Defesa Civil de seu estado para confirmação.</p>" 
+            }
+            if (metarData.UR >= 12 && metarData.UR < 20) {
+                strLegendaDC += "<p>Possível estado de Alerta em sua região.</p>" 
+                strLegendaDC += "<p>Recomendações: </p>" 
+                strLegendaDC += "<p>Suprimir exercícios físicos e trabalhos ao ar livre entre 10h e 16h; <br>evitar aglomerações em ambientes fechados.</p>" 
+                strLegendaDC += "<p>Consulte a Defesa Civil de seu estado para confirmação.</p>" 
+            }
+            if (metarData.UR < 12) {
+                strLegendaDC += "<p>Possível estado de Emergência em sua região.</p>" 
+                strLegendaDC += "<p>Recomendações: </p>" 
+                strLegendaDC += "<p>Suprimir exercícios físicos e trabalhos ao ar livre entre 10h e 16h; <br>suspender atividades que exijam aglomeração de pessoas em recintos fechados entre 10h e 16h.</p>" 
+                strLegendaDC += "<p>Consulte a Defesa Civil de seu estado para confirmação.</p>" 
+            }
+            if (strLegendaDC.length > 0)
+            strLegendaDC = "<br><p>Possibilidade de alerta da Defesa Civil: </p>" + strLegendaDC 
+        }
 
         if (!icon)
             return false
 
         let strInfoICA = spanBold("Fonte:") + " * Quadro 3.2, Página 22 - NSCA 54-5/2020"
         //let strInfoICA = spanBold("Fonte:") + " * Quadro 3.1, Página 21 - ICA 54-3/2007"
-        desc = `${desc}<br><br>${strCDA}<h5>${strAlerta}</h5>${strLegenda}<br><br>${strInfoICA}`
+        desc = `${desc}<br><br>${strCDA}<h5>${strAlerta}</h5>${strLegenda}${strLegendaDC}<br><br>${strInfoICA}`
 
         var m = addMarker(L.marker([lat, lng], { icon: icon }), loc, restricao)
 
@@ -589,6 +613,6 @@ function getI(metar) {
     let UR = getUR(temp)
 
     let i = Math.pow(temp.t, (1 / 4)) * Math.pow(UR, (3 / 32))
-    i = Math.round(i*1000)/1000
+    i = Math.round(i * 1000) / 1000
     return { temp, UR, indice: i }
 }
