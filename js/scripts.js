@@ -549,7 +549,7 @@ function plotaMarca(lat, lng, loc) {
             }
             if (strLegendaDC.length > 0) { 
             	strLegendaDC = insertSpanClass(strLegendaDC, sombra2)
-            	strLegendaDC = '<br>' + strDC + strLegendaDC
+            	strLegendaDC = '<br><br><br>' + strDC + strLegendaDC
 	    }
         }
 
