@@ -522,8 +522,8 @@ function plotaMarca(lat, lng, loc) {
         let strLegendaDC=""
         if (metarData && metarData.UR) {
             let UR = parseInt(metarData.UR)
-            if (UR >= 80 && UR <= 90) {
-            //if (UR >= 20 && UR <= 30) {
+            //if (UR >= 80 && UR <= 90) {
+            if (UR >= 20 && UR <= 30) {
                 strLegendaDC += "- Possível estado de Atenção em sua região.<br><br>" 
                 strLegendaDC += "- Recomendações: <br>" 
                 strLegendaDC += "- Evitar exercícios físicos ao ar livre entre 11h e 15h; permanecer em locais protegidos do sol, em áreas vegetadas.<br>" 
@@ -531,16 +531,16 @@ function plotaMarca(lat, lng, loc) {
             	strLegendaDC = spanColor(strLegendaDC, "Atenção", false, "black", true)
 		    
             }
-            if (UR >= 52 && UR < 80) {
-            //if (UR >= 12 && UR < 20) {
+            //if (UR >= 52 && UR < 80) {
+            if (UR >= 12 && UR < 20) {
                 strLegendaDC += "- Possível estado de Alerta em sua região.<br><br>" 
                 strLegendaDC += "- Recomendações: <br>" 
                 strLegendaDC += "- Suprimir exercícios físicos e trabalhos ao ar livre entre 10h e 16h; evitar aglomerações em ambientes fechados.<br>" 
                 strLegendaDC += "- Consulte a Defesa Civil de seu estado para confirmação.<br>" 
             	strLegendaDC = spanColor(strLegendaDC, "Alerta", false, "black", true)
             }
-            if (UR < 52) {
-            //if (UR < 12) {
+            //if (UR < 52) {
+            if (UR < 12) {
                 strLegendaDC += "- Possível estado de Emergência em sua região.</p><br>" 
                 strLegendaDC += "- Recomendações: </p>" 
                 strLegendaDC += "- Suprimir exercícios físicos e trabalhos ao ar livre entre 10h e 16h; suspender atividades que exijam aglomeração de pessoas em recintos fechados entre 10h e 16h.</p>" 
