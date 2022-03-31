@@ -542,7 +542,7 @@ function plotaMarca(lat, lng, loc) {
             if (UR < 12) {
                 strLegendaDC += "<b> Possível estado de Emergência em sua região. </b></p><br>" 
                 strLegendaDC += "<b> Recomendações:</b> </p>" 
-                strLegendaDC += "- Suprimir exercícios físicos e trabalhos ao ar livre entre 10h e 16h; <br> suspender atividades que exijam aglomeração de pessoas em recintos fechados entre 10h e 16h.</p>" 
+                strLegendaDC += "- Suprimir exercícios físicos e trabalhos ao ar livre entre 10h e 16h; suspender <br>atividades que exijam aglomeração de pessoas em recintos fechados entre 10h e 16h.</p>" 
                 strLegendaDC += "- Consulte a Defesa Civil de seu estado para confirmação.</p>" 
             	strLegendaDC = spanColor(strLegendaDC, "Emergência", false, "red", true)
             }
