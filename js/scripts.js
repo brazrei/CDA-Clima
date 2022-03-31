@@ -470,7 +470,20 @@ function plotaMarca(lat, lng, loc) {
         let strAlerta, strLegenda
         let strCDA = `<h5 style="${sombra2}">Orientações do CDA:</h5>`
 	let strDC = `<h5 style="${sombra2}">Possíveis Orientações da Defesa Civil:</h5>`
-        if (indiceI > 0 && indiceI < 3.35) {
+        if (indiceI >= 3.55 || (metarData && metarData.temp > 39)) {
+            strAlerta = spanColor(strRiscoMuitoAlto, strRiscoMuitoAlto, false, "black", true)
+            icon = grayIcon
+            strLegenda = "- Atividade física suspensa para todos.<br>" +
+                "- Não realizar o TACF."
+
+            strLegenda = spanColor(strLegenda, "suspensa para todos", false, "black", true)
+            strLegenda = spanColor(strLegenda, "Não realizar o TACF", false, "red", true)
+            strLegenda = insertSpanClass(strLegenda, sombra2)
+
+            addMarker(L.marker([lat, lng], { icon: cssIconRed }), "", true, true)
+
+
+        } else if (indiceI > 0 && indiceI < 3.35) {
             icon = greenIcon
             strAlerta = spanColor(strRiscoBaixo, strRiscoBaixo, false, "green", true)
             strAlerta = insertSpanClass(strAlerta, sombra2)
@@ -503,20 +516,6 @@ function plotaMarca(lat, lng, loc) {
             strLegenda = spanColor(strLegenda, "destreinados e não aclimatados", false, "black", true)
             strLegenda = spanColor(strLegenda, "Não realizar o TACF", false, "red", true)
             strLegenda = insertSpanClass(strLegenda, sombra2)
-
-        }
-        else if (indiceI >= 3.55 || (metarData && metarData.temp > 39)) {
-            strAlerta = spanColor(strRiscoMuitoAlto, strRiscoMuitoAlto, false, "black", true)
-            icon = grayIcon
-            strLegenda = "- Atividade física suspensa para todos.<br>" +
-                "- Não realizar o TACF."
-
-            strLegenda = spanColor(strLegenda, "suspensa para todos", false, "black", true)
-            strLegenda = spanColor(strLegenda, "Não realizar o TACF", false, "red", true)
-            strLegenda = insertSpanClass(strLegenda, sombra2)
-
-            addMarker(L.marker([lat, lng], { icon: cssIconRed }), "", true, true)
-
 
         }
         let strLegendaDC=""
