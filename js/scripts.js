@@ -525,7 +525,7 @@ function plotaMarca(lat, lng, loc) {
             //if (UR >= 80 && UR <= 90) {
             if (UR >= 20 && UR <= 30) {
                 strLegendaDC += "- Possível estado de Atenção em sua região.<br><br>" 
-                strLegendaDC += "- Recomendações: <br>" 
+                strLegendaDC += "<b> Recomendações:</b> </p>" 
                 strLegendaDC += "- Evitar exercícios físicos ao ar livre entre 11h e 15h; <br> permanecer em locais protegidos do sol, em áreas vegetadas.<br>" 
                 strLegendaDC += "- Consulte a Defesa Civil de seu estado para confirmação.<br>" 
             	strLegendaDC = spanColor(strLegendaDC, "Atenção", false, "black", true)
@@ -534,7 +534,7 @@ function plotaMarca(lat, lng, loc) {
             //if (UR >= 52 && UR < 80) {
             if (UR >= 12 && UR < 20) {
                 strLegendaDC += "- Possível estado de Alerta em sua região.<br><br>" 
-                strLegendaDC += "- Recomendações: <br>" 
+                strLegendaDC += "<b> Recomendações:</b> </p>" 
                 strLegendaDC += "- Suprimir exercícios físicos e trabalhos ao ar livre entre 10h e 16h; <br> evitar aglomerações em ambientes fechados.<br>" 
                 strLegendaDC += "- Consulte a Defesa Civil de seu estado para confirmação.<br>" 
             	strLegendaDC = spanColor(strLegendaDC, "Alerta", false, "black", true)
@@ -542,7 +542,7 @@ function plotaMarca(lat, lng, loc) {
             //if (UR < 52) {
             if (UR < 12) {
                 strLegendaDC += "- Possível estado de Emergência em sua região.</p><br>" 
-                strLegendaDC += "- Recomendações: </p>" 
+                strLegendaDC += "<b> Recomendações:</b> </p>" 
                 strLegendaDC += "- Suprimir exercícios físicos e trabalhos ao ar livre entre 10h e 16h; <br> suspender atividades que exijam aglomeração de pessoas em recintos fechados entre 10h e 16h.</p>" 
                 strLegendaDC += "- Consulte a Defesa Civil de seu estado para confirmação.</p>" 
             	strLegendaDC = spanColor(strLegendaDC, "Emergência", false, "black", true)
