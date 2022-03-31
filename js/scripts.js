@@ -594,10 +594,19 @@ function plotaMarca(lat, lng, loc) {
 function getTempMetar(metar) { //programado apenas para pressao em Q
 
     let patt2 = /\d{2}\/\d{2} Q/;
-    let t = metar.match(patt2)
-    //console.log(t)
-    if (!Array.isArray(t))
-        return false
+    let patt3 = /\d{2}\/M\d{2} Q/;
+    let t2 = metar.match(patt2)
+    let t
+    if (!Array.isArray(t2)) {
+    	let t3 = metar.match(patt3)
+	t = t3.slice()
+	
+	if (!Array.isArray(t3))
+        	return false
+    } else{
+	    t = t2.slice()
+    }
+    t[0] = t[0].replace(/M/g,"-")
     t = t[0].split("/")
 
     return { t: parseInt(t[0]), td: parseInt(t[1].split(" ")[0]) }
