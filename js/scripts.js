@@ -14,6 +14,7 @@ var iconSize = 18
 var startPosition = [-21.0529434318608, -48.01910972595218]
 /*function spanColor(texto, cor) {
     return `<span style="color:${cor}"> ${texto} + </span>`
+    
 }*/
 
 function insertSpanClass(str, classe) {
