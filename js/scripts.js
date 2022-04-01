@@ -11,7 +11,7 @@ var sombra1 = "text-shadow: 0px 0px 1px black;"
 var sombra2 = "text-shadow: 0px 0px 2px black;"
 var sombra3 = "text-shadow: 0px 0px 3px black;"
 var iconSize = 18
-
+var startPosition = [-21.0529434318608, -48.01910972595218]
 /*function spanColor(texto, cor) {
     return `<span style="color:${cor}"> ${texto} + </span>`
 }*/
@@ -119,7 +119,7 @@ function makeMap() {
     var mapOptions = {
         zoomControl: false,
         attributionControl: false,
-        center: [-21.0529434318608, -48.01910972595218],
+        center: startPosition,
         zoom: 5,
         layers: [basemaps.OpenStreetMaps]
     };
@@ -148,8 +148,10 @@ function loadMap() {
 $(document).ready(function () {
 	
   navigator.geolocation.getCurrentPosition(function(position) {
-    alert(position.coords.latitude + " - " + position.coords.longitude);
-  });
+	  startPosition = [position.coords.latitude,position.coords.longitude]
+	  if (map)
+		map.setView(startPosition,7);
+      });
 	
     document.getElementById('btnMainPopUp').click();
     loadMap();
