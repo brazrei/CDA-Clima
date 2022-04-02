@@ -154,7 +154,8 @@ $(document).ready(function () {
 		map.setView(startPosition,7,{
   			"animate": true,
   			"pan": {
-  			"duration": 1
+  				"duration": 1
+			}
   		});
       });
 	
