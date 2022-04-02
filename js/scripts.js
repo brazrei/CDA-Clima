@@ -151,7 +151,11 @@ $(document).ready(function () {
   navigator.geolocation.getCurrentPosition(function(position) {
 	  startPosition = [position.coords.latitude,position.coords.longitude]
 	  if (map)
-		map.setView(startPosition,7);
+		map.setView(startPosition,7,{
+  			"animate": true,
+  			"pan": {
+  			"duration": 1
+  		});
       });
 	
     document.getElementById('btnMainPopUp').click();
