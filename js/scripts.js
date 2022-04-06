@@ -374,7 +374,7 @@ function plotaMarca(lat, lng, loc) {
         if (metarData && metarData.temp) {
             let strTemp = metarData.temp.t + "º"
             strTemp = insertSpanClass(spanColor(strTemp, strTemp, false, "black", true), sombra2)
-            let strUR = parseInt(metarData.UR) + "%"
+            let strUR = Math.round(metarData.UR) + "%"
             strUR = insertSpanClass(spanColor(strUR, strUR, false, "black", true), sombra2)
             desc += `Temperatura do Ar: ${strTemp}<br>Umidade Relativa: ${strUR}` //+ '<br><br>'+ metar
             desc = spanBold(desc)
@@ -534,7 +534,7 @@ function plotaMarca(lat, lng, loc) {
         }
         let strLegendaDC=""
         if (metarData && metarData.UR) {
-            let UR = parseInt(metarData.UR)
+            let UR = Math.round(metarData.UR)
             //if (UR >= 80 && UR <= 90) {
             if (UR >= 20 && UR <= 30) {
                 strLegendaDC += "<b> Possível estado de Atenção em sua região.</b><br><br>" 
