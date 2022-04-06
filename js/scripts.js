@@ -394,7 +394,7 @@ function plotaMarca(lat, lng, loc) {
 
         var grayIcon = new L.Icon({
             //            iconUrl: 'png/marker-icon-green.png',
-            iconUrl: 'png/condicao_preta2.png',
+            iconUrl: 'png/condicao_preta3.png',
             //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
             iconSize: [iconSize, iconSize],
             //iconAnchor: [0, 0],
