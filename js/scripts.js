@@ -482,7 +482,7 @@ function plotaMarca(lat, lng, loc) {
         let icon = false
         let strAlerta, strLegenda
         let strCDA = `<h5 style="${sombra2}">Orientações do CDA:</h5>`
-	let strDC
+	let strDC = ""
         if (indiceI >= 3.55 || (metarData && metarData.temp.t > 39)) {
             strAlerta = spanColor(strRiscoMuitoAlto, strRiscoMuitoAlto, false, "black", true)
             strAlerta = insertSpanClass(strAlerta, sombra2)
@@ -533,6 +533,7 @@ function plotaMarca(lat, lng, loc) {
 
         }
         let strLegendaDC=""
+	let porcentagemCritica = false
         if (metarData && metarData.UR) {
             let UR = Math.round(metarData.UR)
             //if (UR >= 80 && UR <= 90) {
@@ -563,10 +564,10 @@ function plotaMarca(lat, lng, loc) {
             	strLegendaDC = spanColor(strLegendaDC, "Emergência", false, "red", true)
 		porcentagemCritica = "12%"
             }
-	    strDC = `<h5 style="${sombra2}">Umidade Reltiva do Ar abaixo de ${porcentagemCritica}:</h5>`
-	    strDC = spanColor(strDC, porcentagemCritica, false, "red", true)
-	    strLegendaDC = spanColor(strLegendaDC, "Consulte a Defesa Civil de seu estado para confirmação", false, "red", true)
             if (strLegendaDC.length > 0) { 
+                strDC = `<h5 style="${sombra2}">Umidade Reltiva do Ar abaixo de ${porcentagemCritica}:</h5>`
+	        strDC = spanColor(strDC, porcentagemCritica, false, "red", true)
+	        strLegendaDC = spanColor(strLegendaDC, "Consulte a Defesa Civil de seu estado para confirmação", false, "red", true)
             	strLegendaDC = insertSpanClass(strLegendaDC, sombra2)
             	strLegendaDC = '<br><br><br>' + strDC + strLegendaDC
 	    }
