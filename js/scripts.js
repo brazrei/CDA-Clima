@@ -565,7 +565,7 @@ function plotaMarca(lat, lng, loc) {
 		porcentagemCritica = "12%"
             }
             if (strLegendaDC.length > 0) { 
-                strDC = `<h5 style="${sombra2}">Umidade Reltiva do Ar abaixo de ${porcentagemCritica}:</h5>`
+                strDC = `<h5 style="${sombra2}">Umidade Reltiva do Ar Abaixo de ${porcentagemCritica}:</h5>`
 	        strDC = spanColor(strDC, porcentagemCritica, false, "red", true)
 	        strLegendaDC = spanColor(strLegendaDC, "Consulte a Defesa Civil de seu estado para confirmação", false, "red", true)
             	strLegendaDC = insertSpanClass(strLegendaDC, sombra2)
