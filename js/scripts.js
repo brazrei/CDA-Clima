@@ -394,7 +394,7 @@ function plotaMarca(lat, lng, loc) {
 
         var grayIcon = new L.Icon({
             //            iconUrl: 'png/marker-icon-green.png',
-            iconUrl: 'png/condicao_preta.png',
+            iconUrl: 'png/condicao_preta2.png',
             //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
             iconSize: [iconSize, iconSize],
             //iconAnchor: [0, 0],
@@ -485,6 +485,7 @@ function plotaMarca(lat, lng, loc) {
 	let strDC = `<h5 style="${sombra2}">Possíveis Orientações da Defesa Civil:</h5>`
         if (indiceI >= 3.55 || (metarData && metarData.temp.t > 39)) {
             strAlerta = spanColor(strRiscoMuitoAlto, strRiscoMuitoAlto, false, "black", true)
+            strAlerta = insertSpanClass(strAlerta, sombra2)
             icon = grayIcon
             strLegenda = "- Atividade física suspensa para todos.<br>" +
                 "- Não realizar o TACF."
