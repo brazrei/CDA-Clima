@@ -7,9 +7,9 @@ var strRiscoModerado = "Risco Moderado (Amarelo)"
 var strRiscoAlto = "Risco Alto (Vermelho)"
 var strRiscoMuitoAlto = "Risco Muito Alto (Preto)"
 
-var sombra1 = "text-shadow: 1px 1px 0px #999;"
-var sombra2 = "text-shadow: 1px 1px 0px #999;"
-var sombra3 = "text-shadow: 1px 1px 0px #999;"
+var sombra1 = "text-shadow: 1px 1px 0px #ccc;"
+var sombra2 = "text-shadow: 1px 1px 0px #ccc;"
+var sombra3 = "text-shadow: 1px 1px 0px #ccc;"
 var iconSize = 18
 var startPosition = [-21.0529434318608, -48.01910972595218]
 /*function spanColor(texto, cor) {
