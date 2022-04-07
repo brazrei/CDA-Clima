@@ -24,7 +24,7 @@ var linkIntraer = "http://www.redemet.intraer//api/consulta_automatica/index.php
 var linkAPINova = "https://api-redemet.decea.mil.br/mensagens/"
 
 const urlCache = "php/consulta_msg.php?url="
-const proxy = "&proxy=false"
+const proxy = "&proxy=true"
 
 //var beepOn = true; //
 
