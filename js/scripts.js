@@ -440,7 +440,7 @@ function plotaMarca(lat, lng, loc) {
             html: '<div class="gps_ring"></div>'
             // Set marker width and height
             , iconSize: [28, 28]
-            , iconAnchor: [13, 13]
+            , iconAnchor: [14, 14]
         });
 
         var cssIconYellow = new L.divIcon({
