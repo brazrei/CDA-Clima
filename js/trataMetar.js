@@ -45,6 +45,10 @@ var arrayCMA = [
 
 //Global ciclos, MaxCiclos As integer  ' É 1 CICLO POR SEGUNDO
 
+function updateClock() {
+    $('#').html(new Date().toLocaleTimeString());
+}
+
 function addHours(data, horas) {
     if (!Date.prototype.addHours)
         Date.prototype.addHours = function (h) {
@@ -98,6 +102,7 @@ function GetWebContent(url, idxFIR) {
                 }
                 else {
                     $("#imgLoad" + idxFIR).attr('src', 'pngs/green-button30.png');
+                    updateClock();
                     trataMetarRedemet(this.responseText, idxFIR);
                 }
 
