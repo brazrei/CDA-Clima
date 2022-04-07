@@ -370,7 +370,7 @@ function plotaMarca(lat, lng, loc) {
                 indiceI = -1
             }
         }
-        desc = `<h5 style="${sombra3}">${spanBold(getDescricao(loc).toUpperCase())}</h5>`
+        desc = `<h5 style="${sombra3} background-color: #eee;border-radius: 3px;">${spanBold(getDescricao(loc).toUpperCase())}</h5>`
         if (metarData && metarData.temp) {
             let strTemp = metarData.temp.t + "º"
             strTemp = insertSpanClass(spanColor(strTemp, strTemp, false, "black", true), sombra2)
