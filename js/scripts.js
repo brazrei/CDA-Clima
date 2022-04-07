@@ -579,6 +579,8 @@ function plotaMarca(lat, lng, loc) {
         let strInfoICA = spanBold("Fonte:") + " * Quadro 3.2, Página 22 - NSCA 54-5/2020"
         //let strInfoICA = spanBold("Fonte:") + " * Quadro 3.1, Página 21 - ICA 54-3/2007"
         desc = `${desc}<br><br>${strCDA}<h5>${strAlerta}</h5>${strLegenda}${strLegendaDC}<br><br>${strInfoICA}`
+	desc = desc.replace("color:yellow","color:yellow; background-color: #555; padding: 2px;")
+	desc = desc.replace("color:red","color:red; background-color: #aaa; padding: 2px;")
 
         var m = addMarker(L.marker([lat, lng], { icon: icon }), loc, restricao)
 
