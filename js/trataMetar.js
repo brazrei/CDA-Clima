@@ -46,7 +46,7 @@ var arrayCMA = [
 //Global ciclos, MaxCiclos As integer  ' É 1 CICLO POR SEGUNDO
 
 function updateClock() {
-    $('#spanClock').html(new Date().toLocaleTimeString());
+    $('#spanClock').html(new Date().toLocaleDateString());
 }
 
 function addHours(data, horas) {
