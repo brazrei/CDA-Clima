@@ -407,7 +407,7 @@ function plotaMarca(lat, lng, loc) {
             iconUrl: 'png/condicao_amarelo.png',
             //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
             iconSize: [iconSize, iconSize],
-            iconAnchor: [0, 0],
+            //iconAnchor: [0, 0],
             popupAnchor: [1, -12],
             shadowSize: [6, 6],
             alt: 500
@@ -417,7 +417,7 @@ function plotaMarca(lat, lng, loc) {
             iconUrl: 'png/condicao_laranja.png',
             //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
             iconSize: [iconSize, iconSize],
-            iconAnchor: [0, 0],
+            //iconAnchor: [0, 0],
             popupAnchor: [1, -12],
             shadowSize: [6, 6],
             alt: 500
@@ -428,7 +428,7 @@ function plotaMarca(lat, lng, loc) {
             iconUrl: 'png/condicao_vermelho.png',
             //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
             iconSize: [iconSize, iconSize],
-            iconAnchor: [0, 0],
+            //iconAnchor: [0, 0],
             popupAnchor: [1, -12],
             shadowSize: [6, 6],
             alt: 1000
