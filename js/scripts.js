@@ -426,7 +426,7 @@ function plotaMarca(lat, lng, loc) {
         var silverIcon = new L.Icon({
             iconUrl: 'png/condicao_prata.png',
             //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-            iconSize: [iconSize, iconSize],
+            iconSize: [iconSize-5, iconSize-5],
             //iconAnchor: [0, 0],
             popupAnchor: [1, -12],
             shadowSize: [6, 6],
@@ -462,9 +462,7 @@ function plotaMarca(lat, lng, loc) {
             , iconAnchor: [48, 48]
         });
 
-        let restricao = false
-
-        restricao = true
+        let restricao = true
         //desc = desc.substr(1)
         let descU = desc.toUpperCase();
 
@@ -590,7 +588,7 @@ function plotaMarca(lat, lng, loc) {
 	let strInfoICA 
 	if (!icon){
             icon = silverIcon
-	    let strErro = "Náo Há Dados Meteorológicos Atualizados para Esta Localidade!"
+	    let strErro = spanBold("Náo Há Dados Meteorológicos Atualizados Para Esta Localidade!")
 	    desc = `${desc}<br><br>${strErro}`
 	} else {
 
