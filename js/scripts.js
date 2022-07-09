@@ -396,7 +396,7 @@ function plotaMarca(lat, lng, loc) {
             //            iconUrl: 'png/marker-icon-green.png',
             iconUrl: 'png/condicao_preta3.png',
             //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-            iconSize: [iconSize, iconSize],
+            iconSize: [iconSize+1, iconSize+1],
             //iconAnchor: [0, 0],
             popupAnchor: [1, -12],
             shadowSize: [6, 6],
