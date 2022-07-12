@@ -18,13 +18,13 @@ var OPMET = true;
 var intraer = false; // valido apenas para a api antiga por enquanto
 var apiKey = ""
 //var linkInternet = "http://redemet.decea.gov.br//api/consulta_automatica/index.php?local="
-var linkInternet = "http://localhost/WebServiceOPMET/getMetarOPMET.php?local="
+var linkInternet = "http://10.52.225.42/WebServiceOPMET/getMetarOPMET.php?local="
 
 var linkIntraer = "http://www.redemet.intraer//api/consulta_automatica/index.php?local="
 var linkAPINova = "https://api-redemet.decea.mil.br/mensagens/"
 
 const urlCache = "php/consulta_msg.php?url="
-const proxy = "&proxy=false"
+const proxy = "&proxy=true"
 
 //var beepOn = true; //
 
