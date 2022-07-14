@@ -46,7 +46,7 @@ var arrayCMA = [
 //Global ciclos, MaxCiclos As integer  ' É 1 CICLO POR SEGUNDO
 
 function updateClock() {
-    $('#spanClock').html(new Date().toLocaleString());
+    $('#spanClock').html(new getUTCAgora().toLocaleString());
 }
 
 function addHours(data, horas) {
@@ -73,8 +73,8 @@ function getFormatedDate(data) {
 }
 
 function getInterval(horas = 1) {
-    let dini = getFormatedDate(addHours(new Date(), -horas));
-    let dfim = getFormatedDate(addHours(new Date(), 1));
+    let dini = getFormatedDate(addHours(getUTCAgora(), -horas));
+    let dfim = getFormatedDate(addHours(getUTCAgora(), 1));
     return `&data_ini=${dini}&data_fim=${dfim}`
 }
 
@@ -677,7 +677,7 @@ function getMetarFromFIR(firIdx, Legenda, onLine) {
     var txtLoc;
     txtLoc = localidadesFIR[firIdx];
 
-    var agora = new Date();
+    var agora = getUTCAgora();
     TempoCorrido = 0;
 
     var h = fillZero(agora.getHours());
