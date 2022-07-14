@@ -147,7 +147,7 @@ function loadMap() {
 };
 
 $(document).ready(function () {
-	
+	try {
   navigator.geolocation.getCurrentPosition(function(position) {
 	  startPosition = [position.coords.latitude,position.coords.longitude]
 	  if (map)
@@ -157,8 +157,10 @@ $(document).ready(function () {
   				"duration": 1
 			}
   		});
-      });
-	
+      		});
+	} catch {
+		console.log("Não foi possível encontrar a Localização!")
+	}
     document.getElementById('btnMainPopUp').click();
     loadMap();
     getAeroportos();
