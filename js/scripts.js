@@ -17,6 +17,30 @@ var startPosition = [-21.0529434318608, -48.01910972595218]
     
 }*/
 
+$(document).ready(function () {
+	setTimeout(getLocation,500);
+    document.getElementById('btnMainPopUp').click();
+    loadMap();
+    getAeroportos();
+});
+
+function getLocation() {
+  try {
+  	navigator.geolocation.getCurrentPosition(function(position) {
+	startPosition = [position.coords.latitude,position.coords.longitude]
+	if (map)
+		map.setView(startPosition,7,{
+  			"animate": true,
+  			"pan": {
+  				"duration": 1
+			}
+  		});
+      		});
+	} catch {
+		console.log("Não foi possível encontrar a Localização!")
+	}
+}
+
 function insertSpanClass(str, classe) {
     return str.replace(/style="/g, `style="${classe}`);
 }
@@ -146,25 +170,6 @@ function loadMap() {
 
 };
 
-$(document).ready(function () {
-	try {
-  navigator.geolocation.getCurrentPosition(function(position) {
-	  startPosition = [position.coords.latitude,position.coords.longitude]
-	  if (map)
-		map.setView(startPosition,7,{
-  			"animate": true,
-  			"pan": {
-  				"duration": 1
-			}
-  		});
-      		});
-	} catch {
-		console.log("Não foi possível encontrar a Localização!")
-	}
-    document.getElementById('btnMainPopUp').click();
-    loadMap();
-    getAeroportos();
-});
 
 function exportaMetares(arrayMetares) {
     for (let i in arrayMetares) {
