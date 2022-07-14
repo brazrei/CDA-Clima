@@ -45,6 +45,12 @@ var arrayCMA = [
 
 //Global ciclos, MaxCiclos As integer  ' É 1 CICLO POR SEGUNDO
 
+function getUTCAgora() {
+    let agora = new Date()
+    return new Date(new Date().getTime() + new Date().getTimezoneOffset()*60000);
+    //return new Date(agora.getUTCFullYear(), agora.getUTCMonth(), agora.getUTCDate(), agora.getUTCHours(), agora.getUTCMinutes())
+}
+
 function updateClock() {
     $('#spanClock').html(new getUTCAgora().toLocaleString());
 }
