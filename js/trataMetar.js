@@ -67,11 +67,11 @@ function addHours(data, horas) {
 }
 
 function getFormatedDate(data) {
-    let ano = data.getUTCFullYear();
-    let mes = fillZero(parseInt(data.getUTCMonth()) + 1);
-    let dia = fillZero(data.getUTCDate());
-    let hora = fillZero(data.getUTCHours());
-    //    let minutos = addZeros(data.getUTCMinutes());
+    let ano = data.getFullYear();
+    let mes = fillZero(parseInt(data.getMonth()) + 1);
+    let dia = fillZero(data.getDate());
+    let hora = fillZero(data.getHours());
+    //    let minutos = addZeros(data.getMinutes());
     let minutos = "";
     //    if (zeraMinutos)
     //        minutos = '00';
