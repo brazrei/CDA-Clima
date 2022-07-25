@@ -52,7 +52,7 @@ function getUTCAgora() {
 }
 
 function updateClock() {
-    $('#spanClock').html(new getUTCAgora().toLocaleString());
+    $('#spanClock').html(new getUTCAgora().toLocaleString() + " UTC");
 }
 
 function addHours(data, horas) {
