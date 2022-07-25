@@ -691,7 +691,7 @@ function getMetarFromFIR(firIdx, Legenda, onLine) {
     var s = fillZero(agora.getSeconds());
 
     if (onLine) {
-        atualizaHora("Hora da Última Consulta à REDEMET: " + h + ":" + m + ":" + s + " UTC");
+        atualizaHora("Hora da Última Consulta ao Banco OPMET: " + h + ":" + m + ":" + s + " UTC");
     }
     return getMetar(txtLoc, Legenda, firIdx, onLine);
 
