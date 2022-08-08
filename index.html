@@ -199,25 +199,19 @@
           <p>As orientações aqui apresentadas são baseadas duas fontes:</p>
           <p>1 - NSCA 54-5/2020, especialmente os Quadros 3.1 e 3.2; e</p>
           <p>2 – Recomendações dos órgãos de defesa civil, derivadas de orientações da Organização Mundial da Saúde.</p>
-          <p>Relativamente às orientações da NSCA 54-5/2020, importa esclarecer que o método utilizado para estimar as
-            condutas preventivas para a prática de atividade física, conforme Quadro 3.1 do referido documento, tem como
-            base dados de Temperatura do Bulbo Seco (TBS) e de Temperatura do Bulbo Úmido (TBU), visando obtenção da
-            Umidade
-            Relativa do Ar (URA), o que dificulta a automatização do processo, visto que os informes meteorológicos
-            METAR
-            e
-            SPECI, gerados pelas Estações Meteorológicas de Superfície (EMS), não possuem TBU. Assim, para estimar de
-            maneira automatizada as condutas preventivas, é realizado cálculo da URA a partir da TBS e da Temperatura do
-            Porto de Orvalho (TPO), ambas presentes nos supracitados informes meteorológicos. Em consequência, por
-            vezes,
-            o
-            valor de URA calculada não coincidirá com os valores discretizados (em intervalos variáveis) de URA plotados
-            no
-            Quadro 3.1 da NSCA 54-5/2020. Nesses casos, as condutas preventivas são estimadas por interpolação dos dados
-            de
-            URA plotados no Quadro 3.1.</p>
-          <br>
           <p>Relativamente às orientações da NSCA 54-5/2020, importa esclarecer que o método utilizado para estimar as condutas preventivas para a prática de atividade física, conforme Quadro 3.1 do referido documento, tem como base dados de Temperatura do Bulbo Seco (TBS) e de Temperatura do Bulbo Úmido (TBU), visando obtenção da Umidade Relativa do Ar (URA), o que dificulta a automatização do processo, visto que os informes meteorológicos METAR e SPECI, gerados pelas Estações Meteorológicas de Superfície (EMS), não possuem TBU. Assim, para estimar de maneira automatizada as condutas preventivas, é realizado cálculo da URA a partir da TBS e da Temperatura do Porto de Orvalho (TPO), ambas presentes nos supracitados informes meteorológicos. Os valores de TBS e URA calculada são inseridos, automaticamente, em uma equação, cujo resultado é um índice que possui intervalos de valores que se traduzem nos códigos de cores do Quadro 3.1 da NSCA 54-5/2020. Como resultado da metodologia utilizada, por vezes, o valor de URA calculada não coincidirá com os valores discretizados de URA plotados no Quadro 3.1 da NSCA 54-5/2020. Nesses casos, as condutas preventivas são estimadas por interpolação dos dados de URA plotados no Quadro 3.1.</p>
+          <br>
+          <p>Como exemplo, consideremos uma TBS de 31ºC e uma TPO de 17ºC. A Umidade relativa, nessas condições, é
+            calculada
+            em 43%. Entretanto, os valores de URA constantes no Quadro 3.1 (vide imagem abaixo) mais próximos de 43%,
+            para
+            uma TBS de 31ºC, são 45% e 40%, sendo que o primeiro representaria condutas preventivas diferentes do
+            segundo
+            (código de cores Amarelo para o primeiro e Verde para o segundo). Por interpolação dos dados, entende-se que
+            o
+            valor de 43% representa condições intermediárias entre 45% e 40%, estando mais próximo de 45%, motivo pelo
+            qual,
+            para TBS de 31ºC e URA de 43% esta página apresentará código de cores Amarelo.</p>
           <img src="png/quadro31b.png" alt="Quadro3.1" class="centerImg">
           <br>
           <p>Assim, as informações aqui apresentadas representam uma estimativa, porém bastante precisa, e cuja utilização prática pode não diferir, na maioria dos casos, do método recomendado pela NSCA 54-5/2020, visto que essa norma também realiza uma estimativa, pois se utiliza de aproximações (arredondamento de valores), conforme consta na letra “b” de seu item 3.6.1.5.</p>
