@@ -496,7 +496,7 @@ function plotaMarca(lat, lng, loc) {
         }
         let icon = false
         let strAlerta, strLegenda
-        let strCDA = `<h5 style="${sombra2}">Orientações do CDA:</h5>`
+        let strCDA = `<h5 style="${sombra2}">Orientações da CDA:</h5>`
 	let strDC = ""
         if (indiceI >= 3.55 || (metarData && metarData.temp.t > 39)) {
             strAlerta = spanColor(strRiscoMuitoAlto, strRiscoMuitoAlto, false, "black", true)
