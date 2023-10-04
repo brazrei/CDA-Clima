@@ -509,7 +509,7 @@ function plotaMarca(lat, lng, loc) {
             strLegenda = spanColor(strLegenda, "Não realizar o TACF", false, "red", true)
             strLegenda = insertSpanClass(strLegenda, sombra2)
 
-            addMarker(L.marker([lat, lng], { icon: cssIconRed }), "", true, true)
+            //addMarker(L.marker([lat, lng], { icon: cssIconRed }), "", true, true)
 
 
         } else if (indiceI > 0 && indiceI < 3.35) {
