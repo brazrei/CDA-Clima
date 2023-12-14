@@ -117,7 +117,8 @@
       margin-left: auto;
       margin-right: auto;
       width: 50%;
-     }
+    }
+
     .divFooter {
       position: fixed;
       bottom: 0;
@@ -126,9 +127,112 @@
       z-index: 10000;
       background-color: black;
       padding: 2px 5px 2px 5px;
-    }    
-    .navbar-brand{
+    }
+
+    .navbar-brand {
       text-shadow: 1px 1px 0px #555;
+    }
+
+    .legenda {
+      background-image: url(png/info-circle-fill.svg);
+      width: 50px;
+      height: 50px;
+      bottom: 20px;
+      right: 20px;
+      background-size: 100%;
+      cursor: pointer;
+
+    }
+
+    .ttLegenda {
+      width: 380px;
+      height: 260px;
+      bottom: 80px;
+      right: 80px;
+      display: none;
+      background-color: white;
+
+    }
+
+    .legenda,
+    .ttLegenda {
+      position: absolute;
+      z-index: 5000;
+      border-radius: 25px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      padding: 5px;
+    }
+
+    .legenda:hover {
+      animation: pulseZoomAnimation 1s ease-out infinite;
+      -webkit-animation: pulseZoomAnimation 1s ease-out;
+      -webkit-animation-iteration-count: 1;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    #titleLegenda {
+      margin-top: 8px;
+      margin-left: 15px;
+      margin-right: 15px;
+      text-shadow: 1px 1px 0px #ccc; 
+      background-color: #eee;
+      border-radius: 3px;
+      text-align: center;
+      text-indent: 0px;
+
+    }
+
+    #bodyLegenda {
+      display: flex;
+    }
+
+    span {
+      margin-left: 5px;
+    }
+
+    .icon {
+      width: 30px;
+      height: 30px;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .iconBlack {
+      background-image: url("png/condicao_preta3.png");
+    }
+
+    .iconRed {
+      background-image: url("png/condicao_vermelho.png");
+    }
+
+    .iconYellow {
+      background-image: url("png/condicao_amarelo.png");
+    }
+
+    .iconGreen {
+      background-image: url("png/condicao_verde.png");
+    }
+
+    .iconSilver {
+      background-image: url("png/condicao_prata.png");
+    }
+
+    @keyframes pulseZoomAnimation {
+      0% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+      }
+
+      50% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+      }
+
+      100% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+      }
+
     }
   </style>
   <!-- Custom styles for this template 
@@ -160,18 +264,20 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title sombra2" id="exampleModalLabel">ATENÇÃO:</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
         <div class="modal-body sombra2">
           <h5>
-            <p>Este produto visa apresentar, de maneira prática e acessível, uma estimativa das condutas preventivas para a prática de atividade física nas organizações militares, 
-              decorrentes das condições climáticas, a partir das orientações contidas na NSCA 54-5/2020 e das recomendações da Organização Mundial da Saúde. </p>
+            <p>Este produto visa apresentar, de maneira prática e acessível, uma estimativa das condutas preventivas
+              para a prática de atividade física nas organizações militares,
+              decorrentes das condições climáticas, a partir das orientações contidas na NSCA 54-5/2023 e das
+              recomendações da Organização Mundial da Saúde. </p>
             <p class="alerta">As informações apresentadas não prevalecem sobre as orientações das fontes oficiais!</p>
           </h5>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal"
-          data-bs-target="#exampleModalFullscreen" style="margin-right: 60%;">Saiba mais</button>
+            data-bs-target="#exampleModalFullscreen" style="margin-right: 60%;">Saiba mais</button>
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
         </div>
       </div>
@@ -196,11 +302,34 @@
             isso, as condições climáticas e meteorológicas podem e devem determinar adaptações de horários, locais e
             uniformes para a prática de treinamento físico.</p>
           <br>
-          <p>Essas adaptações são orientadas por órgãos específicos, como a Comissão de Desportos da Aeronáutica (CDA) e a Defesa Civil. O uso rotineiro dessas fontes de informação, no entanto, pode representar um desafio frente às rotinas agitadas das organizações militares. A correta aplicação das orientações da CDA, por exemplo, exige contato com órgãos de Controle de Tráfego ou de Meteorologia para a obtenção de dados meteorológicos, os quais devem ser plotados em tabela específica, conforme item 3.6.1.5 da NSCA 54-5/2020, a fim de se identificar condutas preventivas para a prática de atividade física. Além disso, as contínuas mudanças nos parâmetros meteorológicos, que, por vezes, podem acontecer de forma célere e acentuada, podem alterar rapidamente as condutas preventivas necessárias, e o acompanhamento dessas alterações climáticas pode se tornar um obstáculo. Por isso, a Subdivisão de Estudos e Projetos, juntamente com o Centro Meteorológico Integrado, ambos do CIMAER, criaram esta página, que proporciona aos militares da Força Aérea Brasileira, de maneira prática, acessível e continuamente atualizada, uma estimativa das condutas preventivas para a prática de atividade física nas organizações militares que possuem Estações Meteorológicas de Superfície (EMS).</p>
+          <p>Essas adaptações são orientadas por órgãos específicos, como a Comissão de Desportos da Aeronáutica (CDA) e
+            a Defesa Civil. O uso rotineiro dessas fontes de informação, no entanto, pode representar um desafio frente
+            às rotinas agitadas das organizações militares. A correta aplicação das orientações da CDA, por exemplo,
+            exige contato com órgãos de Controle de Tráfego ou de Meteorologia para a obtenção de dados meteorológicos,
+            os quais devem ser plotados em tabela específica, conforme item 3.6.1.5 da NSCA 54-5/2023, a fim de se
+            identificar condutas preventivas para a prática de atividade física. Além disso, as contínuas mudanças nos
+            parâmetros meteorológicos, que, por vezes, podem acontecer de forma célere e acentuada, podem alterar
+            rapidamente as condutas preventivas necessárias, e o acompanhamento dessas alterações climáticas pode se
+            tornar um obstáculo. Por isso, a Subdivisão de Estudos e Projetos, juntamente com o Centro Meteorológico
+            Integrado, ambos do CIMAER, criaram esta página, que proporciona aos militares da Força Aérea Brasileira, de
+            maneira prática, acessível e continuamente atualizada, uma estimativa das condutas preventivas para a
+            prática de atividade física nas organizações militares que possuem Estações Meteorológicas de Superfície
+            (EMS).</p>
           <p>As orientações aqui apresentadas são baseadas duas fontes:</p>
-          <p>1 - NSCA 54-5/2020, especialmente os Quadros 3.1 e 3.2; e</p>
+          <p>1 - NSCA 54-5/2023, especialmente os Quadros 3.1 e 3.2; e</p>
           <p>2 – Recomendações dos órgãos de defesa civil, derivadas de orientações da Organização Mundial da Saúde.</p>
-          <p>Relativamente às orientações da NSCA 54-5/2020, importa esclarecer que o método utilizado para estimar as condutas preventivas para a prática de atividade física, conforme Quadro 3.1 do referido documento, tem como base dados de Temperatura do Bulbo Seco (TBS) e de Temperatura do Bulbo Úmido (TBU), visando obtenção da Umidade Relativa do Ar (URA), o que dificulta a automatização do processo, visto que os informes meteorológicos METAR e SPECI, gerados pelas Estações Meteorológicas de Superfície (EMS), não possuem TBU. Assim, para estimar de maneira automatizada as condutas preventivas, é realizado cálculo da URA a partir da TBS e da Temperatura do Porto de Orvalho (TPO), ambas presentes nos supracitados informes meteorológicos. Os valores de TBS e URA calculada são inseridos, automaticamente, em uma equação, cujo resultado é um índice que possui intervalos de valores que se traduzem nos códigos de cores do Quadro 3.1 da NSCA 54-5/2020. Como resultado da metodologia utilizada, por vezes, o valor de URA calculada não coincidirá com os valores discretizados de URA plotados no Quadro 3.1 da NSCA 54-5/2020. Nesses casos, as condutas preventivas são estimadas por interpolação dos dados de URA plotados no Quadro 3.1.</p>
+          <p>Relativamente às orientações da NSCA 54-5/2023, importa esclarecer que o método utilizado para estimar as
+            condutas preventivas para a prática de atividade física, conforme Quadro 3.1 do referido documento, tem como
+            base dados de Temperatura do Bulbo Seco (TBS) e de Temperatura do Bulbo Úmido (TBU), visando obtenção da
+            Umidade Relativa do Ar (URA), o que dificulta a automatização do processo, visto que os informes
+            meteorológicos METAR e SPECI, gerados pelas Estações Meteorológicas de Superfície (EMS), não possuem TBU.
+            Assim, para estimar de maneira automatizada as condutas preventivas, é realizado cálculo da URA a partir da
+            TBS e da Temperatura do Porto de Orvalho (TPO), ambas presentes nos supracitados informes meteorológicos. Os
+            valores de TBS e URA calculada são inseridos, automaticamente, em uma equação, cujo resultado é um índice
+            que possui intervalos de valores que se traduzem nos códigos de cores do Quadro 3.1 da NSCA 54-5/2023. Como
+            resultado da metodologia utilizada, por vezes, o valor de URA calculada não coincidirá com os valores
+            discretizados de URA plotados no Quadro 3.1 da NSCA 54-5/2023. Nesses casos, as condutas preventivas são
+            estimadas por interpolação dos dados de URA plotados no Quadro 3.1.</p>
           <br>
           <p>Como exemplo, consideremos uma TBS de 31ºC e uma TPO de 17ºC. A Umidade relativa, nessas condições, é
             calculada
@@ -215,7 +344,10 @@
             para TBS de 31ºC e URA de 43% esta página apresentará código de cores Amarelo.</p>
           <img src="png/quadro31b.png" alt="Quadro3.1" class="centerImg">
           <br>
-          <p>Assim, as informações aqui disponibilizadas representam uma estimativa, porém bastante precisa, e que não difere, na maioria dos casos, dos resultados obtidos por meio do método recomendado pela NSCA 54-5/2020, visto que essa norma também realiza uma estimativa, utilizando-se de aproximações (arredondamento de valores), conforme consta na letra “b” de seu item 3.6.1.5.</p>
+          <p>Assim, as informações aqui disponibilizadas representam uma estimativa, porém bastante precisa, e que não
+            difere, na maioria dos casos, dos resultados obtidos por meio do método recomendado pela NSCA 54-5/2023,
+            visto que essa norma também realiza uma estimativa, utilizando-se de aproximações (arredondamento de
+            valores), conforme consta na letra “b” de seu item 3.6.1.5.</p>
           <p>Relativamente às orientações da Organização Mundial da Saúde, cabe destacar a sinalização de complicações
             alérgicas e respiratórias em casos de URA muito baixa, motivo pelo qual, nessas condições, os órgãos de
             Defesa
@@ -232,13 +364,14 @@
             órgão oficiais em sua região.</p>
           <br>
           <b>
-          <p>Por fim, é importante ressaltar que qualquer informação aqui apresentada não substitui nem prevalece sobre
-            as
-            orientações provenientes dos órgãos oficiais.</p>
+            <p>Por fim, é importante ressaltar que qualquer informação aqui apresentada não substitui nem prevalece
+              sobre
+              as
+              orientações provenientes dos órgãos oficiais.</p>
           </b>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
         </div>
       </div>
     </div>
@@ -297,8 +430,44 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 -->
-  <div id = "footer" class = "divFooter">
-    <span>Última consulta aos dados meteorológicos realizada em: </span><span id = "spanClock"> 00:00:00 </span>
+  <div class="ttLegenda">
+    <div id="titleLegenda">
+      <h5>
+        LEGENDA
+      </h5>
+    </div>
+
+    <div id="bodyLegenda">
+      <div class="gps_ring css-icon"></div><span>Umidade Relativa do Ar Abaixo de 30%</span>
+    </div>
+
+    <div id="bodyLegenda">
+      <div class="iconBlack icon"></div><span>Risco Muito Alto</span>
+    </div>
+
+    <div id="bodyLegenda">
+      <div class="iconRed icon"></div><span>Risco Alto</span>
+    </div>
+
+    <div id="bodyLegenda">
+      <div class="iconYellow icon"></div><span>Risco Moderado</span>
+    </div>
+
+    <div id="bodyLegenda">
+      <div class="iconGreen icon"></div><span>Risco Baixo</span>
+    </div>
+
+    <div id="bodyLegenda">
+      <div class="iconSilver icon"></div><span>Localidade sem Dados Meteorológicos Atualizados</span>
+    </div>
+
+
+  </div>
+  <div class="legenda">
+
+  </div>
+  <div id="footer" class="divFooter">
+    <span>Última consulta aos dados meteorológicos realizada em: </span><span id="spanClock"> 00:00:00 </span>
   </div>
 
   <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
