@@ -18,27 +18,43 @@ var startPosition = [-21.0529434318608, -48.01910972595218]
 }*/
 
 $(document).ready(function () {
-	setTimeout(getLocation,500);
+    setTimeout(getLocation, 500);
     document.getElementById('btnMainPopUp').click();
     loadMap();
     getAeroportos();
+
+    $('.legenda').on('mousemove', function () {
+        $('.ttLegenda').fadeIn()
+    })
+    $('.legenda').on('mouseout', function () {
+        $('.ttLegenda').fadeOut()
+    })
+
+    $(".modal").on('shown.bs.modal', function () {
+        $('.legenda').fadeOut()
+    });
+
+    $(".modal").on('hidden.bs.modal', function () {
+        $('.legenda').fadeIn()
+    });
+
 });
 
 function getLocation() {
-  try {
-  	navigator.geolocation.getCurrentPosition(function(position) {
-	startPosition = [position.coords.latitude,position.coords.longitude]
-	if (map)
-		map.setView(startPosition,7,{
-  			"animate": true,
-  			"pan": {
-  				"duration": 1
-			}
-  		});
-      		});
-	} catch {
-		console.log("Não foi possível encontrar a Localização!")
-	}
+    try {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            startPosition = [position.coords.latitude, position.coords.longitude]
+            if (map)
+                map.setView(startPosition, 7, {
+                    "animate": true,
+                    "pan": {
+                        "duration": 1
+                    }
+                });
+        });
+    } catch {
+        console.log("Não foi possível encontrar a Localização!")
+    }
 }
 
 function insertSpanClass(str, classe) {
@@ -403,7 +419,7 @@ function plotaMarca(lat, lng, loc) {
             //            iconUrl: 'png/marker-icon-green.png',
             iconUrl: 'png/condicao_preta3.png',
             //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-            iconSize: [iconSize+1, iconSize+1],
+            iconSize: [iconSize + 1, iconSize + 1],
             //iconAnchor: [0, 0],
             popupAnchor: [1, -12],
             shadowSize: [6, 6],
@@ -433,7 +449,7 @@ function plotaMarca(lat, lng, loc) {
         var silverIcon = new L.Icon({
             iconUrl: 'png/condicao_prata.png',
             //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-            iconSize: [iconSize-5, iconSize-5],
+            iconSize: [iconSize - 5, iconSize - 5],
             //iconAnchor: [0, 0],
             popupAnchor: [1, -12],
             shadowSize: [6, 6],
@@ -497,7 +513,7 @@ function plotaMarca(lat, lng, loc) {
         let icon = false
         let strAlerta, strLegenda
         let strCDA = `<h5 style="${sombra2}">Orientações da CDA:</h5>`
-	let strDC = ""
+        let strDC = ""
         if (indiceI >= 3.55 || (metarData && metarData.temp.t > 39)) {
             strAlerta = spanColor(strRiscoMuitoAlto, strRiscoMuitoAlto, false, "black", true)
             strAlerta = insertSpanClass(strAlerta, sombra2)
@@ -547,53 +563,53 @@ function plotaMarca(lat, lng, loc) {
             strLegenda = insertSpanClass(strLegenda, sombra2)
 
         }
-        let strLegendaDC=""
-	let porcentagemCritica = false
+        let strLegendaDC = ""
+        let porcentagemCritica = false
         if (metarData && metarData.UR) {
             let UR = Math.round(metarData.UR)
             //if (UR >= 80 && UR <= 90) {
             if (UR >= 20 && UR < 30) {
-                strLegendaDC += "<b> Possível estado de Atenção em sua região.</b><br><br>" 
-                strLegendaDC += "<b> Recomendações:</b><br>" 
-                strLegendaDC += "- Evitar exercícios físicos ao ar livre entre 11h e 15h; <br> permanecer em locais protegidos do sol, em áreas vegetadas.<br>" 
-                strLegendaDC += "- Consulte a Defesa Civil de seu estado para confirmação.<br>" 
-            	strLegendaDC = spanColor(strLegendaDC, "Atenção", false, "red", true)
-		porcentagemCritica = "30%"
-		    
+                strLegendaDC += "<b> Possível estado de Atenção em sua região.</b><br><br>"
+                strLegendaDC += "<b> Recomendações:</b><br>"
+                strLegendaDC += "- Evitar exercícios físicos ao ar livre entre 11h e 15h; <br> permanecer em locais protegidos do sol, em áreas vegetadas.<br>"
+                strLegendaDC += "- Consulte a Defesa Civil de seu estado para confirmação.<br>"
+                strLegendaDC = spanColor(strLegendaDC, "Atenção", false, "red", true)
+                porcentagemCritica = "30%"
+
             }
             //if (UR >= 52 && UR < 80) {
             if (UR >= 12 && UR < 20) {
-                strLegendaDC += "<b> Possível estado de Alerta em sua região. </b><br><br>" 
-                strLegendaDC += "<b> Recomendações:</b>" 
-                strLegendaDC += "- Suprimir exercícios físicos e trabalhos ao ar livre entre 10h e 16h; <br> evitar aglomerações em ambientes fechados.<br>" 
-                strLegendaDC += "- Consulte a Defesa Civil de seu estado para confirmação.<br>" 
-            	strLegendaDC = spanColor(strLegendaDC, "Alerta", false, "red", true)
-		porcentagemCritica = "20%"
+                strLegendaDC += "<b> Possível estado de Alerta em sua região. </b><br><br>"
+                strLegendaDC += "<b> Recomendações:</b>"
+                strLegendaDC += "- Suprimir exercícios físicos e trabalhos ao ar livre entre 10h e 16h; <br> evitar aglomerações em ambientes fechados.<br>"
+                strLegendaDC += "- Consulte a Defesa Civil de seu estado para confirmação.<br>"
+                strLegendaDC = spanColor(strLegendaDC, "Alerta", false, "red", true)
+                porcentagemCritica = "20%"
             }
             //if (UR < 52) {
             if (UR < 12) {
-                strLegendaDC += "<b> Possível estado de Emergência em sua região. </b></p><br>" 
-                strLegendaDC += "<b> Recomendações:</b>" 
-                strLegendaDC += "- Suprimir exercícios físicos e trabalhos ao ar livre entre 10h e 16h; suspender <br>atividades que exijam aglomeração de pessoas em recintos fechados entre 10h e 16h.</p>" 
-                strLegendaDC += "- Consulte a Defesa Civil de seu estado para confirmação.</p>" 
-            	strLegendaDC = spanColor(strLegendaDC, "Emergência", false, "red", true)
-		porcentagemCritica = "12%"
+                strLegendaDC += "<b> Possível estado de Emergência em sua região. </b></p><br>"
+                strLegendaDC += "<b> Recomendações:</b>"
+                strLegendaDC += "- Suprimir exercícios físicos e trabalhos ao ar livre entre 10h e 16h; suspender <br>atividades que exijam aglomeração de pessoas em recintos fechados entre 10h e 16h.</p>"
+                strLegendaDC += "- Consulte a Defesa Civil de seu estado para confirmação.</p>"
+                strLegendaDC = spanColor(strLegendaDC, "Emergência", false, "red", true)
+                porcentagemCritica = "12%"
             }
-            if (strLegendaDC.length > 0) { 
+            if (strLegendaDC.length > 0) {
                 strDC = `<h5 style="${sombra2}">Umidade Reltiva do Ar Abaixo de ${porcentagemCritica}:</h5>`
-	        strDC = spanColor(strDC, porcentagemCritica, false, "red", true)
-	        strLegendaDC = spanColor(strLegendaDC, "Consulte a Defesa Civil de seu estado para confirmação", false, "red", true)
-            	strLegendaDC = insertSpanClass(strLegendaDC, sombra2)
-            	strLegendaDC = '<br><br><br>' + strDC + strLegendaDC
-	    }
+                strDC = spanColor(strDC, porcentagemCritica, false, "red", true)
+                strLegendaDC = spanColor(strLegendaDC, "Consulte a Defesa Civil de seu estado para confirmação", false, "red", true)
+                strLegendaDC = insertSpanClass(strLegendaDC, sombra2)
+                strLegendaDC = '<br><br><br>' + strDC + strLegendaDC
+            }
         }
 
 
         if (porcentagemCritica)
             addMarker(L.marker([lat, lng], { icon: cssIconRed }), "", true, true)
 
-	let strInfoICA 
-	if (!icon){
+        let strInfoICA
+        if (!icon) {
             icon = silverIcon
 	    let strErro = spanBold("Náo Há Dados Meteorológicos Atualizados Para Esta Localidade!")
 	    desc = `${desc}<br><br>${strErro}`
@@ -645,15 +661,15 @@ function getTempMetar(metar) { //programado apenas para pressao em Q
     let t2 = metar.match(patt2)
     let t
     if (!Array.isArray(t2)) {
-    	let t3 = metar.match(patt3)
-	t = t3.slice()
-	
-	if (!Array.isArray(t3))
-        	return false
-    } else{
-	    t = t2.slice()
+        let t3 = metar.match(patt3)
+        t = t3.slice()
+
+        if (!Array.isArray(t3))
+            return false
+    } else {
+        t = t2.slice()
     }
-    t[0] = t[0].replace(/M/g,"-")
+    t[0] = t[0].replace(/M/g, "-")
     t = t[0].split("/")
 
     return { t: parseInt(t[0]), td: parseInt(t[1].split(" ")[0]) }
